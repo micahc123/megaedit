@@ -1,0 +1,2061 @@
+{
+  "title": "What if you could see 10 seconds into the future?",
+  "hook": "You can see ten seconds into the future.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "You can see ten seconds into the future.",
+      "visual": {
+        "layout": "hero",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "bible": {
+            "hero": "you",
+            "looks": {
+              "you": {
+                "coat": "#e5b23a",
+                "pants": "#2c2b38",
+                "hair": "hood",
+                "eyes": "#ffb83f",
+                "rim": "#ffb46a"
+              },
+              "kid": {
+                "coat": "#d4553f",
+                "pants": "#2b3346",
+                "hair": "cap",
+                "kid": true
+              },
+              "mom": {
+                "coat": "#3f7f86",
+                "pants": "#2a2a34",
+                "hair": "bun"
+              }
+            },
+            "power": {
+              "eyes": "#ffb83f",
+              "ghost": "cyan"
+            },
+            "counter": {
+              "label": "SAVED"
+            }
+          },
+          "shots": [
+            {
+              "tint": "rgba(255,140,90,.22)",
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "e",
+                  "x": 1320,
+                  "y": 880,
+                  "h": 160,
+                  "pose": "walk",
+                  "vx": -48,
+                  "dir": -1,
+                  "seed": 0.8
+                },
+                {
+                  "kind": "person",
+                  "look": "d",
+                  "x": 520,
+                  "y": 875,
+                  "h": 158,
+                  "pose": "walk",
+                  "vx": 52,
+                  "dir": 1,
+                  "seed": 0.3
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 960,
+                  "y": 930,
+                  "h": 210,
+                  "eyes": {
+                    "from": 0,
+                    "to": 1,
+                    "at": "future",
+                    "dur": 0.35,
+                    "ease": "out"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "a",
+                  "x": 260,
+                  "y": 905,
+                  "h": 175,
+                  "pose": "walk",
+                  "vx": 60,
+                  "dir": 1,
+                  "seed": 0.1
+                },
+                {
+                  "kind": "person",
+                  "look": "c",
+                  "x": 1640,
+                  "y": 915,
+                  "h": 180,
+                  "pose": "walk",
+                  "vx": -55,
+                  "dir": -1,
+                  "seed": 0.5
+                }
+              ],
+              "cam": {
+                "x": 960,
+                "y": 640,
+                "z": 1.0
+              },
+              "to": {
+                "x": 960,
+                "y": 700,
+                "z": 1.32
+              },
+              "push": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Not in a dream. A faint copy of the world plays out right in front of you, ten seconds ahead of everyone else.",
+      "visual": {
+        "layout": "hero",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "tint": "rgba(255,140,90,.22)",
+              "look": {
+                "blur": 6
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "b",
+                  "x": 1300,
+                  "y": 900,
+                  "h": 170,
+                  "pose": "walk",
+                  "vx": 90,
+                  "ghost": true,
+                  "op": 0.8
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 820,
+                  "y": 1430,
+                  "h": 1000,
+                  "eyes": 1,
+                  "front": true,
+                  "d": 1
+                }
+              ],
+              "cam": {
+                "x": 960,
+                "y": 540,
+                "z": 1.0
+              },
+              "push": 0.025
+            },
+            {
+              "tint": "rgba(255,140,90,.22)",
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "f",
+                  "x": 560,
+                  "y": 885,
+                  "h": 165,
+                  "pose": "walk",
+                  "vx": 55,
+                  "dir": 1,
+                  "seed": 0.9,
+                  "copy": {
+                    "lead": 1.4,
+                    "op": {
+                      "from": 0,
+                      "to": 0.95,
+                      "at": "faint",
+                      "dur": 0.6,
+                      "ease": "out"
+                    }
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "a",
+                  "x": 1300,
+                  "y": 880,
+                  "h": 162,
+                  "pose": "walk",
+                  "vx": -50,
+                  "dir": -1,
+                  "seed": 0.4,
+                  "copy": {
+                    "lead": 1.4,
+                    "op": {
+                      "from": 0,
+                      "to": 0.95,
+                      "at": "faint",
+                      "dur": 0.6,
+                      "ease": "out"
+                    }
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "d",
+                  "x": 900,
+                  "y": 930,
+                  "h": 200,
+                  "pose": "walk",
+                  "vx": 70,
+                  "dir": 1,
+                  "seed": 0.2,
+                  "copy": {
+                    "lead": 1.4,
+                    "op": {
+                      "from": 0,
+                      "to": 0.95,
+                      "at": "faint",
+                      "dur": 0.6,
+                      "ease": "out"
+                    }
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "e",
+                  "x": 1560,
+                  "y": 905,
+                  "h": 185,
+                  "pose": "walk",
+                  "vx": -62,
+                  "dir": -1,
+                  "seed": 0.6,
+                  "copy": {
+                    "lead": 1.4,
+                    "op": {
+                      "from": 0,
+                      "to": 0.95,
+                      "at": "faint",
+                      "dur": 0.6,
+                      "ease": "out"
+                    }
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 300,
+                  "y": 1080,
+                  "h": 540,
+                  "eyes": 1,
+                  "front": true,
+                  "d": 1.25,
+                  "blur": 2.5
+                }
+              ],
+              "chips": [
+                {
+                  "at": "ten seconds",
+                  "pos": [
+                    0.7448,
+                    0.2778
+                  ],
+                  "text": "THE COPY · 10 s AHEAD",
+                  "target": [
+                    0.6198,
+                    0.6806
+                  ]
+                }
+              ],
+              "at": "a faint",
+              "cam": {
+                "x": 960,
+                "y": 540,
+                "z": 1.08
+              },
+              "push": 0.012
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "swish",
+          "at": 2.16,
+          "volume": 0.22
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "A cup is about to fall. You catch it before it even tips.",
+      "visual": {
+        "layout": "hero",
+        "setting": "cafe",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "vcam": {
+                "x": 900,
+                "y": 760,
+                "z": 0.85
+              },
+              "vto": {
+                "x": 940,
+                "y": 760,
+                "z": 0.9
+              },
+              "shake": [
+                "catch+0.05"
+              ],
+              "tint": "rgba(255,140,90,.22)",
+              "actors": [
+                {
+                  "kind": "prop",
+                  "prop": "stool",
+                  "x": 560,
+                  "y": 900,
+                  "seat": 822
+                },
+                {
+                  "kind": "prop",
+                  "prop": "stool",
+                  "x": 1290,
+                  "y": 900,
+                  "seat": 814
+                },
+                {
+                  "kind": "person",
+                  "look": "b",
+                  "x": 560,
+                  "y": 900,
+                  "h": 300,
+                  "pose": "sit"
+                },
+                {
+                  "kind": "prop",
+                  "prop": "table",
+                  "x": 330,
+                  "y": 760,
+                  "w": 300
+                },
+                {
+                  "kind": "prop",
+                  "prop": "table",
+                  "x": 760,
+                  "y": 760,
+                  "w": 470
+                },
+                {
+                  "kind": "cup",
+                  "x": 900,
+                  "y": 760
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1290,
+                  "y": 900,
+                  "h": 330,
+                  "dir": -1,
+                  "pose": "sit",
+                  "poses": [
+                    {
+                      "at": "catch-0.2",
+                      "pose": "reach"
+                    }
+                  ],
+                  "reach": {
+                    "from": 0,
+                    "to": 0.7,
+                    "at": "catch-0.2",
+                    "dur": 0.2,
+                    "ease": "out"
+                  },
+                  "eyes": 1
+                },
+                {
+                  "kind": "cup",
+                  "x": {
+                    "from": 1180,
+                    "to": 1250,
+                    "at": "about",
+                    "dur": 0.55,
+                    "ease": "lin"
+                  },
+                  "y": {
+                    "from": 760,
+                    "to": 900,
+                    "at": "about",
+                    "dur": 0.55,
+                    "ease": "quad"
+                  },
+                  "rot": {
+                    "from": 0,
+                    "to": 105,
+                    "at": "about",
+                    "dur": 0.55,
+                    "ease": "lin"
+                  },
+                  "splash": true,
+                  "ghost": true,
+                  "show": {
+                    "until": "about+1.3"
+                  },
+                  "fade": 0.4,
+                  "op": {
+                    "from": 0,
+                    "to": 0.9,
+                    "at": 0.1,
+                    "dur": 0.4,
+                    "ease": "out"
+                  }
+                },
+                {
+                  "kind": "cup",
+                  "x": 1180,
+                  "y": 760,
+                  "rot": [
+                    {
+                      "from": 0,
+                      "to": -34,
+                      "at": "catch-0.18",
+                      "dur": 0.18,
+                      "ease": "out"
+                    },
+                    {
+                      "from": -34,
+                      "to": 0,
+                      "at": "catch+0.25",
+                      "dur": 0.45
+                    }
+                  ]
+                }
+              ],
+              "cam": {
+                "x": 1000,
+                "y": 650,
+                "z": 1.42
+              },
+              "to": {
+                "x": 1040,
+                "y": 660,
+                "z": 1.5
+              },
+              "push": 0
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "thud",
+          "at": 1.37,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Most people need a quarter of a second just to react. You get ten whole seconds.",
+      "visual": {
+        "layout": "hero",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "vcam": {
+                "x": 960,
+                "y": 540,
+                "z": 0.64
+              },
+              "scan": {
+                "bg": "#0c1626",
+                "grid": {
+                  "step": 60,
+                  "color": "#1b3350"
+                },
+                "finder": true,
+                "shapes": [
+                  {
+                    "t": "box",
+                    "x": 380,
+                    "y": 720,
+                    "w": 1200,
+                    "h": 40,
+                    "fill": "none",
+                    "stroke": "#2c4a6c",
+                    "sw": 3
+                  },
+                  {
+                    "t": "box",
+                    "x": 380,
+                    "y": 790,
+                    "w": 1200,
+                    "h": 40,
+                    "fill": "none",
+                    "stroke": "#2c4a6c",
+                    "sw": 3
+                  },
+                  {
+                    "t": "box",
+                    "x": 380,
+                    "y": 720,
+                    "w": {
+                      "from": 0,
+                      "to": 30,
+                      "at": "quarter",
+                      "dur": 0.25,
+                      "ease": "out"
+                    },
+                    "h": 40,
+                    "fill": "#7fe3f5",
+                    "stroke": "none",
+                    "sw": 0
+                  },
+                  {
+                    "t": "box",
+                    "x": 380,
+                    "y": 790,
+                    "w": {
+                      "from": 0,
+                      "to": 1200,
+                      "at": "ten whole",
+                      "dur": 0.8,
+                      "ease": "out"
+                    },
+                    "h": 40,
+                    "fill": "#ffb83f",
+                    "stroke": "none",
+                    "sw": 0
+                  },
+                  {
+                    "t": "text",
+                    "x": 356,
+                    "y": 751,
+                    "text": "THEM",
+                    "fill": "#7fe3f5",
+                    "size": 32,
+                    "anchor": "end",
+                    "font": "head"
+                  },
+                  {
+                    "t": "text",
+                    "x": 356,
+                    "y": 821,
+                    "text": "YOU",
+                    "fill": "#ffb83f",
+                    "size": 32,
+                    "anchor": "end",
+                    "font": "head"
+                  },
+                  {
+                    "t": "text",
+                    "x": 380,
+                    "y": 878,
+                    "text": "0 s",
+                    "fill": "#6f8db0",
+                    "size": 28,
+                    "anchor": "middle"
+                  },
+                  {
+                    "t": "text",
+                    "x": 680.0,
+                    "y": 878,
+                    "text": "2.5 s",
+                    "fill": "#6f8db0",
+                    "size": 28,
+                    "anchor": "middle"
+                  },
+                  {
+                    "t": "text",
+                    "x": 980,
+                    "y": 878,
+                    "text": "5 s",
+                    "fill": "#6f8db0",
+                    "size": 28,
+                    "anchor": "middle"
+                  },
+                  {
+                    "t": "text",
+                    "x": 1280.0,
+                    "y": 878,
+                    "text": "7.5 s",
+                    "fill": "#6f8db0",
+                    "size": 28,
+                    "anchor": "middle"
+                  },
+                  {
+                    "t": "text",
+                    "x": 1580,
+                    "y": 878,
+                    "text": "10 s",
+                    "fill": "#6f8db0",
+                    "size": 28,
+                    "anchor": "middle"
+                  }
+                ]
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "a",
+                  "x": 640,
+                  "y": 650,
+                  "h": 420,
+                  "ghost": true,
+                  "op": 0.9
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1280,
+                  "y": 650,
+                  "h": 420,
+                  "dir": -1,
+                  "eyes": 1
+                }
+              ],
+              "chips": [
+                {
+                  "at": "quarter",
+                  "pos": [
+                    0.3333,
+                    0.1389
+                  ],
+                  "text": "MOST PEOPLE · 0.25 s",
+                  "target": [
+                    0.3333,
+                    0.2056
+                  ],
+                  "vpos": [
+                    0.3,
+                    0.2
+                  ],
+                  "vtarget": [
+                    0.3,
+                    0.26
+                  ]
+                },
+                {
+                  "at": "ten whole",
+                  "pos": [
+                    0.6667,
+                    0.1389
+                  ],
+                  "text": "YOU · 10 s",
+                  "target": [
+                    0.6667,
+                    0.2056
+                  ],
+                  "tone": "amber",
+                  "vpos": [
+                    0.7,
+                    0.2
+                  ],
+                  "vtarget": [
+                    0.7,
+                    0.26
+                  ]
+                }
+              ],
+              "cam": {
+                "x": 960,
+                "y": 540,
+                "z": 1.0
+              },
+              "push": 0.014
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Then one afternoon, the copy shows you a kid chasing a ball into the road. And a car that can't stop in time.",
+      "visual": {
+        "layout": "hero",
+        "setting": "day",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "vcam": {
+                "x": 850,
+                "y": 770,
+                "z": 0.88
+              },
+              "vto": {
+                "x": 1000,
+                "y": 770,
+                "z": 0.95
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "c",
+                  "x": 1700,
+                  "y": 800,
+                  "h": 160,
+                  "pose": "walk",
+                  "vx": -50,
+                  "dir": -1,
+                  "seed": 0.4
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": 1300,
+                  "y": 815,
+                  "h": 118,
+                  "dir": -1
+                },
+                {
+                  "kind": "ball",
+                  "x": 1254,
+                  "y": 815,
+                  "r": 13,
+                  "spin": 200,
+                  "bounce": {
+                    "amp": 70,
+                    "rate": 4.2
+                  }
+                },
+                {
+                  "kind": "ball",
+                  "x": {
+                    "from": 1346,
+                    "to": 1010,
+                    "at": "chasing-0.25",
+                    "dur": 1.2,
+                    "ease": "out"
+                  },
+                  "y": {
+                    "from": 815,
+                    "to": 965,
+                    "at": "chasing-0.25",
+                    "dur": 1.2,
+                    "ease": "out"
+                  },
+                  "r": 13,
+                  "spin": -400,
+                  "ghost": true,
+                  "op": {
+                    "from": 0,
+                    "to": 0.95,
+                    "at": "kid-0.2",
+                    "dur": 0.5,
+                    "ease": "out"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": {
+                    "from": 1300,
+                    "to": 1070,
+                    "at": "chasing",
+                    "dur": 1.3
+                  },
+                  "y": {
+                    "from": 815,
+                    "to": 950,
+                    "at": "chasing",
+                    "dur": 1.3
+                  },
+                  "h": {
+                    "from": 118,
+                    "to": 132,
+                    "at": "chasing",
+                    "dur": 1.3
+                  },
+                  "pose": "stand",
+                  "poses": [
+                    {
+                      "at": "chasing",
+                      "pose": "run"
+                    },
+                    {
+                      "at": "chasing+1.3",
+                      "pose": "stand"
+                    }
+                  ],
+                  "rate": 2.6,
+                  "dir": -1,
+                  "ghost": true,
+                  "op": {
+                    "from": 0,
+                    "to": 0.95,
+                    "at": "kid-0.2",
+                    "dur": 0.5,
+                    "ease": "out"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 420,
+                  "y": 835,
+                  "h": 190,
+                  "pose": "walk",
+                  "vx": 62,
+                  "eyes": 1
+                }
+              ],
+              "cam": {
+                "x": 900,
+                "y": 660,
+                "z": 1.3
+              },
+              "to": {
+                "x": 960,
+                "y": 680,
+                "z": 1.4
+              },
+              "push": 0
+            },
+            {
+              "vcam": {
+                "x": 800,
+                "y": 840,
+                "z": 1.12
+              },
+              "vto": {
+                "x": 850,
+                "y": 840,
+                "z": 1.19
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": 1300,
+                  "y": 815,
+                  "h": 118,
+                  "dir": -1
+                },
+                {
+                  "kind": "ball",
+                  "x": 1254,
+                  "y": 815,
+                  "r": 13,
+                  "spin": 200,
+                  "bounce": {
+                    "amp": 70,
+                    "rate": 4.2
+                  }
+                },
+                {
+                  "kind": "ball",
+                  "x": {
+                    "from": 1346,
+                    "to": 1010,
+                    "at": "chasing-0.25",
+                    "dur": 1.2,
+                    "ease": "out"
+                  },
+                  "y": {
+                    "from": 815,
+                    "to": 965,
+                    "at": "chasing-0.25",
+                    "dur": 1.2,
+                    "ease": "out"
+                  },
+                  "r": 13,
+                  "spin": -400,
+                  "ghost": true,
+                  "op": 0.95
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": {
+                    "from": 1300,
+                    "to": 1070,
+                    "at": "chasing",
+                    "dur": 1.3
+                  },
+                  "y": {
+                    "from": 815,
+                    "to": 950,
+                    "at": "chasing",
+                    "dur": 1.3
+                  },
+                  "h": {
+                    "from": 118,
+                    "to": 132,
+                    "at": "chasing",
+                    "dur": 1.3
+                  },
+                  "pose": "stand",
+                  "poses": [
+                    {
+                      "at": "chasing",
+                      "pose": "run"
+                    },
+                    {
+                      "at": "chasing+1.3",
+                      "pose": "stand"
+                    }
+                  ],
+                  "rate": 2.6,
+                  "dir": -1,
+                  "ghost": true,
+                  "op": 0.95
+                },
+                {
+                  "kind": "car",
+                  "x": {
+                    "from": -560,
+                    "to": 620,
+                    "at": 4.6370000000000005,
+                    "until": 6.94,
+                    "ease": "decel"
+                  },
+                  "y": 990,
+                  "L": 400,
+                  "color": "#3d6fb0",
+                  "ghost": true,
+                  "skid": "can't"
+                }
+              ],
+              "chips": [
+                {
+                  "at": "can't+0.1",
+                  "pos": [
+                    0.6562,
+                    0.2778
+                  ],
+                  "text": "CAN'T STOP IN TIME",
+                  "tone": "red",
+                  "size": 30
+                }
+              ],
+              "at": "and a",
+              "cam": {
+                "x": 1040,
+                "y": 790,
+                "z": 1.55
+              },
+              "to": {
+                "x": 1000,
+                "y": 800,
+                "z": 1.68
+              },
+              "push": 0
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "whoosh",
+          "at": 4.74,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "At city speed, a car needs over twenty meters to stop. This one has eight.",
+      "visual": {
+        "layout": "hero",
+        "setting": "day",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "vcam": {
+                "x": 900,
+                "y": 540,
+                "z": 0.6
+              },
+              "scan": {
+                "bg": "#0b1524",
+                "grid": {
+                  "step": 40,
+                  "color": "#17304c"
+                },
+                "finder": true,
+                "shapes": [
+                  {
+                    "t": "box",
+                    "x": -400,
+                    "y": 380,
+                    "w": 2800,
+                    "h": 320,
+                    "fill": "#13233a",
+                    "stroke": "#7fe3f5",
+                    "sw": 3
+                  },
+                  {
+                    "t": "line",
+                    "x1": -400,
+                    "y1": 540,
+                    "x2": 2400,
+                    "y2": 540,
+                    "stroke": "#7fe3f5",
+                    "sw": 3,
+                    "dash": "40 30",
+                    "op": 0.6
+                  },
+                  {
+                    "t": "box",
+                    "x": {
+                      "from": -500,
+                      "to": 140,
+                      "at": 0,
+                      "dur": 0.45,
+                      "ease": "out"
+                    },
+                    "y": 568,
+                    "w": 240,
+                    "h": 112,
+                    "rx": 22,
+                    "fill": "rgba(110,225,255,.18)",
+                    "stroke": "#7fe3f5",
+                    "sw": 4
+                  },
+                  {
+                    "t": "box",
+                    "x": {
+                      "from": -360,
+                      "to": 280,
+                      "at": 0,
+                      "dur": 0.45,
+                      "ease": "out"
+                    },
+                    "y": 582,
+                    "w": 62,
+                    "h": 84,
+                    "rx": 10,
+                    "fill": "none",
+                    "stroke": "#7fe3f5",
+                    "sw": 3
+                  },
+                  {
+                    "t": "dot",
+                    "x": 780,
+                    "y": 624,
+                    "r": 32,
+                    "stroke": "#7fe3f5",
+                    "flip": {
+                      "at": "this one",
+                      "color": "#ff5a4a"
+                    },
+                    "pulse": {
+                      "at": "this one",
+                      "color": "#ff5a4a"
+                    }
+                  },
+                  {
+                    "t": "box",
+                    "x": 380,
+                    "y": 450,
+                    "w": {
+                      "from": 0,
+                      "to": 1150,
+                      "at": "twenty-0.1",
+                      "dur": 0.7,
+                      "ease": "out"
+                    },
+                    "h": 16,
+                    "fill": "#ff5a4a",
+                    "stroke": "none",
+                    "sw": 0
+                  },
+                  {
+                    "t": "line",
+                    "x1": 1530,
+                    "y1": 420,
+                    "x2": 1530,
+                    "y2": 720,
+                    "stroke": "#ff5a4a",
+                    "sw": 4,
+                    "show": {
+                      "at": "twenty+0.6"
+                    }
+                  },
+                  {
+                    "t": "box",
+                    "x": 380,
+                    "y": 712,
+                    "w": {
+                      "from": 0,
+                      "to": 400,
+                      "at": "this one",
+                      "dur": 0.5,
+                      "ease": "out"
+                    },
+                    "h": 16,
+                    "fill": "#ffb83f",
+                    "stroke": "none",
+                    "sw": 0
+                  },
+                  {
+                    "t": "line",
+                    "x1": 780,
+                    "y1": 660,
+                    "x2": 780,
+                    "y2": 745,
+                    "stroke": "#ffb83f",
+                    "sw": 4,
+                    "show": {
+                      "at": "this one+0.5"
+                    }
+                  }
+                ]
+              },
+              "chips": [
+                {
+                  "at": "city",
+                  "pos": [
+                    0.5,
+                    0.1759
+                  ],
+                  "text": "CITY SPEED · 30 MPH",
+                  "size": 32,
+                  "vpos": [
+                    0.5,
+                    0.17
+                  ]
+                },
+                {
+                  "at": "twenty+0.4",
+                  "pos": [
+                    0.8125,
+                    0.2963
+                  ],
+                  "text": "TO STOP · 23 m",
+                  "target": [
+                    0.7969,
+                    0.4167
+                  ],
+                  "tone": "red",
+                  "size": 38,
+                  "vpos": [
+                    0.5,
+                    0.27
+                  ],
+                  "vtarget": [
+                    0.8,
+                    0.34
+                  ]
+                },
+                {
+                  "at": "this one+0.3",
+                  "pos": [
+                    0.3646,
+                    0.8056
+                  ],
+                  "text": "YOU HAVE · 8 m",
+                  "target": [
+                    0.3021,
+                    0.6759
+                  ],
+                  "tone": "amber",
+                  "size": 38,
+                  "vpos": [
+                    0.45,
+                    0.73
+                  ],
+                  "vtarget": [
+                    0.4,
+                    0.6
+                  ]
+                }
+              ],
+              "cam": {
+                "x": 960,
+                "y": 540,
+                "z": 1.0
+              },
+              "push": 0.012
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "swish",
+          "at": 0,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "So you run, before anyone else knows there's a reason to.",
+      "visual": {
+        "layout": "hero",
+        "setting": "day",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "vcam": {
+                "x": 700,
+                "y": 820,
+                "z": 1.25
+              },
+              "vto": {
+                "x": 1150,
+                "y": 830,
+                "z": 1.31
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "c",
+                  "x": 1640,
+                  "y": 790,
+                  "h": 160,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": {
+                    "from": 1300,
+                    "to": 1260,
+                    "at": "reason",
+                    "dur": 0.9,
+                    "ease": "out"
+                  },
+                  "y": 815,
+                  "h": 118,
+                  "dir": -1,
+                  "pose": "stand",
+                  "poses": [
+                    {
+                      "at": "reason",
+                      "pose": "walk"
+                    }
+                  ],
+                  "rate": 1.4
+                },
+                {
+                  "kind": "ball",
+                  "x": 1254,
+                  "y": 815,
+                  "r": 13,
+                  "spin": 300,
+                  "bounce": {
+                    "amp": 70,
+                    "rate": 4.2
+                  },
+                  "show": {
+                    "until": "reason"
+                  }
+                },
+                {
+                  "kind": "ball",
+                  "x": {
+                    "from": 1254,
+                    "to": 1120,
+                    "at": "reason",
+                    "dur": 0.9,
+                    "ease": "out"
+                  },
+                  "y": {
+                    "from": 815,
+                    "to": 960,
+                    "at": "reason",
+                    "dur": 0.9,
+                    "ease": "out"
+                  },
+                  "r": 13,
+                  "spin": 300,
+                  "show": {
+                    "at": "reason"
+                  }
+                },
+                {
+                  "kind": "prop",
+                  "prop": "streaks",
+                  "x": {
+                    "from": 360,
+                    "to": 933,
+                    "at": 0,
+                    "dur": 3.28,
+                    "ease": "lin"
+                  },
+                  "y": 720,
+                  "w": 260,
+                  "op": 0.45
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 420,
+                  "y": 840,
+                  "h": 200,
+                  "pose": "run",
+                  "vx": 175,
+                  "rate": 2.5,
+                  "eyes": 1
+                }
+              ],
+              "cam": {
+                "x": 640,
+                "y": 720,
+                "z": 1.3
+              },
+              "to": {
+                "x": 1060,
+                "y": 740,
+                "z": 1.38
+              },
+              "push": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s08",
+      "text": "You pull him back. The car flies past. And everyone just saw you grab a stranger's kid.",
+      "visual": {
+        "layout": "hero",
+        "setting": "day",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "bump": [
+            "flies+0.25"
+          ],
+          "shots": [
+            {
+              "vcam": {
+                "x": 1200,
+                "y": 850,
+                "z": 1.25
+              },
+              "vto": {
+                "x": 1220,
+                "y": 840,
+                "z": 1.31
+              },
+              "shake": [
+                "flies+0.1"
+              ],
+              "actors": [
+                {
+                  "kind": "ball",
+                  "x": {
+                    "from": 1120,
+                    "to": 2640,
+                    "at": "flies+0.07",
+                    "dur": 0.8,
+                    "ease": "lin"
+                  },
+                  "y": {
+                    "from": 960,
+                    "to": 740,
+                    "at": "flies+0.07",
+                    "dur": 0.8,
+                    "ease": "arc"
+                  },
+                  "r": 13,
+                  "spin": 900
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": {
+                    "from": 1150,
+                    "to": 1250,
+                    "at": "pull",
+                    "dur": 0.4
+                  },
+                  "y": {
+                    "from": 945,
+                    "to": 860,
+                    "at": "pull",
+                    "dur": 0.4
+                  },
+                  "h": 124,
+                  "dir": -1,
+                  "pose": "run",
+                  "poses": [
+                    {
+                      "at": "pull+0.02",
+                      "pose": "stand"
+                    }
+                  ],
+                  "rate": 2.4,
+                  "mouth": "talk",
+                  "talk": {
+                    "at": "pull+0.2"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1340,
+                  "y": 850,
+                  "h": 200,
+                  "dir": -1,
+                  "pose": "reach",
+                  "poses": [
+                    {
+                      "at": "pull+0.01",
+                      "pose": "pull"
+                    }
+                  ],
+                  "reach": 1,
+                  "eyes": 1
+                },
+                {
+                  "kind": "prop",
+                  "prop": "streaks",
+                  "x": {
+                    "from": -700,
+                    "to": 2600,
+                    "at": "flies-0.45",
+                    "dur": 0.95,
+                    "ease": "lin"
+                  },
+                  "y": 975,
+                  "w": 700,
+                  "n": 4,
+                  "op": 0.55,
+                  "show": {
+                    "at": "flies-0.55",
+                    "until": "flies+0.7"
+                  }
+                },
+                {
+                  "kind": "car",
+                  "x": {
+                    "from": -700,
+                    "to": 2600,
+                    "at": "flies-0.45",
+                    "dur": 0.95,
+                    "ease": "lin"
+                  },
+                  "y": 995,
+                  "L": 430,
+                  "color": "#c4473b",
+                  "spin": 2000,
+                  "show": {
+                    "at": "flies-0.55",
+                    "until": "flies+0.7"
+                  }
+                }
+              ],
+              "cam": {
+                "x": 1180,
+                "y": 800,
+                "z": 1.35
+              },
+              "to": {
+                "x": 1200,
+                "y": 780,
+                "z": 1.42
+              },
+              "push": 0
+            },
+            {
+              "vcam": {
+                "x": 1300,
+                "y": 820,
+                "z": 1.62
+              },
+              "vto": {
+                "x": 1150,
+                "y": 800,
+                "z": 0.78
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "a",
+                  "x": 420,
+                  "y": 805,
+                  "h": 170,
+                  "dir": 1
+                },
+                {
+                  "kind": "person",
+                  "look": "e",
+                  "x": 640,
+                  "y": 790,
+                  "h": 160,
+                  "dir": 1,
+                  "mouth": "talk",
+                  "talk": {
+                    "at": "stranger"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "d",
+                  "x": 860,
+                  "y": 800,
+                  "h": 165,
+                  "dir": 1
+                },
+                {
+                  "kind": "person",
+                  "look": "c",
+                  "x": 1560,
+                  "y": 795,
+                  "h": 165,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "f",
+                  "x": 1760,
+                  "y": 805,
+                  "h": 172,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "b",
+                  "x": 1940,
+                  "y": 790,
+                  "h": 160,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": 1270,
+                  "y": 858,
+                  "h": 124,
+                  "dir": 1
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1360,
+                  "y": 850,
+                  "h": 200,
+                  "dir": -1,
+                  "pose": "reach",
+                  "reach": 0.55,
+                  "eyes": 1
+                }
+              ],
+              "at": "and everyone",
+              "cam": {
+                "x": 1240,
+                "y": 720,
+                "z": 1.6
+              },
+              "to": {
+                "x": 1180,
+                "y": 640,
+                "z": 1.08
+              },
+              "push": 0
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "whoosh",
+          "at": 0.96,
+          "volume": 0.55
+        },
+        {
+          "id": "thud",
+          "at": 1.53,
+          "volume": 0.32
+        },
+        {
+          "id": "click",
+          "at": 1.71,
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "His mom screams at you. You can't explain. Nobody else saw what you saw.",
+      "visual": {
+        "layout": "hero",
+        "setting": "day",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "vcam": {
+                "x": 1080,
+                "y": 810,
+                "z": 1.44
+              },
+              "vto": {
+                "x": 1110,
+                "y": 810,
+                "z": 1.56
+              },
+              "shake": [
+                "screams"
+              ],
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": 840,
+                  "y": 845,
+                  "h": 124,
+                  "dir": 1
+                },
+                {
+                  "kind": "person",
+                  "look": "mom",
+                  "x": 960,
+                  "y": 850,
+                  "h": 205,
+                  "dir": 1,
+                  "pose": "walk",
+                  "poses": [
+                    {
+                      "at": "screams-0.1",
+                      "pose": "shout"
+                    }
+                  ],
+                  "rate": 1.6,
+                  "mouth": "talk",
+                  "talk": {
+                    "at": "screams-0.1",
+                    "until": "explain-0.3"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1290,
+                  "y": 850,
+                  "h": 200,
+                  "dir": -1,
+                  "eyes": 1,
+                  "mouth": "talk",
+                  "talk": {
+                    "at": "explain-0.15",
+                    "until": "explain+0.5"
+                  }
+                }
+              ],
+              "cam": {
+                "x": 1080,
+                "y": 690,
+                "z": 1.45
+              },
+              "to": {
+                "x": 1110,
+                "y": 700,
+                "z": 1.6
+              },
+              "push": 0
+            },
+            {
+              "vcam": {
+                "x": 950,
+                "y": 660,
+                "z": 1.19
+              },
+              "tint": "rgba(60,90,160,.25)",
+              "look": {
+                "blur": 5,
+                "sat": 0.45
+              },
+              "actors": [
+                {
+                  "kind": "car",
+                  "x": {
+                    "from": -300,
+                    "to": 786,
+                    "at": 0,
+                    "dur": 2.09,
+                    "ease": "lin"
+                  },
+                  "y": 990,
+                  "L": 400,
+                  "color": "#3d6fb0",
+                  "ghost": true,
+                  "op": 0.75
+                },
+                {
+                  "kind": "person",
+                  "look": "kid",
+                  "x": 1080,
+                  "y": 950,
+                  "h": 132,
+                  "dir": -1,
+                  "ghost": true,
+                  "op": 0.75
+                },
+                {
+                  "kind": "person",
+                  "look": "a",
+                  "x": 1500,
+                  "y": 820,
+                  "h": 180,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "mom",
+                  "x": 1680,
+                  "y": 820,
+                  "h": 180,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "d",
+                  "x": 1820,
+                  "y": 820,
+                  "h": 180,
+                  "dir": -1
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 760,
+                  "y": 1440,
+                  "h": 1000,
+                  "eyes": 1,
+                  "front": true,
+                  "d": 1
+                }
+              ],
+              "at": "nobody",
+              "cam": {
+                "x": 960,
+                "y": 540,
+                "z": 1.0
+              },
+              "push": 0.02
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "thud",
+          "at": 0.53,
+          "volume": 0.22
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "That night, alone at the bus stop, it hits you. Ten seconds is enough to save someone. It's never enough to explain why.",
+      "visual": {
+        "layout": "hero",
+        "setting": "night",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "tint": "rgba(70,80,200,.28)",
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1180,
+                  "y": 820,
+                  "h": 210,
+                  "dir": -1,
+                  "pose": "slump",
+                  "eyes": 0
+                }
+              ],
+              "cam": {
+                "x": 960,
+                "y": 560,
+                "z": 1.0
+              },
+              "to": {
+                "x": 1100,
+                "y": 620,
+                "z": 1.16
+              },
+              "push": 0
+            },
+            {
+              "tint": "rgba(70,80,200,.28)",
+              "look": {
+                "rain": 0.45
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1180,
+                  "y": 820,
+                  "h": 210,
+                  "dir": -1,
+                  "pose": "slump",
+                  "eyes": 0
+                }
+              ],
+              "at": "it's never",
+              "cam": {
+                "x": 1180,
+                "y": 650,
+                "z": 1.9
+              },
+              "to": {
+                "x": 1170,
+                "y": 640,
+                "z": 2.0
+              },
+              "push": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Then the copy shows you one more thing. Footsteps. His mom, coming back, to say thank you.",
+      "visual": {
+        "layout": "hero",
+        "setting": "night",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "tint": "rgba(70,80,200,.28)",
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "mom",
+                  "x": {
+                    "from": -80,
+                    "to": 700,
+                    "at": 0.6,
+                    "dur": 2.6
+                  },
+                  "y": 820,
+                  "h": 205,
+                  "pose": "walk",
+                  "poses": [
+                    {
+                      "at": 3.2,
+                      "pose": "stand"
+                    }
+                  ],
+                  "rate": 1.1,
+                  "ghost": true,
+                  "op": {
+                    "from": 0,
+                    "to": 0.95,
+                    "at": 0.5,
+                    "dur": 0.5,
+                    "ease": "out"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1180,
+                  "y": 820,
+                  "h": 210,
+                  "dir": -1,
+                  "pose": "slump",
+                  "eyes": {
+                    "from": 0,
+                    "to": 1,
+                    "at": 0.25,
+                    "dur": 0.4,
+                    "ease": "out"
+                  }
+                }
+              ],
+              "cam": {
+                "x": 900,
+                "y": 600,
+                "z": 1.18
+              },
+              "to": {
+                "x": 860,
+                "y": 600,
+                "z": 1.24
+              },
+              "push": 0
+            },
+            {
+              "tint": "rgba(70,80,200,.28)",
+              "look": {
+                "warm": {
+                  "from": 0,
+                  "to": 1,
+                  "at": "thank-0.2",
+                  "dur": 0.8,
+                  "ease": "out"
+                },
+                "rain": {
+                  "from": 0.35,
+                  "to": 0.14,
+                  "at": "thank-0.2",
+                  "dur": 0.8,
+                  "ease": "out"
+                }
+              },
+              "actors": [
+                {
+                  "kind": "person",
+                  "look": "mom",
+                  "x": 830,
+                  "y": 820,
+                  "h": 205,
+                  "dir": 1,
+                  "ghost": true,
+                  "op": {
+                    "from": 0.9,
+                    "to": 0,
+                    "at": 0,
+                    "dur": 1.6
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "mom",
+                  "x": {
+                    "from": 380,
+                    "to": 820,
+                    "at": 0,
+                    "dur": 1.6
+                  },
+                  "y": 820,
+                  "h": 205,
+                  "dir": 1,
+                  "pose": "walk",
+                  "poses": [
+                    {
+                      "at": "his mom+1.57",
+                      "pose": "stand"
+                    }
+                  ],
+                  "rate": 1.1,
+                  "mouth": "talk",
+                  "talk": {
+                    "at": "thank-0.1",
+                    "until": "thank+0.6"
+                  }
+                },
+                {
+                  "kind": "person",
+                  "look": "you",
+                  "x": 1180,
+                  "y": 820,
+                  "h": 210,
+                  "dir": -1,
+                  "pose": "slump",
+                  "poses": [
+                    {
+                      "at": "thank",
+                      "pose": "sit"
+                    }
+                  ],
+                  "eyes": 1
+                },
+                {
+                  "kind": "prop",
+                  "prop": "glow",
+                  "x": 1000,
+                  "y": 700,
+                  "rx": 520,
+                  "ry": 300,
+                  "color": "#ffb46a",
+                  "op": {
+                    "from": 0,
+                    "to": 1,
+                    "at": "thank-0.2",
+                    "dur": 0.8,
+                    "ease": "out"
+                  }
+                }
+              ],
+              "at": "his mom",
+              "cam": {
+                "x": 980,
+                "y": 640,
+                "z": 1.3
+              },
+              "to": {
+                "x": 1000,
+                "y": 630,
+                "z": 1.42
+              },
+              "push": 0
+            }
+          ]
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "thud",
+          "at": 2.57,
+          "volume": 0.16
+        },
+        {
+          "id": "thud",
+          "at": 2.95,
+          "volume": 0.16
+        },
+        {
+          "id": "thud",
+          "at": 3.33,
+          "volume": 0.16
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "If you could see it coming... would you still jump in?",
+      "visual": {
+        "layout": "cta",
+        "setting": "night",
+        "camera": "static",
+        "transition": "cut",
+        "headline": "would you still jump in?",
+        "subhead": "If you could see it coming...",
+        "items": [
+          "tell me in the comments"
+        ],
+        "extra": {
+          "askAt": "would"
+        }
+      },
+      "sfxCues": [
+        {
+          "id": "swish",
+          "at": 0,
+          "volume": 0.18
+        }
+      ]
+    }
+  ],
+  "cta": "Would you still jump in? Tell me in the comments."
+}

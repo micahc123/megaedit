@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "pixel-save-files",
+  "slug": "pixel-save-files",
+  "title": "How a game save file works",
+  "style": "pixel",
+  "createdAt": "2026-11-09T09:00:00.000Z",
+  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "system",
+    "voiceId": "default",
+    "model": "eleven_multilingual_v2",
+    "speed": 1,
+    "stability": 0.5,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "pixel",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [
+    {
+      "id": "knox",
+      "name": "Knox",
+      "body": "bean",
+      "skin": "#e8b48a",
+      "hair": {
+        "style": "spiky",
+        "color": "#2b2b6b"
+      },
+      "eyes": "wide",
+      "outfit": {
+        "top": "#d94f4f",
+        "bottom": "#2a2a4a",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.95,
+      "personality": "Over-confident beginner who learns everything the hard way."
+    },
+    {
+      "id": "sage",
+      "name": "Sage",
+      "body": "tall",
+      "skin": "#8d5a3b",
+      "hair": {
+        "style": "bun",
+        "color": "#1d1410"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#3fa07a",
+        "bottom": "#264653",
+        "pattern": "plain"
+      },
+      "accessory": "glasses",
+      "height": 1.1,
+      "personality": "The calm one who explains things plainly and is usually right."
+    },
+    {
+      "id": "boone",
+      "name": "Boone",
+      "body": "block",
+      "skin": "#c68a62",
+      "hair": {
+        "style": "cap",
+        "color": "#6b4a2b"
+      },
+      "eyes": "dot",
+      "outfit": {
+        "top": "#f2a541",
+        "bottom": "#3b3b5c",
+        "pattern": "stripe"
+      },
+      "accessory": "none",
+      "height": 1.0,
+      "personality": "Hype man. Loud, loyal, always has a terrible plan."
+    },
+    {
+      "id": "lyra",
+      "name": "Lyra",
+      "body": "round",
+      "skin": "#f1c9a5",
+      "hair": {
+        "style": "long",
+        "color": "#8a3a8a"
+      },
+      "eyes": "sleepy",
+      "outfit": {
+        "top": "#7a5cd6",
+        "bottom": "#2b2147",
+        "pattern": "plain"
+      },
+      "accessory": "scarf",
+      "height": 0.98,
+      "personality": "Fearless, competitive, keeps score of everything."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {}
+}

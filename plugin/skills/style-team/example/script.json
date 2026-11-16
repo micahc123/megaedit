@@ -1,0 +1,233 @@
+{
+  "title": "Day 1: the cracked lot",
+  "hook": "Five of us just took over the worst basketball club in town.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Five of us just took over the worst basketball club in town.",
+      "visual": {
+        "layout": "title",
+        "headline": "The worst club in town",
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "kai",
+            "pose": "point",
+            "position": "center"
+          },
+          {
+            "ref": "mina",
+            "pose": "idle",
+            "position": "left"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "mood": "dusk"
+        }
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Last week the old coach handed us the keys and just walked away.",
+      "visual": {
+        "layout": "recap",
+        "headline": "Previously",
+        "subhead": "The old coach left us the keys, a ball and one note: good luck.",
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "kai",
+            "pose": "sad",
+            "position": "left"
+          },
+          {
+            "ref": "mina",
+            "pose": "think",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "wipe",
+        "extra": {
+          "mood": "night"
+        }
+      }
+    },
+    {
+      "id": "s03",
+      "text": "So today we went to see our home court for the very first time.",
+      "visual": {
+        "layout": "hero",
+        "headline": "Home court",
+        "subhead": "Day 1",
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "kai",
+            "pose": "run",
+            "position": "center"
+          }
+        ],
+        "camera": "whip",
+        "transition": "slide",
+        "extra": {
+          "mood": "dusk"
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "And it's a parking lot. Cracks everywhere, weeds, and one rusty hoop.",
+      "visual": {
+        "layout": "hero",
+        "headline": "It's a parking lot",
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "kai",
+            "pose": "shock",
+            "position": "left"
+          },
+          {
+            "ref": "tomas",
+            "pose": "shock",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "ground": "rundown",
+          "mood": "dusk",
+          "impact": "hoop"
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Kai asked if this was really our court, and Ruiz said it's ours though.",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "kai",
+            "pose": "shrug",
+            "position": "left",
+            "line": "This is our home court?"
+          },
+          {
+            "ref": "ruiz",
+            "pose": "idle",
+            "position": "right",
+            "line": "It's ours, though."
+          }
+        ],
+        "camera": "static",
+        "transition": "slide",
+        "extra": {
+          "ground": "rundown"
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "So we swept it, filled the biggest cracks and Pia painted the free throw line.",
+      "visual": {
+        "layout": "process",
+        "headline": "First fixes",
+        "items": [
+          "Sweep the lot",
+          "Fill the cracks",
+          "Paint the line"
+        ],
+        "props": [
+          {
+            "kind": "tool"
+          },
+          {
+            "kind": "target"
+          },
+          {
+            "kind": "check"
+          }
+        ],
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "mina",
+            "pose": "run",
+            "position": "center"
+          }
+        ],
+        "camera": "static",
+        "transition": "wipe",
+        "extra": {
+          "ground": "patched",
+          "mood": "day"
+        }
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Then eleven people showed up to watch, and they each put in a dollar.",
+      "visual": {
+        "layout": "big-number",
+        "number": {
+          "value": 11,
+          "label": "OG fans showed up"
+        },
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "pia",
+            "pose": "cheer",
+            "position": "center"
+          }
+        ],
+        "camera": "static",
+        "transition": "zoom",
+        "extra": {
+          "ground": "patched",
+          "mood": "dusk"
+        }
+      }
+    },
+    {
+      "id": "s08",
+      "text": "The rim is still bent. Do we fix the hoop first, or the lights? Tell me below.",
+      "visual": {
+        "layout": "cta",
+        "headline": "Hoop or lights first?",
+        "subhead": "Comment it",
+        "setting": "basketball",
+        "characters": [
+          {
+            "ref": "kai",
+            "pose": "think",
+            "position": "left"
+          },
+          {
+            "ref": "mina",
+            "pose": "idle",
+            "position": "center"
+          },
+          {
+            "ref": "ruiz",
+            "pose": "idle",
+            "position": "right"
+          }
+        ],
+        "camera": "pull-out",
+        "transition": "cut",
+        "extra": {
+          "cliffhanger": true,
+          "ground": "patched",
+          "mood": "night"
+        }
+      }
+    }
+  ]
+}

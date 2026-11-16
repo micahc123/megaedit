@@ -1,0 +1,550 @@
+{
+  "title": "The Fog Bell",
+  "hook": "This town had a fog problem.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "This town had a fog problem.",
+      "visual": {
+        "layout": "hero",
+        "headline": "The Fog Bell",
+        "setting": "harbour",
+        "characters": [
+          {
+            "ref": "bea",
+            "pose": "idle",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "time": "dusk",
+          "shots": [
+            {
+              "size": "wide",
+              "move": "pull",
+              "light": "cool",
+              "fx": "none"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Every night it rolled in so thick that the boats couldn't find the dock.",
+      "visual": {
+        "layout": "hero",
+        "headline": "So thick",
+        "setting": "harbour",
+        "characters": [
+          {
+            "ref": "bea",
+            "pose": "idle",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "time": "dusk",
+          "shots": [
+            {
+              "size": "full",
+              "focus": "bea",
+              "expr": "worried",
+              "move": "push",
+              "light": "blue",
+              "fx": "none"
+            },
+            {
+              "at": "the boats",
+              "size": "close",
+              "focus": "bea",
+              "expr": "sad",
+              "light": "dark",
+              "fx": "sweat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s03",
+      "text": "So the town called a meeting, and everybody showed up with a plan, and every plan was terrible.",
+      "visual": {
+        "layout": "dialogue",
+        "headline": "Everybody had a plan",
+        "setting": "town-square",
+        "characters": [
+          {
+            "ref": "mo",
+            "pose": "talk",
+            "position": "left"
+          },
+          {
+            "ref": "bea",
+            "pose": "idle",
+            "position": "center"
+          },
+          {
+            "ref": "juno",
+            "pose": "talk",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "size": "wide",
+              "move": "push",
+              "light": "warm"
+            },
+            {
+              "at": "everybody",
+              "size": "two",
+              "move": "pan-right",
+              "expr": {
+                "mo": "excited",
+                "juno": "smug"
+              }
+            },
+            {
+              "at": "every plan",
+              "size": "close",
+              "focus": "bea",
+              "expr": "deadpan",
+              "light": "cool"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Mo put up a giant flag so the boats could see the town. Nobody could see the flag, because of the fog.",
+      "visual": {
+        "layout": "hero",
+        "headline": "The flag",
+        "setting": "harbour",
+        "characters": [
+          {
+            "ref": "mo",
+            "pose": "point",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "props": [
+          {
+            "kind": "flag",
+            "label": "flag"
+          }
+        ],
+        "extra": {
+          "time": "day",
+          "shots": [
+            {
+              "size": "full",
+              "focus": "mo",
+              "pose": "point",
+              "expr": "smug",
+              "holds": "flag",
+              "light": "bright"
+            },
+            {
+              "at": "giant flag",
+              "insert": "flag",
+              "focus": "mo"
+            },
+            {
+              "at": "Nobody",
+              "size": "medium",
+              "focus": "mo",
+              "pose": "shrug",
+              "expr": "deadpan",
+              "move": "pull",
+              "light": "cool"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Juno drew up a taller lighthouse, and it was beautiful. It would also take nine years and every coin the town had.",
+      "visual": {
+        "layout": "hero",
+        "headline": "The lighthouse",
+        "setting": "office",
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "props": [
+          {
+            "kind": "coin",
+            "label": "coin"
+          }
+        ],
+        "extra": {
+          "sign": "TOWN PLANS",
+          "time": "day",
+          "shots": [
+            {
+              "size": "medium",
+              "focus": "juno",
+              "expr": "excited",
+              "holds": "pencil",
+              "light": "gold"
+            },
+            {
+              "at": "nine years",
+              "size": "close",
+              "focus": "juno",
+              "expr": "smug",
+              "tag": "9 YEARS"
+            },
+            {
+              "at": "every coin",
+              "insert": "coin",
+              "focus": "juno",
+              "light": "red"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "And Bea, who never said much, put her hand up and asked, what about a sound?",
+      "visual": {
+        "layout": "dialogue",
+        "headline": "What about a sound?",
+        "setting": "town-square",
+        "characters": [
+          {
+            "ref": "mo",
+            "pose": "idle",
+            "position": "left"
+          },
+          {
+            "ref": "bea",
+            "pose": "idle",
+            "position": "center"
+          },
+          {
+            "ref": "juno",
+            "pose": "idle",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "size": "wide",
+              "move": "hold",
+              "light": "cool"
+            },
+            {
+              "at": "put her hand",
+              "size": "medium",
+              "focus": "bea",
+              "pose": "wave",
+              "expr": "think"
+            },
+            {
+              "at": "what about",
+              "size": "close",
+              "focus": "bea",
+              "expr": "happy",
+              "holds": "lightbulb",
+              "light": "bright",
+              "fx": "rays"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s07",
+      "text": "So she went down to the old workshop and dug out a bell that nobody had rung in forty years.",
+      "visual": {
+        "layout": "hero",
+        "headline": "The old bell",
+        "setting": "town-square",
+        "characters": [
+          {
+            "ref": "bea",
+            "pose": "walk",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "props": [
+          {
+            "kind": "bell",
+            "label": "bell"
+          }
+        ],
+        "extra": {
+          "shots": [
+            {
+              "size": "full",
+              "focus": "bea",
+              "pose": "walk",
+              "expr": "happy",
+              "light": "warm",
+              "fx": "dust"
+            },
+            {
+              "at": "dug out",
+              "place": "workshop",
+              "size": "medium",
+              "focus": "bea",
+              "pose": "point",
+              "expr": "excited",
+              "light": "lamp"
+            },
+            {
+              "at": "a bell",
+              "insert": "bell",
+              "focus": "bea"
+            },
+            {
+              "at": "nobody had",
+              "size": "medium",
+              "focus": "bea",
+              "expr": "grin",
+              "holds": "bell",
+              "light": "gold"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s08",
+      "text": "They dragged it up the hill and hung it on a post, and Bea gave the rope one good pull.",
+      "visual": {
+        "layout": "dialogue",
+        "headline": "One good pull",
+        "setting": "castle-hill",
+        "characters": [
+          {
+            "ref": "mo",
+            "pose": "walk",
+            "position": "left"
+          },
+          {
+            "ref": "bea",
+            "pose": "walk",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "size": "wide",
+              "move": "tilt-up",
+              "light": "sunset",
+              "fx": "dust"
+            },
+            {
+              "at": "hung it",
+              "size": "two",
+              "pose": {
+                "mo": "point",
+                "bea": "idle"
+              },
+              "expr": {
+                "mo": "worried"
+              },
+              "holds": "bell",
+              "focus": "bea"
+            },
+            {
+              "at": "one good pull",
+              "size": "close",
+              "focus": "bea",
+              "pose": "cheer",
+              "expr": "excited",
+              "light": "bright",
+              "fx": [
+                "shake",
+                "burst"
+              ],
+              "cut": "cut"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s09",
+      "text": "That night the fog came in like it always did, and the boats just turned toward the sound and came home.",
+      "visual": {
+        "layout": "hero",
+        "headline": "Home",
+        "setting": "harbour",
+        "characters": [
+          {
+            "ref": "bea",
+            "pose": "idle",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "time": "night",
+          "shots": [
+            {
+              "size": "wide",
+              "move": "pan-left",
+              "light": "night",
+              "fx": "none"
+            },
+            {
+              "at": "the boats",
+              "size": "medium",
+              "focus": "bea",
+              "expr": "happy",
+              "holds": "bell",
+              "light": "blue",
+              "fx": "sparkle"
+            },
+            {
+              "at": "came home",
+              "size": "full",
+              "move": "rise",
+              "light": "gold",
+              "fx": "rays"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s10",
+      "text": "The fishermen cheered, Mo quietly took his flag down, and Bea rang that bell until the sun came up.",
+      "visual": {
+        "layout": "dialogue",
+        "headline": "Until sunrise",
+        "setting": "harbour",
+        "characters": [
+          {
+            "ref": "mo",
+            "pose": "cheer",
+            "position": "left"
+          },
+          {
+            "ref": "bea",
+            "pose": "cheer",
+            "position": "center"
+          },
+          {
+            "ref": "juno",
+            "pose": "cheer",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "time": "dusk",
+          "shots": [
+            {
+              "size": "wide",
+              "pose": {
+                "mo": "cheer",
+                "bea": "cheer",
+                "juno": "cheer"
+              },
+              "expr": {
+                "mo": "laugh",
+                "bea": "laugh",
+                "juno": "happy"
+              },
+              "light": "gold",
+              "fx": "confetti"
+            },
+            {
+              "at": "Mo quietly",
+              "size": "medium",
+              "focus": "mo",
+              "pose": "sad",
+              "expr": "worried",
+              "light": "warm",
+              "fx": "sweat"
+            },
+            {
+              "at": "Bea rang",
+              "size": "close",
+              "focus": "bea",
+              "pose": "cheer",
+              "expr": "laugh",
+              "holds": "bell",
+              "light": "sunset",
+              "move": "shake"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Juno still has the lighthouse drawings. She says it's a nine year plan, and she's on year one.",
+      "visual": {
+        "layout": "hero",
+        "headline": "Year one",
+        "setting": "office",
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "sign": "TOWN PLANS",
+          "time": "night",
+          "shots": [
+            {
+              "size": "medium",
+              "focus": "juno",
+              "expr": "smug",
+              "holds": "book",
+              "light": "warm"
+            },
+            {
+              "at": "nine year",
+              "size": "close",
+              "focus": "juno",
+              "expr": "deadpan",
+              "tag": "YEAR 1",
+              "light": "lamp"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "cta": "Follow for another small story."
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "example-nightdesk-water-reminder",
+  "slug": "nightdesk-water-reminder",
+  "title": "Pip can't remind me to drink water",
+  "style": "nightdesk",
+  "createdAt": "2026-11-15T00:00:00.000Z",
+  "updatedAt": "2026-11-15T00:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "file",
+    "voiceId": "kokoro-af_heart",
+    "model": "kokoro-82m",
+    "speed": 1.0,
+    "stability": 0.45,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "nightdesk",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -24
+  },
+  "sfx": false,
+  "cast": [
+    {
+      "id": "juno",
+      "name": "Juno",
+      "body": "bean",
+      "skin": "#f2c3a6",
+      "hair": {
+        "style": "bob",
+        "color": "#2b2236"
+      },
+      "eyes": "dot",
+      "outfit": {
+        "top": "#6f9b7c",
+        "bottom": "#2a2c44",
+        "pattern": "plain"
+      },
+      "accessory": "glasses",
+      "height": 1.0,
+      "voiceId": "kokoro:af_heart",
+      "personality": "A tired indie maker who builds at night. Short, dry corrections. Secretly loves Pip."
+    },
+    {
+      "id": "pip",
+      "name": "Pip",
+      "body": "blob",
+      "skin": "#8fcfbf",
+      "hair": {
+        "style": "none",
+        "color": "#2b2236"
+      },
+      "eyes": "dot",
+      "outfit": {
+        "top": "#8fcfbf",
+        "bottom": "#2a2c44",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.8,
+      "voiceId": "kokoro:am_puck",
+      "personality": "Juno's tiny desk AI. Takes every request literally, then gets far too human about any new tool."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {
+    "accent": "#f0b23a"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "street-treehouse-day-3",
+  "slug": "street-treehouse-day-3",
+  "title": "Day 3: the rope ladder",
+  "style": "dayn",
+  "createdAt": "2026-11-09T09:00:00.000Z",
+  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "system",
+    "voiceId": "default",
+    "model": "eleven_multilingual_v2",
+    "speed": 1,
+    "stability": 0.5,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "karaoke",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [
+    {
+      "id": "ollie",
+      "name": "Ollie",
+      "body": "bean",
+      "skin": "#f0c8a0",
+      "hair": {
+        "style": "beanie",
+        "color": "#c0392b"
+      },
+      "eyes": "wide",
+      "outfit": {
+        "top": "#2f7d6d",
+        "bottom": "#33415c",
+        "pattern": "plain"
+      },
+      "accessory": "backpack",
+      "height": 0.9,
+      "personality": "Over-confident beginner who learns everything the hard way."
+    },
+    {
+      "id": "priya",
+      "name": "Priya",
+      "body": "tall",
+      "skin": "#a86f4b",
+      "hair": {
+        "style": "long",
+        "color": "#1b1210"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#e9a23b",
+        "bottom": "#2f2f3a",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 1.1,
+      "personality": "The calm one who explains things plainly and is usually right."
+    },
+    {
+      "id": "tobe",
+      "name": "Tobe",
+      "body": "block",
+      "skin": "#7a4a2e",
+      "hair": {
+        "style": "cap",
+        "color": "#1d3557"
+      },
+      "eyes": "dot",
+      "outfit": {
+        "top": "#457b9d",
+        "bottom": "#1d3557",
+        "pattern": "stripe"
+      },
+      "accessory": "headphones",
+      "height": 1.0,
+      "personality": "Hype man. Loud, loyal, always has a terrible plan."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {},
+  "series": {
+    "id": "street-treehouse",
+    "episode": 3
+  }
+}

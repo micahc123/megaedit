@@ -1,0 +1,190 @@
+{
+  "title": "Day 2: the wheel came off",
+  "hook": "Last time you voted: fix the rusty cart's steering first.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Last time you voted: fix the rusty cart's steering first.",
+      "visual": {
+        "layout": "recap",
+        "setting": "office",
+        "characters": [
+          {
+            "ref": "wren",
+            "pose": "sad",
+            "position": "left"
+          },
+          {
+            "ref": "dax",
+            "pose": "idle",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "headline": "Previously"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "So this is Day 2 of getting that cart to the county race, and today the steering wheel came off in my hands.",
+      "visual": {
+        "layout": "title",
+        "setting": "street",
+        "characters": [
+          {
+            "ref": "wren",
+            "pose": "shock",
+            "position": "center"
+          }
+        ],
+        "camera": "pull-out",
+        "transition": "cut",
+        "headline": "Day 2: the wheel came off"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "We pushed it to the field behind the school, the only place nobody yells at us for being loud.",
+      "visual": {
+        "layout": "hero",
+        "setting": "field",
+        "characters": [
+          {
+            "ref": "wren",
+            "pose": "idle",
+            "position": "left"
+          },
+          {
+            "ref": "ola",
+            "pose": "talk",
+            "position": "right"
+          }
+        ],
+        "camera": "pan-right",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Dax said it's just a bolt. Wren said it's never just a bolt. Ola pointed out we only had one left, and it was the wrong size.",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "field",
+        "characters": [
+          {
+            "ref": "dax",
+            "pose": "talk",
+            "position": "left"
+          },
+          {
+            "ref": "wren",
+            "pose": "think",
+            "position": "center"
+          },
+          {
+            "ref": "ola",
+            "pose": "point",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "So we walked into town and asked at the hardware shop, and the guy laughed at us, then handed over a whole box for free.",
+      "visual": {
+        "layout": "hero",
+        "setting": "street",
+        "characters": [
+          {
+            "ref": "dax",
+            "pose": "cheer",
+            "position": "left"
+          },
+          {
+            "ref": "ola",
+            "pose": "idle",
+            "position": "right"
+          }
+        ],
+        "camera": "orbit",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Back in the gym we spent all afternoon bolting it together, and for the first time it looks like a real cart.",
+      "visual": {
+        "layout": "hero",
+        "setting": "gym",
+        "characters": [
+          {
+            "ref": "wren",
+            "pose": "cheer",
+            "position": "left"
+          },
+          {
+            "ref": "dax",
+            "pose": "talk",
+            "position": "center"
+          },
+          {
+            "ref": "ola",
+            "pose": "idle",
+            "position": "right"
+          }
+        ],
+        "camera": "pull-out",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Wren took it down the hill. It went straight, it turned left, and then it did not stop.",
+      "visual": {
+        "layout": "hero",
+        "setting": "field-dusk",
+        "characters": [
+          {
+            "ref": "wren",
+            "pose": "shock",
+            "position": "center"
+          }
+        ],
+        "camera": "pan-left",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Now the brakes are the problem. Do we borrow a real one from the bike shop, or build our own? Top comment decides Day 3.",
+      "visual": {
+        "layout": "choice",
+        "setting": "street-night",
+        "characters": [
+          {
+            "ref": "wren",
+            "pose": "think",
+            "position": "left"
+          },
+          {
+            "ref": "ola",
+            "pose": "point",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut",
+        "headline": "What stops the cart?",
+        "choice": {
+          "a": "Borrow a real brake",
+          "b": "Build our own"
+        }
+      }
+    }
+  ],
+  "cta": "Top comment decides Day 3."
+}

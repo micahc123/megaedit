@@ -1,0 +1,190 @@
+{
+  "title": "Day 3: the rope ladder",
+  "hook": "Last time we built the floor out of old pallets. It wobbles, but it holds Ollie.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Last time we built the floor out of old pallets. It wobbles, but it holds Ollie.",
+      "visual": {
+        "layout": "recap",
+        "headline": "Previously",
+        "setting": "garage",
+        "characters": [
+          {
+            "ref": "ollie",
+            "pose": "sad",
+            "position": "left"
+          },
+          {
+            "ref": "priya",
+            "pose": "facepalm",
+            "position": "right"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "And you decided the next step: a rope ladder first, then a slide.",
+      "visual": {
+        "layout": "quote",
+        "setting": "street",
+        "extra": {
+          "decision": true
+        },
+        "characters": [
+          {
+            "ref": "tobe",
+            "pose": "cheer",
+            "position": "center"
+          }
+        ],
+        "transition": "slide",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "So this is Day 3, and today, we climb.",
+      "visual": {
+        "layout": "title",
+        "headline": "The rope ladder",
+        "setting": "field",
+        "characters": [
+          {
+            "ref": "ollie",
+            "pose": "point",
+            "position": "left"
+          },
+          {
+            "ref": "priya",
+            "pose": "idle",
+            "position": "right"
+          }
+        ],
+        "camera": "pull-out",
+        "transition": "zoom"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Ollie said how hard can a rope be, and Priya just stared at him.",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "workshop",
+        "characters": [
+          {
+            "ref": "ollie",
+            "pose": "shrug",
+            "position": "left",
+            "line": "How hard can a rope be?"
+          },
+          {
+            "ref": "priya",
+            "pose": "facepalm",
+            "position": "right",
+            "line": "Very hard."
+          }
+        ],
+        "transition": "slide",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "We tied a knot every foot and nailed the top to a beam.",
+      "visual": {
+        "layout": "process",
+        "headline": "How we built it",
+        "items": [
+          "Cut the rope",
+          "Knot every foot",
+          "Nail it to a beam"
+        ],
+        "props": [
+          {
+            "kind": "tool"
+          },
+          {
+            "kind": "target"
+          },
+          {
+            "kind": "check"
+          }
+        ],
+        "setting": "workshop",
+        "transition": "wipe",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "And over two thousand of you are following along now. That's wild.",
+      "visual": {
+        "layout": "big-number",
+        "number": {
+          "value": 2140,
+          "label": "of you are following along"
+        },
+        "setting": "street",
+        "characters": [
+          {
+            "ref": "tobe",
+            "pose": "cheer",
+            "position": "center"
+          }
+        ],
+        "transition": "zoom",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "By sunset, Ollie made it to the top and found one very big problem.",
+      "visual": {
+        "layout": "hero",
+        "headline": "One big problem",
+        "setting": "field",
+        "characters": [
+          {
+            "ref": "ollie",
+            "pose": "shock",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "transition": "slide"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "The slide won't fit. Cut it shorter, or build a bigger platform? Tell me below.",
+      "visual": {
+        "layout": "cta",
+        "headline": "Shorter slide or bigger platform?",
+        "subhead": "Top comment decides Day 4",
+        "setting": "street",
+        "characters": [
+          {
+            "ref": "ollie",
+            "pose": "think",
+            "position": "left"
+          },
+          {
+            "ref": "priya",
+            "pose": "point",
+            "position": "right"
+          }
+        ],
+        "extra": {
+          "cliffhanger": true
+        },
+        "camera": "static",
+        "transition": "cut"
+      }
+    }
+  ],
+  "cta": "Top comment decides Day 4."
+}

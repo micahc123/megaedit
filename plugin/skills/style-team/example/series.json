@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "ash-lot-hoops",
+  "title": "Ash Lot Hoops",
+  "premise": "Five friends take over the worst basketball club in town: a cracked parking lot, one rusty hoop and eleven fans. One small real step a day toward the big leagues, and the top comment decides what happens next.",
+  "format": "day-n",
+  "style": "team",
+  "castIds": [
+    "kai",
+    "mina",
+    "tomas",
+    "ruiz",
+    "pia"
+  ],
+  "counters": {
+    "OG fans": 11,
+    "Team fund": 40
+  },
+  "rules": [
+    "One small real step per episode. Small wins, real setbacks, no early triumphs.",
+    "Counters on screen come from series.json only. The fund grows by one rule: every OG fan puts in a dollar a week. It is story money, never an income claim.",
+    "Open on the problem inside 3 seconds, then breathe.",
+    "End on an open question the comments can answer in a few words."
+  ],
+  "episodes": [],
+  "next": {
+    "brief": "Day 1: the court is a cracked lot. End on the question of what to fix first."
+  }
+}

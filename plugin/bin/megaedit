@@ -1,0 +1,98 @@
+#!/bin/sh
+# Megaedit for Claude Code: the launcher.
+# The plugin repo stays small. The engine (renderer, styles, sound library, its own Node) is a GitHub release
+# asset: the first run downloads the one for this Mac, checks its SHA-256 against engine.lock, and unpacks it to
+# ~/.megaedit/plugin-engine/<version>-<platform>/. After that this script just starts it.
+#   megaedit <command>     run a Megaedit command (megaedit help)
+#   megaedit install       download the engine now (waits for it)
+# Testing before a release: MEGAEDIT_ENGINE_FILE=<local .tar.gz> (still checksum-checked).
+# All messages go to stderr: stdout belongs to the MCP server and the hooks.
+
+BIN_DIR=$(cd "$(dirname "$0")" && pwd -P)
+ROOT=$(dirname "$BIN_DIR")
+LOCK_FILE="$ROOT/engine.lock"
+say() { printf '%s\n' "$*" >&2; }
+get() { sed -n "s/^$1=//p" "$LOCK_FILE" | head -n 1; }
+
+[ -f "$LOCK_FILE" ] || { say "Megaedit: engine.lock is missing from the plugin. Reinstall it: /plugin install megaedit@megamedia-labs"; exit 1; }
+VER=$(get version)
+URL=$(get url)
+
+OS=$(uname -s); ARCH=$(uname -m)
+if [ "$OS" = Darwin ] && [ "$ARCH" = x86_64 ] && [ "$(sysctl -n sysctl.proc_translated 2>/dev/null)" = 1 ]; then ARCH=arm64; fi
+case "$OS-$ARCH" in
+  Darwin-arm64) PLAT=darwin-arm64 ;;
+  Darwin-x86_64) PLAT=darwin-x64 ;;
+  *) say "Megaedit's Claude Code plugin runs on a Mac (Apple silicon or Intel). This computer is $OS $ARCH."; exit 1 ;;
+esac
+
+ENTRY=$(get "$PLAT")
+FILE=${ENTRY%% *}
+SUM=${ENTRY##* }
+H="${MEGAEDIT_HOME:-$HOME/.megaedit}"
+DEST="$H/plugin-engine/$VER-$PLAT"
+LOCKD="$DEST.installing"
+
+install_engine() {
+  mkdir -p "$H/plugin-engine" || return 1
+  # One installer at a time (the session hook, the MCP server and a command can all start together).
+  waited=0
+  while ! mkdir "$LOCKD" 2>/dev/null; do
+    [ -f "$DEST/.ok" ] && return 0
+    # A lock older than 20 minutes is left over from an install that was killed.
+    if [ -n "$(find "$LOCKD" -maxdepth 0 -mmin +20 2>/dev/null)" ]; then rm -rf "$LOCKD"; continue; fi
+    [ "$waited" -ge "${1:-900}" ] && { say "Megaedit is still installing its engine. Try again in a minute."; return 1; }
+    [ "$waited" = 0 ] && say "Megaedit: waiting for the engine install that is already running…"
+    sleep 2; waited=$((waited + 2))
+  done
+  [ -f "$DEST/.ok" ] && { rmdir "$LOCKD"; return 0; }
+  TMP="$DEST.part"
+  rm -rf "$TMP"; mkdir -p "$TMP"
+  SRC="${MEGAEDIT_ENGINE_FILE:-}"
+  if [ -z "$SRC" ]; then
+    say "Megaedit: downloading the engine for this Mac (first run only, $(get size_$PLAT))…"
+    if ! curl -fL --retry 3 --connect-timeout 20 -sS -o "$TMP/engine.tar.gz" "$URL/$FILE"; then
+      say "Megaedit couldn't download its engine from $URL/$FILE. Check the internet connection and try again."
+      rm -rf "$TMP" "$LOCKD"; return 1
+    fi
+    SRC="$TMP/engine.tar.gz"
+  fi
+  GOT=$(shasum -a 256 "$SRC" | cut -d' ' -f1)
+  if [ "$GOT" != "$SUM" ]; then
+    say "Megaedit: the engine download didn't match its checksum, so it was not installed. Try again; if it keeps happening, update the plugin (/plugin update megaedit@megamedia-labs)."
+    rm -rf "$TMP" "$LOCKD"; return 1
+  fi
+  if ! tar -xzf "$SRC" -C "$TMP"; then say "Megaedit couldn't unpack its engine (is the disk full?)."; rm -rf "$TMP" "$LOCKD"; return 1; fi
+  rm -f "$TMP/engine.tar.gz"
+  touch "$TMP/.ok"
+  rm -rf "$DEST"; mv "$TMP" "$DEST"
+  rmdir "$LOCKD" 2>/dev/null
+  # Engines from older plugin versions, unused for a day.
+  find "$H/plugin-engine" -mindepth 1 -maxdepth 1 -type d -name "*-$PLAT" ! -name "$VER-$PLAT" -mtime +1 -exec rm -rf {} + 2>/dev/null
+  say "Megaedit: engine $VER ready."
+  return 0
+}
+
+if [ ! -f "$DEST/.ok" ]; then
+  case "${1:-}" in
+    hook)
+      # Never hold up the start of a session: install in the background and say so.
+      ( install_engine >/dev/null 2>&1 & )
+      if [ "${2:-}" = session-start ]; then
+        printf '%s\n' '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Megaedit is installing its engine on this Mac (first run, a minute or two). Megaedit commands wait for it. If the megaedit tools are missing in this session, run /megaedit:setup, then /mcp and reconnect megaedit (or restart Claude Code)."}}'
+      fi
+      exit 0 ;;
+    mcp) install_engine 25 || exit 1 ;;
+    # The slash commands run gate/login/voice-key inline: exit 0 so the member sees the message, not a shell error.
+    gate|login|voice-key) install_engine || exit 0 ;;
+    *) install_engine || exit 1 ;;
+  esac
+fi
+[ "${1:-}" = install ] && { say "Megaedit: engine $VER is installed at $DEST"; exit 0; }
+
+export MEGAEDIT_PLUGIN=1
+export MEGAEDIT_PLUGIN_DIR="$ROOT"
+export MEGAEDIT_ENGINE_BUNDLE="$DEST/engine-bundle"
+export MEGAEDIT_STYLES_DIR="$DEST/styles"
+export MEGAEDIT_LIBRARY_DIR="$DEST/library"
+exec "$DEST/node/bin/node" "$DEST/cli/node_modules/@megaedit/cli/dist/bin.js" "$@"

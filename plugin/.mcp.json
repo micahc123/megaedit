@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "megaedit": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/megaedit",
+      "args": ["mcp"]
+    }
+  }
+}

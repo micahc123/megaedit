@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "pothole-racing",
+  "title": "Pothole Racing",
+  "premise": "Wren, Dax and Ola are fixing a rusty go-cart to race it at the county fair. Every video, the top comment decides what they do next.",
+  "format": "day-n",
+  "style": "roadto",
+  "castIds": [
+    "wren",
+    "dax",
+    "ola"
+  ],
+  "counters": {},
+  "rules": [
+    "One small, real step per episode. No early wins.",
+    "Counters on screen come from series.json only. Never invent a number.",
+    "Open with a one-line recap of the last episode, then the new problem inside 3 seconds.",
+    "End on a vote the comments can answer.",
+    "Thank the commenter whose idea decided this episode, by the comment."
+  ],
+  "episodes": [
+    {
+      "number": 1,
+      "slug": "pothole-racing-day-1",
+      "title": "The cart in the garage",
+      "summary": "We found a rusty go-cart in Mr. Pell's garage. Steering or brakes first?",
+      "openLoop": "Steering or brakes first?",
+      "counters": {},
+      "publishedAt": "2026-11-08T17:00:00.000Z"
+    }
+  ],
+  "next": {
+    "decidedBy": {
+      "comment": "Fix the steering first, brakes can wait",
+      "likes": 641,
+      "pickedAt": "2026-11-09T08:00:00.000Z",
+      "rule": "most liked eligible comment"
+    },
+    "brief": "Fix the steering. End on the brakes problem."
+  }
+}

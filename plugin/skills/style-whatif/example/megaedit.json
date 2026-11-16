@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "example-see-10-seconds-ahead",
+  "slug": "see-10-seconds-ahead",
+  "title": "What if you could see 10 seconds into the future?",
+  "style": "whatif",
+  "createdAt": "2026-11-14T00:00:00.000Z",
+  "updatedAt": "2026-11-14T00:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "QCOsaFukRxK1IUh7WVlM",
+    "model": "eleven_multilingual_v2",
+    "speed": 1.08,
+    "stability": 0.45,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "whatif",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [
+    {
+      "id": "you",
+      "name": "You",
+      "body": "round",
+      "skin": "#d9a066",
+      "hair": {
+        "style": "short",
+        "color": "#2b1b12"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#e5b23a",
+        "bottom": "#2c2b38",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 1.0,
+      "voiceId": "QCOsaFukRxK1IUh7WVlM",
+      "personality": "The one who can see ten seconds ahead. Quiet, quick, never gets to explain."
+    },
+    {
+      "id": "kid",
+      "name": "The kid",
+      "body": "round",
+      "skin": "#e3b48a",
+      "hair": {
+        "style": "short",
+        "color": "#3a2418"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#d4553f",
+        "bottom": "#2b3346",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.7,
+      "voiceId": "QCOsaFukRxK1IUh7WVlM",
+      "personality": "Chases a ball into the road."
+    },
+    {
+      "id": "mom",
+      "name": "His mom",
+      "body": "round",
+      "skin": "#c99068",
+      "hair": {
+        "style": "bun",
+        "color": "#2b1b12"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#3f7f86",
+        "bottom": "#2a2a34",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 1.0,
+      "voiceId": "QCOsaFukRxK1IUh7WVlM",
+      "personality": "Screams first, comes back to say thank you."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {
+    "accent": "#ffb83f"
+  }
+}

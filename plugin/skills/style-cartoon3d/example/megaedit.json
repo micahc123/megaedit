@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "fog-bell",
+  "slug": "fog-bell",
+  "title": "The Fog Bell",
+  "style": "cartoon3d",
+  "createdAt": "2026-11-09T09:00:00.000Z",
+  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "system",
+    "voiceId": "default",
+    "model": "eleven_multilingual_v2",
+    "speed": 1,
+    "stability": 0.5,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "story",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [
+    {
+      "id": "bea",
+      "name": "Bea",
+      "body": "bean",
+      "skin": "#f5d0b5",
+      "hair": {
+        "style": "long",
+        "color": "#c0562f"
+      },
+      "eyes": "anime",
+      "outfit": {
+        "top": "#9b5de5",
+        "bottom": "#22223b",
+        "pattern": "dots"
+      },
+      "accessory": "scarf",
+      "height": 0.98,
+      "personality": "Fearless, competitive, keeps score of everything."
+    },
+    {
+      "id": "mo",
+      "name": "Mo",
+      "body": "block",
+      "skin": "#e8b98f",
+      "hair": {
+        "style": "cap",
+        "color": "#b23a48"
+      },
+      "eyes": "sleepy",
+      "outfit": {
+        "top": "#577590",
+        "bottom": "#2b2d42",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 1,
+      "personality": "Deadpan. Says the quiet part out loud."
+    },
+    {
+      "id": "juno",
+      "name": "Juno",
+      "body": "tall",
+      "skin": "#8d5a3b",
+      "hair": {
+        "style": "bun",
+        "color": "#1d1410"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#2a9d8f",
+        "bottom": "#264653",
+        "pattern": "plain"
+      },
+      "accessory": "glasses",
+      "height": 1.08,
+      "personality": "The calm one who explains things plainly and is usually right."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {}
+}

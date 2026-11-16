@@ -1,0 +1,184 @@
+{
+  "title": "Plan your week in three steps",
+  "hook": "Your week feels messy because nobody told you where to start.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Your week feels messy because nobody told you where to start.",
+      "visual": {
+        "layout": "title",
+        "headline": "Plan your week",
+        "subhead": "in three steps",
+        "characters": [
+          {
+            "ref": "dana",
+            "pose": "point",
+            "position": "center"
+          }
+        ],
+        "props": [
+          {
+            "kind": "clock"
+          }
+        ],
+        "setting": "studio",
+        "camera": "push-in",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Here is how I do it every Sunday, and it takes about ten minutes.",
+      "visual": {
+        "layout": "big-number",
+        "number": {
+          "value": 10,
+          "suffix": " min",
+          "label": "every Sunday"
+        },
+        "props": [
+          {
+            "kind": "clock"
+          }
+        ],
+        "setting": "chart-room",
+        "camera": "static",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "First, write down everything on your mind, even the tiny stuff.",
+      "visual": {
+        "layout": "process",
+        "headline": "Three steps",
+        "items": [
+          "Dump it all",
+          "Pick the big three",
+          "Give each a day"
+        ],
+        "characters": [
+          {
+            "ref": "marcus",
+            "pose": "think",
+            "position": "right"
+          }
+        ],
+        "props": [
+          {
+            "kind": "book"
+          },
+          {
+            "kind": "target"
+          },
+          {
+            "kind": "check"
+          }
+        ],
+        "setting": "office",
+        "camera": "pan-left",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Second, pick the three things that actually matter this week.",
+      "visual": {
+        "layout": "list",
+        "headline": "The big three",
+        "items": [
+          "The thing due first",
+          "The thing you keep avoiding",
+          "The thing you want"
+        ],
+        "setting": "office",
+        "camera": "static",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Third, give each one a day so nothing piles up on Friday.",
+      "visual": {
+        "layout": "split",
+        "headline": "Monday versus Friday",
+        "items": [
+          "Spread out",
+          "Piled up"
+        ],
+        "props": [
+          {
+            "kind": "check"
+          },
+          {
+            "kind": "cross"
+          }
+        ],
+        "setting": "studio",
+        "camera": "static",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Marcus tried it last month and his stress dropped, he says, by half.",
+      "visual": {
+        "layout": "dialogue",
+        "characters": [
+          {
+            "ref": "marcus",
+            "pose": "cheer",
+            "position": "left",
+            "line": "I finally slept on Sunday."
+          },
+          {
+            "ref": "dana",
+            "pose": "talk",
+            "position": "right",
+            "line": "Told you."
+          }
+        ],
+        "setting": "city",
+        "camera": "push-in",
+        "transition": "cut"
+      },
+      "speaker": "marcus"
+    },
+    {
+      "id": "s07",
+      "text": "One page, three steps, and you stop carrying it all in your head.",
+      "visual": {
+        "layout": "recap",
+        "headline": "The whole plan",
+        "items": [
+          "Dump it",
+          "Pick three",
+          "Give each a day"
+        ],
+        "setting": "chart-room",
+        "camera": "static",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Comment WEEK and I will send you the template.",
+      "visual": {
+        "layout": "cta",
+        "headline": "Get the template",
+        "subhead": "WEEK",
+        "characters": [
+          {
+            "ref": "dana",
+            "pose": "wave",
+            "position": "center"
+          }
+        ],
+        "setting": "studio",
+        "camera": "pull-out",
+        "transition": "cut"
+      }
+    }
+  ],
+  "cta": "Comment WEEK and I will send you the template."
+}

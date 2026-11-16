@@ -1,0 +1,215 @@
+{
+  "title": "Theo and the stain",
+  "hook": "Theo has a date in ten minutes and a huge stain on his shirt.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Theo has a date in ten minutes and a huge stain on his shirt.",
+      "visual": {
+        "layout": "hero",
+        "headline": "Ten minutes!",
+        "characters": [
+          {
+            "ref": "theo",
+            "pose": "shock",
+            "position": "center"
+          }
+        ],
+        "props": [
+          {
+            "kind": "clock"
+          }
+        ],
+        "setting": "bathroom",
+        "camera": "shake",
+        "transition": "cut",
+        "emphasis": [
+          "stain"
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "He is panicking, and honestly, so am I.",
+      "visual": {
+        "layout": "dialogue",
+        "characters": [
+          {
+            "ref": "theo",
+            "pose": "facepalm",
+            "position": "left",
+            "line": "This was my only clean one!"
+          },
+          {
+            "ref": "gus",
+            "pose": "shrug",
+            "position": "right",
+            "line": "Not my problem."
+          }
+        ],
+        "setting": "street",
+        "camera": "push-in",
+        "transition": "cut"
+      },
+      "speaker": "theo"
+    },
+    {
+      "id": "s03",
+      "text": "So you have to help. Does he wear a jacket over it, or just own it?",
+      "visual": {
+        "layout": "choice",
+        "headline": "You pick",
+        "props": [
+          {
+            "kind": "gift"
+          },
+          {
+            "kind": "star"
+          }
+        ],
+        "setting": "mall",
+        "camera": "whip",
+        "transition": "cut",
+        "choice": {
+          "a": "Hide it with a jacket",
+          "b": "Own the stain"
+        },
+        "extra": {
+          "counters": {
+            "Jacket": 412,
+            "Own it": 388
+          },
+          "comments": [
+            {
+              "author": "@mika.laughs",
+              "text": "Jacket. Obviously the jacket.",
+              "likes": 2310
+            },
+            {
+              "author": "@dan_no_shirt",
+              "text": "Own it, confidence sells",
+              "likes": 1480
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Most of you picked the jacket, so on it goes. And it is two sizes too big.",
+      "visual": {
+        "layout": "compare",
+        "headline": "Glow up?",
+        "characters": [
+          {
+            "ref": "theo",
+            "pose": "sad",
+            "position": "center"
+          }
+        ],
+        "setting": "mall",
+        "camera": "static",
+        "transition": "cut",
+        "compare": {
+          "before": "Stained and sad",
+          "after": "Jacket on, still sad"
+        },
+        "extra": {
+          "counters": {
+            "Jacket": 4120,
+            "Own it": 1930
+          }
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Nadia shows up, takes one look, and says nothing for a very long time.",
+      "visual": {
+        "layout": "dialogue",
+        "characters": [
+          {
+            "ref": "theo",
+            "pose": "wave",
+            "position": "left",
+            "line": "Hi! Great to see you!"
+          },
+          {
+            "ref": "nadia",
+            "pose": "think",
+            "position": "right",
+            "line": "..."
+          }
+        ],
+        "setting": "cafe",
+        "camera": "push-in",
+        "transition": "cut"
+      },
+      "speaker": "nadia"
+    },
+    {
+      "id": "s06",
+      "text": "Then she laughs, and shows him the coffee on her own sleeve.",
+      "visual": {
+        "layout": "reveal",
+        "headline": "She spilled too",
+        "props": [
+          {
+            "kind": "coffee"
+          }
+        ],
+        "setting": "cafe",
+        "camera": "push-in",
+        "transition": "cut",
+        "emphasis": [
+          "coffee"
+        ],
+        "extra": {
+          "comments": [
+            {
+              "author": "@nadia.real",
+              "text": "I spilled mine first",
+              "likes": 8800
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s07",
+      "text": "One stain each. That is how you know it is going to be a good night.",
+      "visual": {
+        "layout": "recap",
+        "headline": "The score",
+        "items": [
+          "One stain",
+          "One jacket",
+          "One second date"
+        ],
+        "setting": "park",
+        "camera": "static",
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Comment A or B and I will tell you what happened.",
+      "visual": {
+        "layout": "cta",
+        "headline": "Next pick",
+        "subhead": "A or B",
+        "characters": [
+          {
+            "ref": "theo",
+            "pose": "cheer",
+            "position": "center"
+          }
+        ],
+        "setting": "party",
+        "camera": "pull-out",
+        "transition": "cut"
+      }
+    }
+  ],
+  "cta": "Comment A or B and I will tell you what happened."
+}

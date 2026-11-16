@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "street-treehouse",
+  "title": "The Street Treehouse",
+  "premise": "Ollie, Priya and Tobe are building a treehouse for the whole street out of leftovers. Every video, the top comment decides what they build next.",
+  "format": "day-n",
+  "style": "dayn",
+  "castIds": [
+    "ollie",
+    "priya",
+    "tobe"
+  ],
+  "counters": {
+    "fans": 2140,
+    "cups served": 38
+  },
+  "rules": [
+    "One small, real step per episode. No early launches, no sudden wins.",
+    "Counters on screen come from series.json only. Never invent a number.",
+    "Open with a one-line recap of the last episode, then the new problem inside 3 seconds.",
+    "End on an open question the comments can answer.",
+    "Thank the commenter whose idea decided this episode, by the comment, not a fake name."
+  ],
+  "episodes": [
+    {
+      "number": 1,
+      "slug": "street-treehouse-day-1",
+      "title": "The oak by the creek",
+      "summary": "We picked the big oak by the creek. Priya measured it twice and Ollie lost the tape measure.",
+      "openLoop": "What should we build first?",
+      "counters": {
+        "fans": 310
+      },
+      "publishedAt": "2026-11-06T17:00:00.000Z"
+    },
+    {
+      "number": 2,
+      "slug": "street-treehouse-day-2",
+      "title": "A floor made of pallets",
+      "summary": "We built the floor out of old pallets. It wobbles, but it holds Ollie.",
+      "openLoop": "How do we get up there: a ladder, a rope or a slide?",
+      "decidedBy": {
+        "comment": "Build the floor first so nobody falls",
+        "author": "@maplemornings",
+        "likes": 812,
+        "pickedAt": "2026-11-07T20:00:00.000Z",
+        "rule": "most liked eligible comment"
+      },
+      "counters": {
+        "fans": 1190
+      },
+      "publishedAt": "2026-11-08T17:00:00.000Z"
+    }
+  ],
+  "next": {
+    "decidedBy": {
+      "comment": "A rope ladder first, then a slide for coming down",
+      "author": "@kitchenfloordj",
+      "likes": 1204,
+      "pickedAt": "2026-11-09T08:00:00.000Z",
+      "rule": "most liked eligible comment"
+    },
+    "brief": "Build the rope ladder. End with the slide not fitting."
+  }
+}

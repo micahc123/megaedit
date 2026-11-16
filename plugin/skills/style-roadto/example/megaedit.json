@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "pothole-racing-day-2",
+  "slug": "pothole-racing-day-2",
+  "title": "Day 2: the wheel came off",
+  "style": "roadto",
+  "createdAt": "2026-11-09T09:00:00.000Z",
+  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "UGTtbzgh3HObxRjWaSpr",
+    "model": "eleven_multilingual_v2",
+    "speed": 0.83,
+    "stability": 0.45,
+    "similarity": 0.8
+  },
+  "captions": {
+    "styleId": "roadto",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -24
+  },
+  "sfx": true,
+  "cast": [
+    {
+      "id": "wren",
+      "name": "Wren",
+      "body": "bean",
+      "skin": "#f2c6a0",
+      "hair": {
+        "style": "long",
+        "color": "#7a3b1e"
+      },
+      "eyes": "wide",
+      "outfit": {
+        "top": "#2a9d8f",
+        "bottom": "#264653",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.95,
+      "personality": "Fearless driver. Does it first, reads the instructions never."
+    },
+    {
+      "id": "dax",
+      "name": "Dax",
+      "body": "block",
+      "skin": "#e8b98f",
+      "hair": {
+        "style": "cap",
+        "color": "#b23a48"
+      },
+      "eyes": "sleepy",
+      "outfit": {
+        "top": "#e8683a",
+        "bottom": "#2b2d42",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 1.0,
+      "personality": "Says it is just a bolt. It is never just a bolt."
+    },
+    {
+      "id": "ola",
+      "name": "Ola",
+      "body": "tall",
+      "skin": "#8d5a3b",
+      "hair": {
+        "style": "bun",
+        "color": "#1d1410"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#577590",
+        "bottom": "#22223b",
+        "pattern": "plain"
+      },
+      "accessory": "glasses",
+      "height": 1.08,
+      "personality": "Quiet, measures twice, is usually right."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {},
+  "series": {
+    "id": "pothole-racing",
+    "episode": 2
+  }
+}

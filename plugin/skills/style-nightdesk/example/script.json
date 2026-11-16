@@ -1,0 +1,425 @@
+{
+  "title": "Pip can't remind me to drink water",
+  "hook": "Pip, remind me to drink water at three.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Pip, remind me to drink water at three.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "juno": "neutral"
+          },
+          "move": "push-in"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "I can't. I only exist while this tab is open.",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "deadpan"
+          }
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Then set an alarm.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "juno": "deadpan"
+          },
+          "move": "hold"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "text": "I don't have hands. I have opinions.",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "neutral"
+          },
+          "swap": {
+            "ref": "pip",
+            "to": "smug",
+            "on": "opinions"
+          }
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Fine. I'll just remember.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "juno": "smile"
+          }
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "You said that about your laundry. On Tuesday.",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "deadpan"
+          },
+          "swap": {
+            "ref": "pip",
+            "to": "smug",
+            "on": "Tuesday"
+          }
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Okay. I know a tool for that.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shot": "two",
+          "faces": {
+            "juno": "smug",
+            "pip": "shock"
+          },
+          "move": "pull-out"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "It's called Nudgebird. You tell your AI, it pings your phone.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "reveal",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "shock"
+          },
+          "swap": {
+            "ref": "pip",
+            "to": "hearts",
+            "on": "phone"
+          },
+          "sponsor": {
+            "brand": "Nudgebird",
+            "line": "Your AI writes the reminder. Your phone rings it.",
+            "steps": [
+              "Tell your AI what to remember",
+              "It lands on your lock screen",
+              "It nudges you right on time"
+            ],
+            "code": "NIGHTDESK",
+            "paid": true,
+            "color": "#5f86c9"
+          }
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      },
+      "hold": 1.1
+    },
+    {
+      "id": "s09",
+      "text": "Wait. I can text you now?",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "shock"
+          },
+          "swap": {
+            "ref": "pip",
+            "to": "hearts",
+            "on": "text"
+          },
+          "move": "push-in"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Drink water. Stretch. Text your mom back.",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "hearts"
+          },
+          "move": "hold"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Pip, it's been ten minutes.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "juno": "deadpan"
+          },
+          "phone": true
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Hydration is a lifestyle.",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "smug"
+          },
+          "move": "tilt"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "text": "I'm turning you off.",
+      "speaker": "juno",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "juno": "worry"
+          },
+          "swap": {
+            "ref": "juno",
+            "to": "deadpan",
+            "on": "off"
+          }
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "talk"
+          },
+          {
+            "ref": "pip",
+            "pose": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Too late. I set one for three a.m.",
+      "speaker": "pip",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "dusk",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "faces": {
+            "pip": "deadpan"
+          },
+          "swap": {
+            "ref": "pip",
+            "to": "smug",
+            "on": "three"
+          },
+          "move": "push-in"
+        },
+        "characters": [
+          {
+            "ref": "juno",
+            "pose": "idle"
+          },
+          {
+            "ref": "pip",
+            "pose": "talk"
+          }
+        ]
+      },
+      "hold": 0.5
+    }
+  ],
+  "cta": "Comment LINK."
+}

@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "id": "ash-lot-hoops-day-1",
+  "slug": "ash-lot-hoops-day-1",
+  "title": "Day 1: the cracked lot",
+  "style": "team",
+  "createdAt": "2026-11-09T09:00:00.000Z",
+  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "system",
+    "voiceId": "default",
+    "model": "eleven_multilingual_v2",
+    "speed": 1,
+    "stability": 0.5,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "bold-pop",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [
+    {
+      "id": "kai",
+      "name": "Kai",
+      "body": "bean",
+      "skin": "#f2c6a0",
+      "hair": {
+        "style": "spiky",
+        "color": "#2a1d3a"
+      },
+      "eyes": "anime",
+      "outfit": {
+        "top": "#ff6a2b",
+        "bottom": "#1d2647",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.96,
+      "personality": "#7. Captain, loud and sure, who has never won anything."
+    },
+    {
+      "id": "mina",
+      "name": "Mina",
+      "body": "bean",
+      "skin": "#e8b48f",
+      "hair": {
+        "style": "bob",
+        "color": "#1a1a2e"
+      },
+      "eyes": "anime",
+      "outfit": {
+        "top": "#ff6a2b",
+        "bottom": "#1d2647",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.92,
+      "personality": "#4. Quick point guard who keeps count of everything."
+    },
+    {
+      "id": "tomas",
+      "name": "Tomas",
+      "body": "round",
+      "skin": "#c68b59",
+      "hair": {
+        "style": "curly",
+        "color": "#2b1b12"
+      },
+      "eyes": "dot",
+      "outfit": {
+        "top": "#ff6a2b",
+        "bottom": "#1d2647",
+        "pattern": "plain"
+      },
+      "accessory": "headphones",
+      "height": 0.9,
+      "personality": "#12. Big-hearted centre, always hungry."
+    },
+    {
+      "id": "ruiz",
+      "name": "Ruiz",
+      "body": "tall",
+      "skin": "#8d5a3b",
+      "hair": {
+        "style": "short",
+        "color": "#1d1410"
+      },
+      "eyes": "oval",
+      "outfit": {
+        "top": "#ff6a2b",
+        "bottom": "#1d2647",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 1.1,
+      "personality": "#9. Tall, quiet, wears a cap, says the one useful thing."
+    },
+    {
+      "id": "pia",
+      "name": "Pia",
+      "body": "bean",
+      "skin": "#f0c9a8",
+      "hair": {
+        "style": "bun",
+        "color": "#7a2a2a"
+      },
+      "eyes": "wide",
+      "outfit": {
+        "top": "#ff6a2b",
+        "bottom": "#1d2647",
+        "pattern": "plain"
+      },
+      "accessory": "none",
+      "height": 0.9,
+      "personality": "#3. Draws everything, believes in the team out loud."
+    }
+  ],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {},
+  "series": {
+    "id": "ash-lot-hoops",
+    "episode": 1
+  }
+}

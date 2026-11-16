@@ -1,0 +1,213 @@
+{
+  "title": "How a game save file works",
+  "hook": "Ever wonder how a game remembers exactly where you stopped?",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Ever wonder how a game remembers exactly where you stopped?",
+      "visual": {
+        "layout": "title",
+        "headline": "Save file secrets",
+        "subhead": "Press start",
+        "setting": "arcade",
+        "characters": [
+          {
+            "ref": "knox",
+            "pose": "think",
+            "position": "center"
+          }
+        ],
+        "camera": "push-in",
+        "emphasis": [
+          "remembers"
+        ],
+        "transition": "cut"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "It's way simpler than you think. The game writes a tiny note about you.",
+      "visual": {
+        "layout": "hero",
+        "headline": "A tiny note",
+        "setting": "bedroom",
+        "props": [
+          {
+            "kind": "pencil"
+          },
+          {
+            "kind": "book"
+          }
+        ],
+        "characters": [
+          {
+            "ref": "sage",
+            "pose": "talk",
+            "position": "right"
+          },
+          {
+            "ref": "knox",
+            "pose": "idle",
+            "position": "left"
+          }
+        ],
+        "transition": "slide",
+        "camera": "static"
+      },
+      "speaker": "sage"
+    },
+    {
+      "id": "s03",
+      "text": "That note holds your level, your health, where you stand, and what's in your bag.",
+      "visual": {
+        "layout": "list",
+        "headline": "What's in the note",
+        "items": [
+          "Your level",
+          "Your health",
+          "Where you stand",
+          "What's in your bag"
+        ],
+        "setting": "dungeon",
+        "characters": [
+          {
+            "ref": "knox",
+            "pose": "point",
+            "position": "center"
+          }
+        ],
+        "transition": "wipe",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "A save can be tiny, way smaller than one photo.",
+      "visual": {
+        "layout": "big-number",
+        "number": {
+          "value": 3,
+          "suffix": " KB",
+          "label": "A small save"
+        },
+        "setting": "space",
+        "props": [
+          {
+            "kind": "box"
+          }
+        ],
+        "characters": [
+          {
+            "ref": "boone",
+            "pose": "shock",
+            "position": "center"
+          }
+        ],
+        "transition": "zoom",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Knox asked where it goes, and Sage said it sits on your drive until the game reads it back.",
+      "visual": {
+        "layout": "dialogue",
+        "setting": "town",
+        "characters": [
+          {
+            "ref": "knox",
+            "pose": "shrug",
+            "position": "left",
+            "line": "So where does it go?"
+          },
+          {
+            "ref": "sage",
+            "pose": "talk",
+            "position": "right",
+            "line": "Your drive. The game reads it back later."
+          }
+        ],
+        "transition": "slide",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Loading runs it backwards: find the note, read the numbers, put everything back.",
+      "visual": {
+        "layout": "process",
+        "headline": "Loading",
+        "items": [
+          "Find the note",
+          "Read the numbers",
+          "Put it all back"
+        ],
+        "props": [
+          {
+            "kind": "magnifier"
+          },
+          {
+            "kind": "book"
+          },
+          {
+            "kind": "check"
+          }
+        ],
+        "setting": "arcade",
+        "transition": "wipe",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "That's the trick behind cloud saves: a copy of the note lives somewhere safe.",
+      "visual": {
+        "layout": "reveal",
+        "headline": "Cloud save",
+        "emphasis": [
+          "cloud"
+        ],
+        "props": [
+          {
+            "kind": "cloud"
+          }
+        ],
+        "setting": "space",
+        "characters": [
+          {
+            "ref": "lyra",
+            "pose": "cheer",
+            "position": "right"
+          }
+        ],
+        "transition": "iris",
+        "camera": "static"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "So copy your save before something risky. Comment the game you'd never risk.",
+      "visual": {
+        "layout": "cta",
+        "headline": "Back up your save",
+        "subhead": "Comment your game",
+        "setting": "forest",
+        "characters": [
+          {
+            "ref": "knox",
+            "pose": "cheer",
+            "position": "left"
+          },
+          {
+            "ref": "lyra",
+            "pose": "wave",
+            "position": "right"
+          }
+        ],
+        "camera": "static",
+        "transition": "cut"
+      }
+    }
+  ],
+  "cta": "Comment the game you'd never risk."
+}
