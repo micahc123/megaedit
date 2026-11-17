@@ -55,6 +55,6 @@ A **cue** is seconds from the start of the scene, or a spoken word: `"ten second
 ## Other fields
 - `extra.bump`: counter cues. `extra.askAt` on the cta: the word the big question lands on.
 - `cta` layout: `subhead` = the lead-in, `headline` = the ask, `items[0]` = the footer.
-- `sfxCues`: whoosh or swish for a cut, a soft thud for an impact, a click for the counter. No risers, no chimes.
+- `sfxCues`: whoosh or swish for a cut, a soft thud for an impact, a click for the counter. No risers, no chimes. Here `at` is SECONDS from the start of the scene (a shot's `at` is a cue word; a sound's is not). Easiest: after `voice`, run `sfx auto` and adjust what it placed.
 
 Run `megaedit check` before rendering: it flags cues that are not in the line, bad shapes, a missing bible and a last scene that is not the question.

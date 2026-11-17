@@ -1,0 +1,1032 @@
+{
+  "provider": "elevenlabs",
+  "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+  "language": "en",
+  "scenes": [
+    {
+      "id": "s01",
+      "file": "vo/s01.mp3",
+      "duration": 2.554,
+      "words": [
+        {
+          "w": "The",
+          "start": 0,
+          "end": 0.151
+        },
+        {
+          "w": "Moon",
+          "start": 0.209,
+          "end": 0.406
+        },
+        {
+          "w": "is",
+          "start": 0.464,
+          "end": 0.534
+        },
+        {
+          "w": "quietly",
+          "start": 0.592,
+          "end": 0.987
+        },
+        {
+          "w": "running",
+          "start": 1.045,
+          "end": 1.289
+        },
+        {
+          "w": "away",
+          "start": 1.335,
+          "end": 1.544
+        },
+        {
+          "w": "from",
+          "start": 1.591,
+          "end": 1.73
+        },
+        {
+          "w": "us.",
+          "start": 1.8,
+          "end": 2.554
+        }
+      ],
+      "textHash": "21a1150c53f74847",
+      "lead": 0.04,
+      "trail": 0.474
+    },
+    {
+      "id": "s02",
+      "file": "vo/s02.mp3",
+      "duration": 5.666,
+      "words": [
+        {
+          "w": "Every",
+          "start": 0,
+          "end": 0.302
+        },
+        {
+          "w": "year,",
+          "start": 0.348,
+          "end": 0.604
+        },
+        {
+          "w": "it",
+          "start": 0.639,
+          "end": 0.708
+        },
+        {
+          "w": "drifts",
+          "start": 0.743,
+          "end": 1.01
+        },
+        {
+          "w": "about",
+          "start": 1.045,
+          "end": 1.277
+        },
+        {
+          "w": "four",
+          "start": 1.335,
+          "end": 1.544
+        },
+        {
+          "w": "centimetres",
+          "start": 1.602,
+          "end": 2.171
+        },
+        {
+          "w": "further",
+          "start": 2.229,
+          "end": 2.543
+        },
+        {
+          "w": "out.",
+          "start": 2.612,
+          "end": 3.042
+        },
+        {
+          "w": "Roughly",
+          "start": 3.738,
+          "end": 4.075
+        },
+        {
+          "w": "the",
+          "start": 4.122,
+          "end": 4.191
+        },
+        {
+          "w": "width",
+          "start": 4.226,
+          "end": 4.447
+        },
+        {
+          "w": "of",
+          "start": 4.493,
+          "end": 4.54
+        },
+        {
+          "w": "a",
+          "start": 4.586,
+          "end": 4.609
+        },
+        {
+          "w": "golf",
+          "start": 4.656,
+          "end": 4.876
+        },
+        {
+          "w": "ball.",
+          "start": 4.934,
+          "end": 5.666
+        }
+      ],
+      "textHash": "51a46aa941ec9524",
+      "lead": 0,
+      "trail": 0.386
+    },
+    {
+      "id": "s03",
+      "file": "vo/s03.mp3",
+      "duration": 5.944,
+      "words": [
+        {
+          "w": "How",
+          "start": 0,
+          "end": 0.209
+        },
+        {
+          "w": "do",
+          "start": 0.244,
+          "end": 0.313
+        },
+        {
+          "w": "we",
+          "start": 0.36,
+          "end": 0.43
+        },
+        {
+          "w": "know?",
+          "start": 0.476,
+          "end": 0.94
+        },
+        {
+          "w": "Apollo",
+          "start": 1.382,
+          "end": 1.776
+        },
+        {
+          "w": "astronauts",
+          "start": 1.858,
+          "end": 2.403
+        },
+        {
+          "w": "left",
+          "start": 2.473,
+          "end": 2.682
+        },
+        {
+          "w": "mirrors",
+          "start": 2.763,
+          "end": 3.077
+        },
+        {
+          "w": "on",
+          "start": 3.123,
+          "end": 3.193
+        },
+        {
+          "w": "its",
+          "start": 3.239,
+          "end": 3.355
+        },
+        {
+          "w": "surface,",
+          "start": 3.39,
+          "end": 3.889
+        },
+        {
+          "w": "and",
+          "start": 3.971,
+          "end": 4.11
+        },
+        {
+          "w": "we",
+          "start": 4.156,
+          "end": 4.226
+        },
+        {
+          "w": "still",
+          "start": 4.272,
+          "end": 4.493
+        },
+        {
+          "w": "fire",
+          "start": 4.563,
+          "end": 4.83
+        },
+        {
+          "w": "lasers",
+          "start": 4.888,
+          "end": 5.213
+        },
+        {
+          "w": "at",
+          "start": 5.259,
+          "end": 5.375
+        },
+        {
+          "w": "them.",
+          "start": 5.422,
+          "end": 5.944
+        }
+      ],
+      "textHash": "feae0dcdf245f801",
+      "lead": 0.02,
+      "trail": 0.234
+    },
+    {
+      "id": "s04",
+      "file": "vo/s04.mp3",
+      "duration": 4.969,
+      "words": [
+        {
+          "w": "The",
+          "start": 0,
+          "end": 0.163
+        },
+        {
+          "w": "light",
+          "start": 0.221,
+          "end": 0.418
+        },
+        {
+          "w": "takes",
+          "start": 0.453,
+          "end": 0.685
+        },
+        {
+          "w": "about",
+          "start": 0.72,
+          "end": 0.94
+        },
+        {
+          "w": "two",
+          "start": 0.975,
+          "end": 1.103
+        },
+        {
+          "w": "and",
+          "start": 1.149,
+          "end": 1.219
+        },
+        {
+          "w": "a",
+          "start": 1.254,
+          "end": 1.277
+        },
+        {
+          "w": "half",
+          "start": 1.335,
+          "end": 1.486
+        },
+        {
+          "w": "seconds",
+          "start": 1.544,
+          "end": 1.892
+        },
+        {
+          "w": "to",
+          "start": 1.939,
+          "end": 1.997
+        },
+        {
+          "w": "return.",
+          "start": 2.078,
+          "end": 2.67
+        },
+        {
+          "w": "Each",
+          "start": 2.949,
+          "end": 3.181
+        },
+        {
+          "w": "year,",
+          "start": 3.228,
+          "end": 3.634
+        },
+        {
+          "w": "a",
+          "start": 3.68,
+          "end": 3.738
+        },
+        {
+          "w": "little",
+          "start": 3.796,
+          "end": 4.017
+        },
+        {
+          "w": "longer.",
+          "start": 4.052,
+          "end": 4.969
+        }
+      ],
+      "textHash": "2b1b414e69f9fade",
+      "lead": 0.06,
+      "trail": 0.419
+    },
+    {
+      "id": "s05",
+      "file": "vo/s05.mp3",
+      "duration": 6.502,
+      "words": [
+        {
+          "w": "The",
+          "start": 0,
+          "end": 0.128
+        },
+        {
+          "w": "culprit",
+          "start": 0.174,
+          "end": 0.58
+        },
+        {
+          "w": "is",
+          "start": 0.639,
+          "end": 0.731
+        },
+        {
+          "w": "us.",
+          "start": 0.813,
+          "end": 1.242
+        },
+        {
+          "w": "The",
+          "start": 1.683,
+          "end": 1.8
+        },
+        {
+          "w": "Moon's",
+          "start": 1.858,
+          "end": 2.148
+        },
+        {
+          "w": "gravity",
+          "start": 2.183,
+          "end": 2.577
+        },
+        {
+          "w": "pulls",
+          "start": 2.647,
+          "end": 2.949
+        },
+        {
+          "w": "on",
+          "start": 3.007,
+          "end": 3.088
+        },
+        {
+          "w": "Earth's",
+          "start": 3.17,
+          "end": 3.46
+        },
+        {
+          "w": "oceans,",
+          "start": 3.518,
+          "end": 4.087
+        },
+        {
+          "w": "stretching",
+          "start": 4.261,
+          "end": 4.679
+        },
+        {
+          "w": "them",
+          "start": 4.714,
+          "end": 4.83
+        },
+        {
+          "w": "into",
+          "start": 4.865,
+          "end": 5.016
+        },
+        {
+          "w": "two",
+          "start": 5.074,
+          "end": 5.259
+        },
+        {
+          "w": "bulges.",
+          "start": 5.329,
+          "end": 6.502
+        }
+      ],
+      "textHash": "6bf40259a299da40",
+      "lead": 0.01,
+      "trail": 0.532
+    },
+    {
+      "id": "s06",
+      "file": "vo/s06.mp3",
+      "duration": 6.084,
+      "words": [
+        {
+          "w": "But",
+          "start": 0,
+          "end": 0.221
+        },
+        {
+          "w": "Earth",
+          "start": 0.29,
+          "end": 0.522
+        },
+        {
+          "w": "spins",
+          "start": 0.569,
+          "end": 0.987
+        },
+        {
+          "w": "once",
+          "start": 1.057,
+          "end": 1.265
+        },
+        {
+          "w": "a",
+          "start": 1.3,
+          "end": 1.335
+        },
+        {
+          "w": "day,",
+          "start": 1.382,
+          "end": 1.858
+        },
+        {
+          "w": "far",
+          "start": 1.985,
+          "end": 2.241
+        },
+        {
+          "w": "faster",
+          "start": 2.322,
+          "end": 2.705
+        },
+        {
+          "w": "than",
+          "start": 2.752,
+          "end": 2.868
+        },
+        {
+          "w": "the",
+          "start": 2.902,
+          "end": 2.972
+        },
+        {
+          "w": "Moon",
+          "start": 3.019,
+          "end": 3.239
+        },
+        {
+          "w": "circles",
+          "start": 3.309,
+          "end": 3.727
+        },
+        {
+          "w": "us,",
+          "start": 3.785,
+          "end": 4.087
+        },
+        {
+          "w": "which",
+          "start": 4.203,
+          "end": 4.4
+        },
+        {
+          "w": "takes",
+          "start": 4.435,
+          "end": 4.667
+        },
+        {
+          "w": "almost",
+          "start": 4.714,
+          "end": 5.027
+        },
+        {
+          "w": "a",
+          "start": 5.085,
+          "end": 5.108
+        },
+        {
+          "w": "month.",
+          "start": 5.166,
+          "end": 6.084
+        }
+      ],
+      "textHash": "048bf65d1805c96e",
+      "lead": 0.06,
+      "trail": 0
+    },
+    {
+      "id": "s07",
+      "file": "vo/s07.mp3",
+      "duration": 6.084,
+      "words": [
+        {
+          "w": "So",
+          "start": 0,
+          "end": 0.186
+        },
+        {
+          "w": "our",
+          "start": 0.255,
+          "end": 0.36
+        },
+        {
+          "w": "spin",
+          "start": 0.418,
+          "end": 0.731
+        },
+        {
+          "w": "drags",
+          "start": 0.813,
+          "end": 1.138
+        },
+        {
+          "w": "the",
+          "start": 1.184,
+          "end": 1.254
+        },
+        {
+          "w": "bulge",
+          "start": 1.312,
+          "end": 1.649
+        },
+        {
+          "w": "slightly",
+          "start": 1.683,
+          "end": 2.055
+        },
+        {
+          "w": "ahead",
+          "start": 2.113,
+          "end": 2.322
+        },
+        {
+          "w": "of",
+          "start": 2.357,
+          "end": 2.403
+        },
+        {
+          "w": "the",
+          "start": 2.45,
+          "end": 2.519
+        },
+        {
+          "w": "Moon.",
+          "start": 2.566,
+          "end": 3.03
+        },
+        {
+          "w": "Its",
+          "start": 3.471,
+          "end": 3.657
+        },
+        {
+          "w": "extra",
+          "start": 3.715,
+          "end": 4.052
+        },
+        {
+          "w": "pull",
+          "start": 4.11,
+          "end": 4.354
+        },
+        {
+          "w": "tugs",
+          "start": 4.423,
+          "end": 4.702
+        },
+        {
+          "w": "the",
+          "start": 4.748,
+          "end": 4.818
+        },
+        {
+          "w": "Moon",
+          "start": 4.865,
+          "end": 5.05
+        },
+        {
+          "w": "forward.",
+          "start": 5.132,
+          "end": 6.084
+        }
+      ],
+      "textHash": "72b4e1711ffbf56d",
+      "lead": 0.02,
+      "trail": 0.434
+    },
+    {
+      "id": "s08",
+      "file": "vo/s08.mp3",
+      "duration": 6.316,
+      "words": [
+        {
+          "w": "A",
+          "start": 0,
+          "end": 0.104
+        },
+        {
+          "w": "faster",
+          "start": 0.197,
+          "end": 0.58
+        },
+        {
+          "w": "Moon",
+          "start": 0.639,
+          "end": 0.824
+        },
+        {
+          "w": "climbs",
+          "start": 0.894,
+          "end": 1.219
+        },
+        {
+          "w": "into",
+          "start": 1.254,
+          "end": 1.405
+        },
+        {
+          "w": "a",
+          "start": 1.486,
+          "end": 1.509
+        },
+        {
+          "w": "wider",
+          "start": 1.579,
+          "end": 1.916
+        },
+        {
+          "w": "orbit.",
+          "start": 1.985,
+          "end": 2.543
+        },
+        {
+          "w": "And",
+          "start": 2.984,
+          "end": 3.146
+        },
+        {
+          "w": "Earth",
+          "start": 3.262,
+          "end": 3.529
+        },
+        {
+          "w": "pays",
+          "start": 3.587,
+          "end": 3.855
+        },
+        {
+          "w": "for",
+          "start": 3.913,
+          "end": 4.063
+        },
+        {
+          "w": "it.",
+          "start": 4.133,
+          "end": 4.412
+        },
+        {
+          "w": "Its",
+          "start": 4.621,
+          "end": 4.807
+        },
+        {
+          "w": "spin",
+          "start": 4.841,
+          "end": 5.143
+        },
+        {
+          "w": "slows",
+          "start": 5.224,
+          "end": 5.538
+        },
+        {
+          "w": "down.",
+          "start": 5.596,
+          "end": 6.316
+        }
+      ],
+      "textHash": "00d00d4c31daafd5",
+      "lead": 0.02,
+      "trail": 0.226
+    },
+    {
+      "id": "s09",
+      "file": "vo/s09.mp3",
+      "duration": 7.941,
+      "words": [
+        {
+          "w": "Our",
+          "start": 0,
+          "end": 0.197
+        },
+        {
+          "w": "days",
+          "start": 0.255,
+          "end": 0.499
+        },
+        {
+          "w": "grow",
+          "start": 0.546,
+          "end": 0.743
+        },
+        {
+          "w": "about",
+          "start": 0.813,
+          "end": 1.033
+        },
+        {
+          "w": "two",
+          "start": 1.068,
+          "end": 1.219
+        },
+        {
+          "w": "milliseconds",
+          "start": 1.289,
+          "end": 1.846
+        },
+        {
+          "w": "longer",
+          "start": 1.904,
+          "end": 2.218
+        },
+        {
+          "w": "every",
+          "start": 2.31,
+          "end": 2.577
+        },
+        {
+          "w": "century.",
+          "start": 2.624,
+          "end": 3.228
+        },
+        {
+          "w": "Four",
+          "start": 3.738,
+          "end": 3.982
+        },
+        {
+          "w": "hundred",
+          "start": 4.017,
+          "end": 4.261
+        },
+        {
+          "w": "million",
+          "start": 4.296,
+          "end": 4.574
+        },
+        {
+          "w": "years",
+          "start": 4.621,
+          "end": 4.83
+        },
+        {
+          "w": "ago,",
+          "start": 4.865,
+          "end": 5.213
+        },
+        {
+          "w": "a",
+          "start": 5.329,
+          "end": 5.41
+        },
+        {
+          "w": "day",
+          "start": 5.492,
+          "end": 5.666
+        },
+        {
+          "w": "lasted",
+          "start": 5.735,
+          "end": 6.107
+        },
+        {
+          "w": "just",
+          "start": 6.153,
+          "end": 6.327
+        },
+        {
+          "w": "twenty-two",
+          "start": 6.351,
+          "end": 6.803
+        },
+        {
+          "w": "hours.",
+          "start": 6.873,
+          "end": 7.941
+        }
+      ],
+      "textHash": "5fdc0a114479665b",
+      "lead": 0.01,
+      "trail": 0.581
+    },
+    {
+      "id": "s10",
+      "file": "vo/s10.mp3",
+      "duration": 6.223,
+      "words": [
+        {
+          "w": "In",
+          "start": 0,
+          "end": 0.139
+        },
+        {
+          "w": "about",
+          "start": 0.174,
+          "end": 0.395
+        },
+        {
+          "w": "six",
+          "start": 0.453,
+          "end": 0.673
+        },
+        {
+          "w": "hundred",
+          "start": 0.72,
+          "end": 0.975
+        },
+        {
+          "w": "million",
+          "start": 1.022,
+          "end": 1.3
+        },
+        {
+          "w": "years,",
+          "start": 1.358,
+          "end": 1.765
+        },
+        {
+          "w": "it",
+          "start": 1.892,
+          "end": 1.997
+        },
+        {
+          "w": "will",
+          "start": 2.02,
+          "end": 2.136
+        },
+        {
+          "w": "look",
+          "start": 2.159,
+          "end": 2.299
+        },
+        {
+          "w": "too",
+          "start": 2.334,
+          "end": 2.473
+        },
+        {
+          "w": "small",
+          "start": 2.531,
+          "end": 2.844
+        },
+        {
+          "w": "to",
+          "start": 2.902,
+          "end": 2.949
+        },
+        {
+          "w": "cover",
+          "start": 3.019,
+          "end": 3.228
+        },
+        {
+          "w": "the",
+          "start": 3.274,
+          "end": 3.344
+        },
+        {
+          "w": "Sun.",
+          "start": 3.402,
+          "end": 3.866
+        },
+        {
+          "w": "No",
+          "start": 4.377,
+          "end": 4.551
+        },
+        {
+          "w": "more",
+          "start": 4.632,
+          "end": 4.83
+        },
+        {
+          "w": "total",
+          "start": 4.876,
+          "end": 5.178
+        },
+        {
+          "w": "eclipses.",
+          "start": 5.236,
+          "end": 6.223
+        }
+      ],
+      "textHash": "4b70743693eb2d16",
+      "lead": 0.01,
+      "trail": 0.333
+    },
+    {
+      "id": "s11",
+      "file": "vo/s11.mp3",
+      "duration": 5.387,
+      "words": [
+        {
+          "w": "So",
+          "start": 0,
+          "end": 0.163
+        },
+        {
+          "w": "we",
+          "start": 0.221,
+          "end": 0.29
+        },
+        {
+          "w": "live",
+          "start": 0.348,
+          "end": 0.488
+        },
+        {
+          "w": "in",
+          "start": 0.522,
+          "end": 0.569
+        },
+        {
+          "w": "a",
+          "start": 0.604,
+          "end": 0.639
+        },
+        {
+          "w": "brief",
+          "start": 0.685,
+          "end": 0.917
+        },
+        {
+          "w": "window",
+          "start": 0.987,
+          "end": 1.37
+        },
+        {
+          "w": "when",
+          "start": 1.463,
+          "end": 1.625
+        },
+        {
+          "w": "the",
+          "start": 1.66,
+          "end": 1.73
+        },
+        {
+          "w": "Moon",
+          "start": 1.776,
+          "end": 1.974
+        },
+        {
+          "w": "and",
+          "start": 2.02,
+          "end": 2.101
+        },
+        {
+          "w": "Sun",
+          "start": 2.183,
+          "end": 2.508
+        },
+        {
+          "w": "match",
+          "start": 2.635,
+          "end": 2.926
+        },
+        {
+          "w": "perfectly.",
+          "start": 2.984,
+          "end": 3.715
+        },
+        {
+          "w": "Enjoy",
+          "start": 4.156,
+          "end": 4.551
+        },
+        {
+          "w": "the",
+          "start": 4.609,
+          "end": 4.679
+        },
+        {
+          "w": "view.",
+          "start": 4.725,
+          "end": 5.387
+        }
+      ],
+      "textHash": "9c6f07622d95ec67",
+      "lead": 0,
+      "trail": 0.257
+    }
+  ]
+}

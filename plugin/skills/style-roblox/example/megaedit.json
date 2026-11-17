@@ -1,0 +1,244 @@
+{
+ "schema": 1,
+ "id": "see-your-luck",
+ "slug": "see-your-luck",
+ "title": "You Can See Your Luck",
+ "style": "roblox",
+ "createdAt": "2026-11-09T09:00:00.000Z",
+ "updatedAt": "2026-11-09T09:00:00.000Z",
+ "language": "en",
+ "translations": {},
+ "voice": {
+  "provider": "system",
+  "voiceId": "default",
+  "model": "eleven_multilingual_v2",
+  "speed": 1,
+  "stability": 0.5,
+  "similarity": 0.75
+ },
+ "captions": {
+  "styleId": "block",
+  "position": "upper",
+  "enabled": true
+ },
+ "music": {
+  "trackId": null,
+  "gainDb": -22
+ },
+ "sfx": true,
+ "cast": [
+  {
+   "id": "leo",
+   "name": "Leo",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "spiky",
+    "color": "#f96b0c"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#c6c6c6",
+    "bottom": "#147f1e"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "oldman",
+   "name": "OldMan",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "long",
+    "color": "#e5e5e0"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#e5e0d6",
+    "bottom": "#eae5db"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "purple",
+   "name": "Purple",
+   "body": "block",
+   "skin": "#ffdb33",
+   "hair": {
+    "style": "cap",
+    "color": "#332619"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#b766f9",
+    "bottom": "#333f99"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "woman",
+   "name": "Woman",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "long",
+    "color": "#7f3819"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#f7edbc",
+    "bottom": "#f2e5b2"
+   },
+   "height": 0.97
+  },
+  {
+   "id": "kid",
+   "name": "Kid",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "short",
+    "color": "#26190f"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#4c8cf2",
+    "bottom": "#33333f"
+   },
+   "height": 0.85
+  },
+  {
+   "id": "gruff",
+   "name": "Gruff",
+   "body": "block",
+   "skin": "#d19970",
+   "hair": {
+    "style": "short",
+    "color": "#140f0c"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#4c514c",
+    "bottom": "#26262d"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "bald",
+   "name": "Bald",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "short",
+    "color": "#5b381e"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#ffffff",
+    "bottom": "#c6a87a"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "seller",
+   "name": "Seller",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "short",
+    "color": "#0f0c0a"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#ffffff",
+    "bottom": "#ffffff"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "suit",
+   "name": "Suit",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "short",
+    "color": "#1e140c"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#0c0c0f",
+    "bottom": "#0c0c0f"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "poor",
+   "name": "Poor",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "spiky",
+    "color": "#9e3311"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#ffffff",
+    "bottom": "#e5e5e5"
+   },
+   "height": 1.0
+  },
+  {
+   "id": "lady",
+   "name": "Lady",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "bun",
+    "color": "#f2eadb"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#99999e",
+    "bottom": "#72727f"
+   },
+   "height": 0.97
+  },
+  {
+   "id": "sister",
+   "name": "Sister",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "bun",
+    "color": "#f9cc38"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#f99ec6",
+    "bottom": "#f27fb2"
+   },
+   "height": 0.78
+  },
+  {
+   "id": "mom",
+   "name": "Mom",
+   "body": "block",
+   "skin": "#f4cc9e",
+   "hair": {
+    "style": "long",
+    "color": "#472814"
+   },
+   "eyes": "dot",
+   "outfit": {
+    "top": "#6b84ad",
+    "bottom": "#4c6699"
+   },
+   "height": 1.0
+  }
+ ],
+ "aspect": "9:16",
+ "exports": [
+  "9x16-1080"
+ ],
+ "palette": {}
+}

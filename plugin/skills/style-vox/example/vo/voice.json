@@ -1,0 +1,702 @@
+{
+  "provider": "elevenlabs",
+  "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+  "language": "en",
+  "scenes": [
+    {
+      "id": "s01",
+      "file": "vo/s01.mp3",
+      "duration": 6.827,
+      "words": [
+        {
+          "w": "This",
+          "start": 0,
+          "end": 0.232
+        },
+        {
+          "w": "clock",
+          "start": 0.29,
+          "end": 0.522
+        },
+        {
+          "w": "has",
+          "start": 0.569,
+          "end": 0.697
+        },
+        {
+          "w": "two",
+          "start": 0.755,
+          "end": 0.929
+        },
+        {
+          "w": "minute",
+          "start": 0.987,
+          "end": 1.231
+        },
+        {
+          "w": "hands.",
+          "start": 1.277,
+          "end": 1.753
+        },
+        {
+          "w": "One",
+          "start": 1.997,
+          "end": 2.206
+        },
+        {
+          "w": "shows",
+          "start": 2.241,
+          "end": 2.485
+        },
+        {
+          "w": "London",
+          "start": 2.554,
+          "end": 2.844
+        },
+        {
+          "w": "time.",
+          "start": 2.902,
+          "end": 3.297
+        },
+        {
+          "w": "The",
+          "start": 3.425,
+          "end": 3.541
+        },
+        {
+          "w": "other",
+          "start": 3.599,
+          "end": 3.773
+        },
+        {
+          "w": "shows",
+          "start": 3.808,
+          "end": 4.029
+        },
+        {
+          "w": "Bristol",
+          "start": 4.087,
+          "end": 4.423
+        },
+        {
+          "w": "time,",
+          "start": 4.481,
+          "end": 4.853
+        },
+        {
+          "w": "ten",
+          "start": 4.934,
+          "end": 5.132
+        },
+        {
+          "w": "minutes",
+          "start": 5.19,
+          "end": 5.433
+        },
+        {
+          "w": "behind.",
+          "start": 5.48,
+          "end": 6.827
+        }
+      ],
+      "textHash": "1613cda30f3d3b63",
+      "lead": 0.03,
+      "trail": 0.767
+    },
+    {
+      "id": "s02",
+      "file": "vo/s02.mp3",
+      "duration": 8.173,
+      "words": [
+        {
+          "w": "Before",
+          "start": 0,
+          "end": 0.406
+        },
+        {
+          "w": "trains,",
+          "start": 0.453,
+          "end": 1.01
+        },
+        {
+          "w": "every",
+          "start": 1.161,
+          "end": 1.428
+        },
+        {
+          "w": "town",
+          "start": 1.486,
+          "end": 1.776
+        },
+        {
+          "w": "set",
+          "start": 1.846,
+          "end": 2.055
+        },
+        {
+          "w": "noon",
+          "start": 2.136,
+          "end": 2.392
+        },
+        {
+          "w": "by",
+          "start": 2.461,
+          "end": 2.577
+        },
+        {
+          "w": "its",
+          "start": 2.635,
+          "end": 2.752
+        },
+        {
+          "w": "own",
+          "start": 2.798,
+          "end": 3.019
+        },
+        {
+          "w": "sun.",
+          "start": 3.1,
+          "end": 3.587
+        },
+        {
+          "w": "When",
+          "start": 3.971,
+          "end": 4.145
+        },
+        {
+          "w": "it",
+          "start": 4.18,
+          "end": 4.238
+        },
+        {
+          "w": "was",
+          "start": 4.284,
+          "end": 4.389
+        },
+        {
+          "w": "noon",
+          "start": 4.458,
+          "end": 4.679
+        },
+        {
+          "w": "in",
+          "start": 4.737,
+          "end": 4.807
+        },
+        {
+          "w": "New",
+          "start": 4.876,
+          "end": 5.004
+        },
+        {
+          "w": "York,",
+          "start": 5.062,
+          "end": 5.503
+        },
+        {
+          "w": "it",
+          "start": 5.654,
+          "end": 5.759
+        },
+        {
+          "w": "was",
+          "start": 5.793,
+          "end": 5.898
+        },
+        {
+          "w": "five",
+          "start": 5.956,
+          "end": 6.223
+        },
+        {
+          "w": "past",
+          "start": 6.258,
+          "end": 6.502
+        },
+        {
+          "w": "eleven",
+          "start": 6.56,
+          "end": 6.827
+        },
+        {
+          "w": "in",
+          "start": 6.873,
+          "end": 6.931
+        },
+        {
+          "w": "Chicago.",
+          "start": 6.989,
+          "end": 8.173
+        }
+      ],
+      "textHash": "dc9de356e59b067d",
+      "lead": 0.05,
+      "trail": 0.443
+    },
+    {
+      "id": "s03",
+      "file": "vo/s03.mp3",
+      "duration": 6.037,
+      "words": [
+        {
+          "w": "Then",
+          "start": 0,
+          "end": 0.209
+        },
+        {
+          "w": "the",
+          "start": 0.255,
+          "end": 0.325
+        },
+        {
+          "w": "railroads",
+          "start": 0.372,
+          "end": 0.789
+        },
+        {
+          "w": "made",
+          "start": 0.824,
+          "end": 0.987
+        },
+        {
+          "w": "it",
+          "start": 1.022,
+          "end": 1.08
+        },
+        {
+          "w": "worse.",
+          "start": 1.115,
+          "end": 1.649
+        },
+        {
+          "w": "By",
+          "start": 2.252,
+          "end": 2.392
+        },
+        {
+          "w": "1883",
+          "start": 2.438,
+          "end": 3.228
+        },
+        {
+          "w": "there",
+          "start": 3.344,
+          "end": 3.495
+        },
+        {
+          "w": "were",
+          "start": 3.518,
+          "end": 3.622
+        },
+        {
+          "w": "about",
+          "start": 3.646,
+          "end": 3.831
+        },
+        {
+          "w": "a",
+          "start": 3.866,
+          "end": 3.889
+        },
+        {
+          "w": "hundred",
+          "start": 3.959,
+          "end": 4.249
+        },
+        {
+          "w": "different",
+          "start": 4.296,
+          "end": 4.574
+        },
+        {
+          "w": "railroad",
+          "start": 4.621,
+          "end": 5.016
+        },
+        {
+          "w": "times.",
+          "start": 5.05,
+          "end": 6.037
+        }
+      ],
+      "textHash": "8ee4377cfb1c8072",
+      "lead": 0.04,
+      "trail": 0.457
+    },
+    {
+      "id": "s04",
+      "file": "vo/s04.mp3",
+      "duration": 8.916,
+      "words": [
+        {
+          "w": "So",
+          "start": 0,
+          "end": 0.151
+        },
+        {
+          "w": "on",
+          "start": 0.232,
+          "end": 0.313
+        },
+        {
+          "w": "November",
+          "start": 0.372,
+          "end": 0.743
+        },
+        {
+          "w": "eighteenth,",
+          "start": 0.801,
+          "end": 1.324
+        },
+        {
+          "w": "1883,",
+          "start": 1.347,
+          "end": 2.461
+        },
+        {
+          "w": "at",
+          "start": 2.612,
+          "end": 2.786
+        },
+        {
+          "w": "noon,",
+          "start": 2.856,
+          "end": 3.32
+        },
+        {
+          "w": "telegraph",
+          "start": 3.437,
+          "end": 3.971
+        },
+        {
+          "w": "lines",
+          "start": 4.029,
+          "end": 4.307
+        },
+        {
+          "w": "sent",
+          "start": 4.354,
+          "end": 4.563
+        },
+        {
+          "w": "one",
+          "start": 4.632,
+          "end": 4.841
+        },
+        {
+          "w": "time",
+          "start": 4.888,
+          "end": 5.178
+        },
+        {
+          "w": "signal",
+          "start": 5.224,
+          "end": 5.55
+        },
+        {
+          "w": "to",
+          "start": 5.608,
+          "end": 5.666
+        },
+        {
+          "w": "every",
+          "start": 5.747,
+          "end": 6.002
+        },
+        {
+          "w": "major",
+          "start": 6.06,
+          "end": 6.339
+        },
+        {
+          "w": "city.",
+          "start": 6.385,
+          "end": 6.873
+        },
+        {
+          "w": "Four",
+          "start": 7.384,
+          "end": 7.628
+        },
+        {
+          "w": "zones",
+          "start": 7.686,
+          "end": 8.022
+        },
+        {
+          "w": "began.",
+          "start": 8.081,
+          "end": 8.916
+        }
+      ],
+      "textHash": "cc8e3c6a7e12418b",
+      "lead": 0,
+      "trail": 0.267
+    },
+    {
+      "id": "s05",
+      "file": "vo/s05.mp3",
+      "duration": 6.594,
+      "words": [
+        {
+          "w": "Eastern.",
+          "start": 0,
+          "end": 0.522
+        },
+        {
+          "w": "Central.",
+          "start": 0.604,
+          "end": 1.173
+        },
+        {
+          "w": "Mountain.",
+          "start": 1.289,
+          "end": 1.765
+        },
+        {
+          "w": "Pacific.",
+          "start": 1.8,
+          "end": 2.461
+        },
+        {
+          "w": "A",
+          "start": 2.972,
+          "end": 3.053
+        },
+        {
+          "w": "line",
+          "start": 3.135,
+          "end": 3.402
+        },
+        {
+          "w": "down",
+          "start": 3.437,
+          "end": 3.622
+        },
+        {
+          "w": "the",
+          "start": 3.657,
+          "end": 3.727
+        },
+        {
+          "w": "map,",
+          "start": 3.773,
+          "end": 4.18
+        },
+        {
+          "w": "and",
+          "start": 4.331,
+          "end": 4.47
+        },
+        {
+          "w": "every",
+          "start": 4.528,
+          "end": 4.714
+        },
+        {
+          "w": "clock",
+          "start": 4.76,
+          "end": 4.957
+        },
+        {
+          "w": "inside",
+          "start": 5.016,
+          "end": 5.41
+        },
+        {
+          "w": "it",
+          "start": 5.445,
+          "end": 5.515
+        },
+        {
+          "w": "agreed.",
+          "start": 5.55,
+          "end": 6.594
+        }
+      ],
+      "textHash": "a18c6cb450e13562",
+      "lead": 0,
+      "trail": 0.514
+    },
+    {
+      "id": "s06",
+      "file": "vo/s06.mp3",
+      "duration": 5.851,
+      "words": [
+        {
+          "w": "But",
+          "start": 0,
+          "end": 0.186
+        },
+        {
+          "w": "it",
+          "start": 0.221,
+          "end": 0.279
+        },
+        {
+          "w": "wasn't",
+          "start": 0.325,
+          "end": 0.604
+        },
+        {
+          "w": "law",
+          "start": 0.673,
+          "end": 0.906
+        },
+        {
+          "w": "until",
+          "start": 0.975,
+          "end": 1.219
+        },
+        {
+          "w": "1918.",
+          "start": 1.277,
+          "end": 2.31
+        },
+        {
+          "w": "Thirty-five",
+          "start": 2.752,
+          "end": 3.448
+        },
+        {
+          "w": "years",
+          "start": 3.495,
+          "end": 3.796
+        },
+        {
+          "w": "running",
+          "start": 3.866,
+          "end": 4.133
+        },
+        {
+          "w": "on",
+          "start": 4.18,
+          "end": 4.249
+        },
+        {
+          "w": "the",
+          "start": 4.284,
+          "end": 4.354
+        },
+        {
+          "w": "railroads'",
+          "start": 4.4,
+          "end": 4.899
+        },
+        {
+          "w": "clock.",
+          "start": 4.934,
+          "end": 5.851
+        }
+      ],
+      "textHash": "fd2b1067adde238b",
+      "lead": 0.07,
+      "trail": 0.511
+    },
+    {
+      "id": "s07",
+      "file": "vo/s07.mp3",
+      "duration": 6.269,
+      "words": [
+        {
+          "w": "So",
+          "start": 0,
+          "end": 0.186
+        },
+        {
+          "w": "next",
+          "start": 0.244,
+          "end": 0.441
+        },
+        {
+          "w": "time",
+          "start": 0.464,
+          "end": 0.639
+        },
+        {
+          "w": "your",
+          "start": 0.673,
+          "end": 0.801
+        },
+        {
+          "w": "phone",
+          "start": 0.859,
+          "end": 1.103
+        },
+        {
+          "w": "is",
+          "start": 1.138,
+          "end": 1.207
+        },
+        {
+          "w": "on",
+          "start": 1.265,
+          "end": 1.37
+        },
+        {
+          "w": "time,",
+          "start": 1.44,
+          "end": 1.881
+        },
+        {
+          "w": "thank",
+          "start": 1.997,
+          "end": 2.229
+        },
+        {
+          "w": "a",
+          "start": 2.276,
+          "end": 2.299
+        },
+        {
+          "w": "telegraph,",
+          "start": 2.345,
+          "end": 2.937
+        },
+        {
+          "w": "a",
+          "start": 2.995,
+          "end": 3.077
+        },
+        {
+          "w": "railroad,",
+          "start": 3.158,
+          "end": 3.75
+        },
+        {
+          "w": "and",
+          "start": 3.866,
+          "end": 4.005
+        },
+        {
+          "w": "one",
+          "start": 4.087,
+          "end": 4.272
+        },
+        {
+          "w": "very",
+          "start": 4.319,
+          "end": 4.528
+        },
+        {
+          "w": "confused",
+          "start": 4.586,
+          "end": 5.12
+        },
+        {
+          "w": "Bristol",
+          "start": 5.166,
+          "end": 5.526
+        },
+        {
+          "w": "clock.",
+          "start": 5.584,
+          "end": 6.269
+        }
+      ],
+      "textHash": "08650e23113b3ac9",
+      "lead": 0.02,
+      "trail": 0.269
+    }
+  ]
+}

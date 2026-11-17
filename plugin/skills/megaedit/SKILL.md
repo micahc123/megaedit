@@ -31,7 +31,7 @@ Call the `schema` tool once per session if you're unsure of a field. Don't guess
 ## Starting a video
 
 1. If this is a new install, run `setup` with `fix` on first.
-2. Ask what the video is about if the member didn't say. Call `styles`; if they haven't picked one, suggest the style that suits the topic in one line and `open` its example cover so they can see it. Only offer styles their plan unlocks (`unlocked: true`), unless they just want to try a draft.
+2. Ask what the video is about if the member didn't say. Call `styles` (two groups: **Styles** — cartoon3d, roblox, zackd, lowpoly, whatif, fern, kurzgesagt, vox, pixel — and **Series** — roadto, team, dayn); if they haven't picked one, suggest the style that suits the topic in one line and `open` its example cover so they can see it. Only offer styles their plan unlocks (`unlocked: true`), unless they just want to try a draft.
 3. `new_project` with their title, style and topic.
 
 ## The order of work
@@ -56,7 +56,7 @@ Call the `schema` tool once per session if you're unsure of a field. Don't guess
 - **Audio**: no whistles or high held tones. Only use music and SFX from `library` (everything there is cleared for use). Never download music.
 - **Sound effects**: the library has 1000+ sounds (whooshes, paper, clicks, impacts, footsteps, crowd, cartoon, retro game, sci-fi and more). Never guess an id.
   - Find one with `sfx_search`. Ids look like `whoosh/swishes-sound-pack-swish-3`. Results show `peakMs`, the loudest moment.
-  - Place them: `sfx_auto` puts the right sounds on every shot for this style: a whoosh on transitions, paper for paper2d, pixel blips for pixel, impacts and crowd for team, cartoon pops for cartoon3d and youpick. It writes `sfxCues` into `script.json`. Run it after the script is voiced, then look at what it chose (`dryRun` previews, `overwrite` redoes shots that already have sounds).
+  - Place them: `sfx_auto` puts the right sounds on every shot for this style: a whoosh on transitions, paper for vox, pixel blips for pixel, impacts and crowd for team, cartoon pops for cartoon3d. (Blender styles, roblox, zackd and lowpoly, mix their own sound in the kit.) It writes `sfxCues` into `script.json`. Run it after the script is voiced, then look at what it chose (`dryRun` previews, `overwrite` redoes shots that already have sounds).
   - By hand: `"sfxCues": [{ "id": "<id>", "at": 0.4, "volume": 0.5 }]`, `at` in seconds from the start of the shot. Start the sound `peakMs` early plus about 2 frames (0.07 s) so its loudest point lands just before the visual hit.
   - At most about one sound a second. A sound on every beat is noise; leave the quiet parts quiet. Never pick a sound the check marks as a whistle risk.
 - **Don't touch** `vo/`, `out/` or anything outside this project folder unless asked.

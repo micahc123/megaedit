@@ -71,3 +71,12 @@ Eyes are 2-4 px, the mouth 1-2 px; use `face` changes instead of moving parts. A
 
 ### Sound for micro
 Chiptune bed in code: low soft leads (plucked triangle, under about 520 Hz), a 25 % pulse and triangle bass that bounces on root and octave, a quiet kick on beats 1 and 3, a brushed noise snare on 2 and 4, tiny hats, a quiet 12.5 % pulse arp in the fourth octave, one-pole low-passed. Never a held high square lead; it must pass `whistle.py --strict`. The loop tail wraps into the head so the replay is seamless.
+
+## Pixel v2 playbook (narrated stories)
+- **Reference bar**: the crayon Short SrMiqBGpsjU: one mascot, a set that changes every 1 to 2 s, a face on every prop, hard cuts on the beat, a hook object in the first frame.
+- **Shape (40 s)**: hook object (0 to 3 s) -> problem (hard/waiting) -> change (the cracking/growing beat, squash + sparkle) -> escalation (storm: shake + sweat) -> payoff (big wide with sunburst) -> wink callback to the first frame.
+- **Cut plan**: 20 to 24 shots in 44 s. Give each scene 2 cuts keyed on spoken words (`cuts[].at`), alternating close-up (zoom 1.5 to 1.7, `s` 4 to 5) and wide (zoom 1.0 to 1.2, `s` 1.5 to 2.5).
+- **Sets by mood**: park (hope, growth), soil (hidden, patient), hall/bedroom (indoor comedy), street (city, weather).
+- **Squash and shake**: every impact gets `sq` 0.78 then 1.12 then 1, plus `cam.shake` for big ones. Idle with `breathe` or `bounce`; `wobble` for wind or fear; `nope` for refusal.
+- **Palette**: 40 named colours only; new tones are shade/lite/mix of those. Ink outline on every actor, dithered ground shadows, constant face pixel grain.
+- **Sound**: voice plus the auto chiptune bed (no ambience). Keep the last word within 0.3 s of the end.

@@ -1,0 +1,9 @@
+{
+ "room": "living",
+ "cast": {
+  "ben": {
+   "name": "Ben",
+   "eyes": "hazel"
+  }
+ }
+}

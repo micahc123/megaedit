@@ -112,3 +112,23 @@ something changes (rain, a sound, a person). 5-9. The turn (about 10 beats): hop
 No text cards, no voice, no ambience bed. Every shot is original art drawn in code. At most ~35 colours on screen.
 Render with `megaedit render <dir> --preset 9x16-1080`; the micro samples are `example-micro/` (the umbrella nobody borrows)
 and `example-micro-2/` (the night light nobody thanks). Heavy renders go on the Mac mini: `bash scripts/micro-mini.sh`.
+
+## Pixel v2 additions (work in silent micro AND narrated stories)
+New extras, all optional with defaults, so old scripts render unchanged.
+- **Sets** added: `park` (parallax hills, tree line, path), `soil` (underground cutaway, grass strip on top). `hall`, `kitchen`, `desk` gained wainscot and framed pictures; `street` has a parallax skyline and drifting clouds. `decor: false` on a shot hides wall pictures for a clean close-up.
+- **Kinds** added: heroes pencil, candle (`open` = flame), boot, cookie (`pose: bitten`), key, chair, cat, bird (`pose: fly` flaps, other poses sit), plant (`open` 0..1 grows seed, bud, sapling, tree), seed (`pose: cracked`), root (`open` = length), log (`open` = rings), flower; set dressing bench, frame (`pose`: house sun stars flower hearts moon tree boat), shelf, rug, fence.
+- **Faces** added: wink, angry, tired. **anim** added: bounce, wobble, nope, pulse.
+- **fx** added: sunburst (rays behind the hero), beam (`a` angle, `w` width), sweat, dashes, anger, steam, petals, snow, speed. Up to 14 per shot.
+- **sq** (0.4 to 1.8) on an actor or a key squashes and stretches (landing 0.78, jump 1.15). Key it for punch.
+- **cam.shake** `{from,to,amp}` in beats for hits, storms, thunder.
+- **cuts**: split ONE narrated scene into hard-cut shots. `"cuts":[{"at":"water","cam":{...},"actors":[...],"fx":[...]}]`. `at` is seconds, or a spoken word from the scene text (`"water"`, or `"water#2"` for the second one). A cut may override `set, time, cam, actors, fx, decor`; anything left out is inherited. A cut with its own `actors` restarts their key beats; with its own `cam` it restarts the glide. `megaedit check` warns when the word is not in the text.
+
+## Narrated pixel story (voiced, 35 to 50 s)
+Use the normal format (not `micro`) with a voice and EVERY scene `visual.micro`, layout `hero`, no headline. The pixel caption style is on by default (big, ink-outlined, 3 words per line, bottom third). The top HUD is hidden and the cover uses the first micro shot. If you give no music, a warm chiptune bed loops under the voice automatically (-13 dB, passes the whistle gate).
+Composition rules learned the hard way:
+- Captions sit near 60% of the frame, so stand heroes with their feet near 55%: set `cam.y` about `foot_y - 16/zoom`.
+- Keep `zoom` at 1.7 or below. The art grid is fixed, so make heroes big with `s` (3 to 5 for a close-up hero), not zoom. Zoom above ~1.8 turns soil and sets blocky.
+- A hero should fill 35 to 60% of the width in close-ups; wides stay at s 1.5 to 2.5 with the set visible.
+- Pace: one shot per 1.5 to 3 s. Use `cuts` on a word every scene, alternating wide, close-up, detail. Do not hold one framing for more than 3 s.
+- One story object that changes (seed, plant, log) beats five different objects. Tie the arc to its face: tired, wow, joy, scared, proud.
+- Storm and night grades are dark on purpose; do not stack a storm on a hero that needs to read.

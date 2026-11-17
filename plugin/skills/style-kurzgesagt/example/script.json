@@ -1,0 +1,1549 @@
+{
+ "title": "The Moon Is Leaving",
+ "hook": "The Moon is quietly running away from us.",
+ "scenes": [
+  {
+   "id": "s01",
+   "text": "The Moon is quietly running away from us.",
+   "visual": {
+    "layout": "title",
+    "headline": "The Moon is leaving",
+    "setting": "space",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "running away"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "world": "space",
+       "tint": "violet",
+       "cam": [
+        {
+         "x": 540,
+         "y": 980,
+         "z": 0.9
+        },
+        {
+         "x": 620,
+         "y": 880,
+         "z": 1.1,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 320,
+         "y": 1180,
+         "s": 280,
+         "c": "#3db8f5"
+        },
+        {
+         "kind": "globe",
+         "x": 320,
+         "y": 1180,
+         "s": 180,
+         "face": true,
+         "mood": "calm"
+        },
+        {
+         "kind": "glow",
+         "x": 720,
+         "y": 700,
+         "s": 150,
+         "c": "#ffffff",
+         "p": 0.9
+        },
+        {
+         "kind": "moon",
+         "x": 680,
+         "y": 740,
+         "s": 80,
+         "face": true,
+         "mood": "happy",
+         "to": {
+          "x": 820,
+          "y": 600,
+          "until": 2.6
+         },
+         "act": [
+          {
+           "do": "wave",
+           "at": "running"
+          }
+         ]
+        },
+        {
+         "kind": "planet",
+         "x": 150,
+         "y": 430,
+         "s": 28,
+         "p": 0.4
+        },
+        {
+         "kind": "planet",
+         "x": 900,
+         "y": 1250,
+         "s": 20,
+         "p": 0.5,
+         "ring": true
+        },
+        {
+         "kind": "rock",
+         "x": 950,
+         "y": 1380,
+         "s": 0.5,
+         "p": 1.4
+        }
+       ]
+      }
+     ],
+     "title": {
+      "l1": "The Moon",
+      "l2": "is leaving",
+      "hi": "leaving"
+     }
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "whoosh/60-cc0-sci-fi-sfx-sfx-18b",
+     "at": 0,
+     "volume": 0.35
+    },
+    {
+     "id": "ui/interface-sounds-click-001",
+     "at": 1.347,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "text": "Every year, it drifts about four centimetres further out. Roughly the width of a golf ball.",
+   "visual": {
+    "layout": "hero",
+    "headline": "4 cm a year",
+    "setting": "land",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "four centimetres"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "zoom",
+       "inAt": [
+        820,
+        600
+       ],
+       "world": "land",
+       "tint": "day",
+       "cam": [
+        {
+         "x": 380,
+         "y": 1080,
+         "z": 1.05
+        },
+        {
+         "x": 700,
+         "y": 1080,
+         "z": 1.05,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 320,
+         "y": 620,
+         "s": 200,
+         "c": "#ffffff"
+        },
+        {
+         "kind": "moon",
+         "x": 320,
+         "y": 620,
+         "s": 110,
+         "face": true,
+         "mood": "calm",
+         "to": {
+          "x": 260,
+          "y": 520,
+          "until": 5
+         }
+        },
+        {
+         "kind": "tree",
+         "x": 180,
+         "y": 1480,
+         "s": 1.1,
+         "p": 0.9
+        },
+        {
+         "kind": "bird",
+         "x": 300,
+         "y": 700,
+         "s": 0.6,
+         "to": {
+          "x": 900,
+          "y": 640,
+          "until": 5
+         }
+        },
+        {
+         "kind": "critter",
+         "x": 560,
+         "y": 1380,
+         "s": 1.3,
+         "mood": "shock",
+         "dir": 1,
+         "act": [
+          {
+           "do": "hop",
+           "at": "drifts"
+          }
+         ]
+        },
+        {
+         "kind": "cloud",
+         "x": 300,
+         "y": 420,
+         "s": 0.8,
+         "p": 0.6
+        }
+       ],
+       "tag": {
+        "text": "+4 cm / year",
+        "at": "four"
+       }
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/click-sounds6-click-sound-6",
+     "at": 0.228,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/click-sounds6-click-sound-5",
+     "at": 1.769,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "text": "How do we know? Apollo astronauts left mirrors on its surface, and we still fire lasers at them.",
+   "visual": {
+    "layout": "hero",
+    "headline": "Apollo's mirrors",
+    "setting": "space",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "mirrors",
+     "lasers"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "cut",
+       "world": "space",
+       "tint": "navy",
+       "calm": 0.3,
+       "cam": [
+        {
+         "x": 540,
+         "y": 900,
+         "z": 1.15
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 880,
+         "s": 400,
+         "c": "#ffffff"
+        },
+        {
+         "kind": "moon",
+         "x": 540,
+         "y": 880,
+         "s": 280,
+         "face": true,
+         "mood": "happy",
+         "act": [
+          {
+           "do": "nod",
+           "at": "mirrors"
+          }
+         ]
+        },
+        {
+         "kind": "burst",
+         "x": 660,
+         "y": 760,
+         "s": 34,
+         "c": "#ff1f9d",
+         "at": "mirrors"
+        },
+        {
+         "kind": "rock",
+         "x": 140,
+         "y": 1300,
+         "s": 0.6,
+         "p": 1.4
+        },
+        {
+         "kind": "planet",
+         "x": 880,
+         "y": 360,
+         "s": 24,
+         "p": 0.4
+        }
+       ],
+       "pill": {
+        "text": "Apollo mirrors",
+        "sub": "still working today",
+        "at": "mirrors"
+       }
+      },
+      {
+       "at": "lasers",
+       "in": "cut",
+       "world": "land",
+       "tint": "night",
+       "cam": [
+        {
+         "x": 540,
+         "y": 1050,
+         "z": 1.25
+        },
+        {
+         "x": 540,
+         "y": 1000,
+         "z": 0.95,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 300,
+         "y": 520,
+         "s": 170,
+         "c": "#ffffff"
+        },
+        {
+         "kind": "moon",
+         "x": 300,
+         "y": 520,
+         "s": 90,
+         "face": true,
+         "mood": "calm"
+        },
+        {
+         "kind": "burst",
+         "x": 760,
+         "y": 460,
+         "s": 40,
+         "c": "#3db8f5",
+         "at": "lasers+0.2"
+        },
+        {
+         "kind": "critter",
+         "x": 420,
+         "y": 1390,
+         "s": 1.2,
+         "mood": "happy",
+         "act": [
+          {
+           "do": "hop",
+           "at": "lasers"
+          }
+         ]
+        },
+        {
+         "kind": "tree",
+         "x": 900,
+         "y": 1480,
+         "s": 1,
+         "p": 0.9
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/click-ui-menu-sfx-yesnoselect-click-click-mono",
+     "at": 0.281,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/click-sounds6-click-sound-2",
+     "at": 2.646,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "text": "The light takes about two and a half seconds to return. Each year, a little longer.",
+   "visual": {
+    "layout": "big-number",
+    "headline": "2.5 seconds",
+    "number": {
+     "value": 2.5,
+     "label": "seconds there and back"
+    },
+    "setting": "space",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "longer"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "iris",
+       "inAt": [
+        540,
+        900
+       ],
+       "world": "land",
+       "tint": "sunset",
+       "cam": [
+        {
+         "x": 540,
+         "y": 1100,
+         "z": 1.1
+        },
+        {
+         "x": 540,
+         "y": 1060,
+         "z": 0.9,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 300,
+         "y": 560,
+         "s": 180,
+         "c": "#ffffff"
+        },
+        {
+         "kind": "moon",
+         "x": 300,
+         "y": 560,
+         "s": 85,
+         "face": true,
+         "mood": "calm"
+        },
+        {
+         "kind": "glow",
+         "x": 640,
+         "y": 900,
+         "s": 200,
+         "c": "#ff1f9d",
+         "at": "light"
+        },
+        {
+         "kind": "clock",
+         "x": 640,
+         "y": 900,
+         "s": 130,
+         "v": 0.6,
+         "label": "2.5 s trip",
+         "at": "light"
+        },
+        {
+         "kind": "critter",
+         "x": 300,
+         "y": 1400,
+         "s": 1,
+         "mood": "calm",
+         "act": [
+          {
+           "do": "nod",
+           "at": "longer"
+          }
+         ]
+        },
+        {
+         "kind": "tree",
+         "x": 900,
+         "y": 1480,
+         "s": 1,
+         "p": 0.9
+        },
+        {
+         "kind": "bird",
+         "x": 150,
+         "y": 500,
+         "s": 0.5,
+         "to": {
+          "x": 700,
+          "y": 450,
+          "until": 4
+         }
+        }
+       ],
+       "tag": {
+        "text": "a bit more each year",
+        "at": "longer"
+       }
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/interface-sounds-maximize-001",
+     "at": 0,
+     "volume": 0.5
+    },
+    {
+     "id": "ui/click-ui-menu-sfx-yesnoselect-click-negative2-mono",
+     "at": 1.335,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/interface-sounds-maximize-003",
+     "at": 2.711,
+     "volume": 0.5
+    },
+    {
+     "id": "pop",
+     "at": 3.997,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "text": "The culprit is us. The Moon's gravity pulls on Earth's oceans, stretching them into two bulges.",
+   "visual": {
+    "layout": "hero",
+    "headline": "Gravity pulls the sea",
+    "setting": "ocean",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "gravity",
+     "bulges"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "wipe",
+       "world": "ocean",
+       "tint": "cyan",
+       "cam": [
+        {
+         "x": 600,
+         "y": 2170,
+         "z": 1.7
+        },
+        {
+         "x": 500,
+         "y": 2170,
+         "z": 1.75,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "moon",
+         "x": 800,
+         "y": 1700,
+         "s": 50,
+         "face": true,
+         "mood": "calm",
+         "p": 0.5
+        },
+        {
+         "kind": "school",
+         "x": 300,
+         "y": 1980,
+         "s": 0.8,
+         "p": 0.7,
+         "dir": 1,
+         "to": {
+          "x": 800,
+          "y": 1960,
+          "until": 3
+         }
+        },
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 2040,
+         "s": 200,
+         "c": "#3db8f5"
+        },
+        {
+         "kind": "turtle",
+         "x": 540,
+         "y": 2040,
+         "s": 0.9,
+         "mood": "worried",
+         "act": [
+          {
+           "do": "shake",
+           "at": "culprit"
+          }
+         ]
+        },
+        {
+         "kind": "coral",
+         "x": 220,
+         "y": 2300,
+         "s": 1
+        },
+        {
+         "kind": "jelly",
+         "x": 880,
+         "y": 1950,
+         "s": 0.5,
+         "p": 0.7
+        }
+       ],
+       "sky": 0.3,
+       "near": 0,
+       "calm": 0.5
+      },
+      {
+       "at": "stretching",
+       "in": "cut",
+       "world": "plain",
+       "tint": "cyan",
+       "cam": [
+        {
+         "x": 540,
+         "y": 960,
+         "z": 1
+        },
+        {
+         "x": 540,
+         "y": 960,
+         "z": 1.25
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 1000,
+         "s": 330,
+         "c": "#3db8f5"
+        },
+        {
+         "kind": "globe",
+         "x": 540,
+         "y": 1000,
+         "s": 220,
+         "face": true,
+         "mood": "shock",
+         "act": [
+          {
+           "do": "squash",
+           "at": "stretching",
+           "n": 2
+          }
+         ]
+        },
+        {
+         "kind": "moon",
+         "x": 880,
+         "y": 420,
+         "s": 60,
+         "face": true,
+         "mood": "calm",
+         "p": 0.6
+        }
+       ],
+       "pill": {
+        "text": "Tidal bulges",
+        "sub": "one on each side",
+        "at": "bulges"
+       }
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/click-ui-menu-sfx-yesnoselect-click-negative-mono",
+     "at": 0.011,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/gui-sound-effects-click",
+     "at": 2.099,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "text": "But Earth spins once a day, far faster than the Moon circles us, which takes almost a month.",
+   "visual": {
+    "layout": "compare",
+    "headline": "1 day vs 27 days",
+    "setting": "land",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "once a day",
+     "month"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "cut",
+       "world": "land",
+       "tint": "day",
+       "cam": [
+        {
+         "x": 360,
+         "y": 1150,
+         "z": 1
+        },
+        {
+         "x": 700,
+         "y": 1150,
+         "z": 1
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 820,
+         "y": 980,
+         "s": 260,
+         "c": "#f6b50e"
+        },
+        {
+         "kind": "sun",
+         "x": 820,
+         "y": 980,
+         "s": 150,
+         "face": true,
+         "mood": "happy",
+         "to": {
+          "x": 820,
+          "y": 1180,
+          "until": 3
+         }
+        },
+        {
+         "kind": "clock",
+         "x": 340,
+         "y": 700,
+         "s": 110,
+         "v": 1,
+         "label": "1 day",
+         "at": "spins"
+        },
+        {
+         "kind": "bird",
+         "x": 200,
+         "y": 560,
+         "s": 0.5,
+         "to": {
+          "x": 800,
+          "y": 500,
+          "until": 3
+         }
+        },
+        {
+         "kind": "tree",
+         "x": 160,
+         "y": 1480,
+         "s": 1
+        },
+        {
+         "kind": "critter",
+         "x": 560,
+         "y": 1400,
+         "s": 1,
+         "mood": "calm",
+         "act": [
+          {
+           "do": "spin",
+           "at": "spins"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "at": "Moon",
+       "in": "cut",
+       "world": "space",
+       "tint": "navy",
+       "cam": [
+        {
+         "x": 540,
+         "y": 960,
+         "z": 1.15
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 1000,
+         "s": 340,
+         "c": "#ffffff"
+        },
+        {
+         "kind": "moon",
+         "x": 540,
+         "y": 1000,
+         "s": 220,
+         "face": true,
+         "mood": "sleepy",
+         "act": [
+          {
+           "do": "nod",
+           "at": "month"
+          }
+         ]
+        },
+        {
+         "kind": "clock",
+         "x": 800,
+         "y": 520,
+         "s": 90,
+         "v": 0.9,
+         "label": "27 days",
+         "at": "month"
+        },
+        {
+         "kind": "rock",
+         "x": 160,
+         "y": 1320,
+         "s": 0.6,
+         "p": 1.4
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "cartoon/bubbles-pop-pop",
+     "at": 1.04,
+     "volume": 0.3
+    },
+    {
+     "id": "whoosh/100-cc0-sfx-paper-01",
+     "at": 2.472,
+     "volume": 0.42
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "text": "So our spin drags the bulge slightly ahead of the Moon. Its extra pull tugs the Moon forward.",
+   "visual": {
+    "layout": "process",
+    "headline": "Ahead of the Moon",
+    "setting": "plain",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "ahead",
+     "forward"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "zoom",
+       "inAt": [
+        540,
+        1000
+       ],
+       "world": "plain",
+       "tint": "warm",
+       "cam": [
+        {
+         "x": 560,
+         "y": 960,
+         "z": 1.05
+        },
+        {
+         "x": 540,
+         "y": 920,
+         "z": 0.9,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 400,
+         "y": 1120,
+         "s": 280,
+         "c": "#3db8f5"
+        },
+        {
+         "kind": "globe",
+         "x": 400,
+         "y": 1120,
+         "s": 190,
+         "face": true,
+         "mood": "calm",
+         "act": [
+          {
+           "do": "spin",
+           "at": "drags"
+          }
+         ]
+        },
+        {
+         "kind": "glow",
+         "x": 680,
+         "y": 620,
+         "s": 130,
+         "c": "#ffffff"
+        },
+        {
+         "kind": "moon",
+         "x": 680,
+         "y": 620,
+         "s": 75,
+         "face": true,
+         "mood": "calm",
+         "to": {
+          "x": 720,
+          "y": 520,
+          "until": 5.5
+         },
+         "act": [
+          {
+           "do": "hop",
+           "at": "forward"
+          }
+         ]
+        },
+        {
+         "kind": "burst",
+         "x": 620,
+         "y": 680,
+         "s": 36,
+         "c": "#ff1f9d",
+         "at": "tugs"
+        }
+       ],
+       "pill": {
+        "text": "Tidal tug",
+        "sub": "Earth's spin pays for it",
+        "at": "pull"
+       }
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/card-game-sounds-tap",
+     "at": 1.89,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/click-ui-menu-sfx-yesnoselect-click-negative2-stereo",
+     "at": 3.595,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "text": "A faster Moon climbs into a wider orbit. And Earth pays for it. Its spin slows down.",
+   "visual": {
+    "layout": "hero",
+    "headline": "Earth slows down",
+    "setting": "space",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "wider",
+     "slows"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "dissolve",
+       "world": "space",
+       "tint": "teal",
+       "cam": [
+        {
+         "x": 540,
+         "y": 980,
+         "z": 1.15
+        },
+        {
+         "x": 540,
+         "y": 960,
+         "z": 0.85,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 1150,
+         "s": 240,
+         "c": "#3db8f5"
+        },
+        {
+         "kind": "globe",
+         "x": 540,
+         "y": 1150,
+         "s": 150,
+         "face": true,
+         "mood": "calm"
+        },
+        {
+         "kind": "moon",
+         "x": 700,
+         "y": 900,
+         "s": 60,
+         "face": true,
+         "mood": "happy",
+         "to": {
+          "x": 860,
+          "y": 560,
+          "until": 2.8
+         },
+         "act": [
+          {
+           "do": "grow",
+           "at": "wider"
+          }
+         ]
+        },
+        {
+         "kind": "planet",
+         "x": 160,
+         "y": 420,
+         "s": 24,
+         "p": 0.4
+        },
+        {
+         "kind": "rock",
+         "x": 930,
+         "y": 1350,
+         "s": 0.5,
+         "p": 1.4
+        }
+       ]
+      },
+      {
+       "at": "Earth",
+       "in": "cut",
+       "world": "ocean",
+       "tint": "teal",
+       "calm": 0.5,
+       "cam": [
+        {
+         "x": 540,
+         "y": 2180,
+         "z": 1.6
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 2060,
+         "s": 220,
+         "c": "#2a9d8f"
+        },
+        {
+         "kind": "turtle",
+         "x": 540,
+         "y": 2060,
+         "s": 0.8,
+         "mood": "sleepy",
+         "act": [
+          {
+           "do": "nod",
+           "at": "slows"
+          }
+         ]
+        },
+        {
+         "kind": "fish",
+         "x": 300,
+         "y": 2050,
+         "s": 0.6,
+         "p": 0.7,
+         "to": {
+          "x": 800,
+          "y": 2030,
+          "until": 3
+         }
+        }
+       ],
+       "near": 0
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/click-ui-menu-sfx-yesnoselect-click-click-mono",
+     "at": 0.281,
+     "volume": 0.3
+    },
+    {
+     "id": "pop",
+     "at": 1.497,
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "text": "Our days grow about two milliseconds longer every century. Four hundred million years ago, a day lasted just twenty-two hours.",
+   "visual": {
+    "layout": "big-number",
+    "headline": "Longer days",
+    "number": {
+     "value": 2,
+     "label": "milliseconds per century"
+    },
+    "setting": "land",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "two milliseconds",
+     "twenty-two hours"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "cut",
+       "world": "land",
+       "tint": "day",
+       "cam": [
+        {
+         "x": 540,
+         "y": 1060,
+         "z": 1
+        },
+        {
+         "at": "two",
+         "x": 540,
+         "y": 1060,
+         "z": 1
+        },
+        {
+         "at": "two+0.3",
+         "x": 540,
+         "y": 900,
+         "z": 1.35
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 820,
+         "s": 230,
+         "c": "#f6b50e"
+        },
+        {
+         "kind": "clock",
+         "x": 540,
+         "y": 820,
+         "s": 150,
+         "v": 0.3,
+         "label": "+2 ms",
+         "at": "days"
+        },
+        {
+         "kind": "sun",
+         "x": 880,
+         "y": 360,
+         "s": 80,
+         "face": true,
+         "mood": "happy",
+         "p": 0.7
+        },
+        {
+         "kind": "critter",
+         "x": 300,
+         "y": 1400,
+         "s": 1,
+         "mood": "calm",
+         "act": [
+          {
+           "do": "nod",
+           "at": "century"
+          }
+         ]
+        },
+        {
+         "kind": "tree",
+         "x": 880,
+         "y": 1480,
+         "s": 1,
+         "p": 0.9
+        },
+        {
+         "kind": "bird",
+         "x": 150,
+         "y": 560,
+         "s": 0.5,
+         "to": {
+          "x": 700,
+          "y": 520,
+          "until": 3
+         }
+        }
+       ],
+       "tag": {
+        "text": "2 ms per century",
+        "at": "two"
+       }
+      },
+      {
+       "at": "Four",
+       "in": "dissolve",
+       "world": "ocean",
+       "tint": "warm",
+       "sky": 0.1,
+       "cam": [
+        {
+         "x": 480,
+         "y": 2170,
+         "z": 1.7
+        },
+        {
+         "x": 600,
+         "y": 2170,
+         "z": 1.75,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 760,
+         "y": 2060,
+         "s": 190,
+         "c": "#f6b50e"
+        },
+        {
+         "kind": "fish",
+         "x": 760,
+         "y": 2060,
+         "s": 1.3,
+         "mood": "happy",
+         "act": [
+          {
+           "do": "hop",
+           "at": "twenty-two"
+          }
+         ]
+        },
+        {
+         "kind": "school",
+         "x": 820,
+         "y": 2000,
+         "s": 0.7,
+         "p": 0.6
+        },
+        {
+         "kind": "coral",
+         "x": 220,
+         "y": 2300,
+         "s": 1
+        },
+        {
+         "kind": "jelly",
+         "x": 180,
+         "y": 1950,
+         "s": 0.5,
+         "p": 0.7
+        }
+       ],
+       "tag": {
+        "text": "22-hour days",
+        "at": "twenty-two"
+       },
+       "near": 0,
+       "calm": 0.5
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/16-button-clicks-clic09-mp3",
+     "at": 0,
+     "volume": 0.5
+    },
+    {
+     "id": "ui/card-game-sounds-tap",
+     "at": 1.108,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/click-ui-menu-sfx-yesnoselect-click-negative2-stereo",
+     "at": 2.225,
+     "volume": 0.3
+    },
+    {
+     "id": "ui/interface-sounds-maximize-004",
+     "at": 4.147,
+     "volume": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "text": "In about six hundred million years, it will look too small to cover the Sun. No more total eclipses.",
+   "visual": {
+    "layout": "reveal",
+    "headline": "The last eclipse",
+    "setting": "space",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "too small",
+     "eclipses"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "zoom",
+       "inAt": [
+        540,
+        900
+       ],
+       "world": "space",
+       "tint": "violet",
+       "cam": [
+        {
+         "x": 540,
+         "y": 960,
+         "z": 1
+        },
+        {
+         "x": 540,
+         "y": 920,
+         "z": 1.25,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 900,
+         "s": 420,
+         "c": "#f6b50e"
+        },
+        {
+         "kind": "sun",
+         "x": 540,
+         "y": 900,
+         "s": 250,
+         "face": true,
+         "mood": "calm"
+        },
+        {
+         "kind": "moon",
+         "x": 300,
+         "y": 1150,
+         "s": 110,
+         "face": true,
+         "mood": "worried",
+         "to": {
+          "x": 500,
+          "y": 930,
+          "until": 4
+         },
+         "act": [
+          {
+           "do": "shake",
+           "at": "No"
+          }
+         ]
+        },
+        {
+         "kind": "planet",
+         "x": 880,
+         "y": 360,
+         "s": 26,
+         "p": 0.4
+        }
+       ],
+       "tag": {
+        "text": "~600 million years",
+        "at": "six"
+       }
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "ui/16-button-clicks-clic01-mp3",
+     "at": 0,
+     "volume": 0.5
+    },
+    {
+     "id": "ui/interface-sounds-maximize-005",
+     "at": 1.776,
+     "volume": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "text": "So we live in a brief window when the Moon and Sun match perfectly. Enjoy the view.",
+   "visual": {
+    "layout": "recap",
+    "headline": "Enjoy the view",
+    "setting": "land",
+    "camera": "push-in",
+    "transition": "cut",
+    "emphasis": [
+     "perfectly",
+     "view"
+    ],
+    "extra": {
+     "shots": [
+      {
+       "in": "iris",
+       "inAt": [
+        540,
+        700
+       ],
+       "world": "land",
+       "tint": "night",
+       "cam": [
+        {
+         "x": 540,
+         "y": 1000,
+         "z": 1.35
+        },
+        {
+         "x": 540,
+         "y": 1080,
+         "z": 0.9,
+         "ease": "io"
+        }
+       ],
+       "actors": [
+        {
+         "kind": "glow",
+         "x": 540,
+         "y": 600,
+         "s": 240,
+         "c": "#f6b50e"
+        },
+        {
+         "kind": "sun",
+         "x": 540,
+         "y": 600,
+         "s": 115
+        },
+        {
+         "kind": "moon",
+         "x": 420,
+         "y": 640,
+         "s": 110,
+         "face": true,
+         "mood": "happy",
+         "to": {
+          "x": 540,
+          "y": 600,
+          "until": "perfectly"
+         },
+         "act": [
+          {
+           "do": "nod",
+           "at": "perfectly+0.3"
+          }
+         ]
+        },
+        {
+         "kind": "critter",
+         "x": 360,
+         "y": 1390,
+         "s": 1.1,
+         "mood": "happy",
+         "act": [
+          {
+           "do": "wave",
+           "at": "Enjoy"
+          }
+         ]
+        },
+        {
+         "kind": "critter",
+         "x": 700,
+         "y": 1400,
+         "s": 0.9,
+         "mood": "calm",
+         "dir": -1
+        },
+        {
+         "kind": "tree",
+         "x": 120,
+         "y": 1480,
+         "s": 1.1,
+         "p": 0.9
+        },
+        {
+         "kind": "bird",
+         "x": 900,
+         "y": 420,
+         "s": 0.4,
+         "p": 0.6
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "sfxCues": [
+    {
+     "id": "whoosh/100-cc0-sfx-weird-01",
+     "at": 0.458,
+     "volume": 0.42
+    },
+    {
+     "id": "ui/click-sounds6-click-sound-6",
+     "at": 2.878,
+     "volume": 0.3
+    },
+    {
+     "id": "digital/interface-sounds-select-001",
+     "at": 3.945,
+     "volume": 0.36
+    }
+   ]
+  }
+ ]
+}

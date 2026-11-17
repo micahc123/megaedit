@@ -7,7 +7,7 @@ description: Create a member's own Megaedit style — palette, fonts, caption lo
 # Making a custom style
 
 Custom styles live in the member's library as `custom:<slug>` and are built on a base
-engine style (paper2d, flat, collage, pixel, cartoon3d, dayn, team or youpick). Use
+engine style from the lineup that Megaedit draws itself (whatif, pixel, cartoon3d, vox, fern, kurzgesagt, or a series: roadto, team, dayn; the Blender styles roblox, zackd and lowpoly can't be a base). Use
 `cli` with `["styles", "new", "<slug>", "--base", "<style>"]` to scaffold one.
 That creates `~/Megaedit/library/styles/<slug>/` with:
 

@@ -1,550 +1,1676 @@
 {
-  "title": "The Fog Bell",
-  "hook": "This town had a fog problem.",
-  "scenes": [
-    {
-      "id": "s01",
-      "text": "This town had a fog problem.",
-      "visual": {
-        "layout": "hero",
-        "headline": "The Fog Bell",
-        "setting": "harbour",
-        "characters": [
+ "title": "The Clock That Stopped at 3:07",
+ "hook": "Every night at exactly seven past three, the village clock stopped.",
+ "scenes": [
+  {
+   "id": "s01",
+   "text": "Every night at exactly seven past three, the village clock stopped.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "bible": {
+       "sets": {
+        "tower": {
+         "base": "hall",
+         "mood": "cold",
+         "size": [
+          7,
+          14,
+          6.5
+         ],
+         "windows": 2,
+         "props": [
           {
-            "ref": "bea",
-            "pose": "idle",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "time": "dusk",
-          "shots": [
-            {
-              "size": "wide",
-              "move": "pull",
-              "light": "cool",
-              "fx": "none"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s02",
-      "text": "Every night it rolled in so thick that the boats couldn't find the dock.",
-      "visual": {
-        "layout": "hero",
-        "headline": "So thick",
-        "setting": "harbour",
-        "characters": [
-          {
-            "ref": "bea",
-            "pose": "idle",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "time": "dusk",
-          "shots": [
-            {
-              "size": "full",
-              "focus": "bea",
-              "expr": "worried",
-              "move": "push",
-              "light": "blue",
-              "fx": "none"
-            },
-            {
-              "at": "the boats",
-              "size": "close",
-              "focus": "bea",
-              "expr": "sad",
-              "light": "dark",
-              "fx": "sweat"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s03",
-      "text": "So the town called a meeting, and everybody showed up with a plan, and every plan was terrible.",
-      "visual": {
-        "layout": "dialogue",
-        "headline": "Everybody had a plan",
-        "setting": "town-square",
-        "characters": [
-          {
-            "ref": "mo",
-            "pose": "talk",
-            "position": "left"
+           "k": "pillar",
+           "at": [
+            -2.6,
+            -3
+           ]
           },
           {
-            "ref": "bea",
-            "pose": "idle",
-            "position": "center"
+           "k": "pillar",
+           "at": [
+            2.6,
+            -3
+           ]
           },
           {
-            "ref": "juno",
-            "pose": "talk",
-            "position": "right"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "shots": [
-            {
-              "size": "wide",
-              "move": "push",
-              "light": "warm"
-            },
-            {
-              "at": "everybody",
-              "size": "two",
-              "move": "pan-right",
-              "expr": {
-                "mo": "excited",
-                "juno": "smug"
-              }
-            },
-            {
-              "at": "every plan",
-              "size": "close",
-              "focus": "bea",
-              "expr": "deadpan",
-              "light": "cool"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s04",
-      "text": "Mo put up a giant flag so the boats could see the town. Nobody could see the flag, because of the fog.",
-      "visual": {
-        "layout": "hero",
-        "headline": "The flag",
-        "setting": "harbour",
-        "characters": [
-          {
-            "ref": "mo",
-            "pose": "point",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "props": [
-          {
-            "kind": "flag",
-            "label": "flag"
-          }
-        ],
-        "extra": {
-          "time": "day",
-          "shots": [
-            {
-              "size": "full",
-              "focus": "mo",
-              "pose": "point",
-              "expr": "smug",
-              "holds": "flag",
-              "light": "bright"
-            },
-            {
-              "at": "giant flag",
-              "insert": "flag",
-              "focus": "mo"
-            },
-            {
-              "at": "Nobody",
-              "size": "medium",
-              "focus": "mo",
-              "pose": "shrug",
-              "expr": "deadpan",
-              "move": "pull",
-              "light": "cool"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s05",
-      "text": "Juno drew up a taller lighthouse, and it was beautiful. It would also take nine years and every coin the town had.",
-      "visual": {
-        "layout": "hero",
-        "headline": "The lighthouse",
-        "setting": "office",
-        "characters": [
-          {
-            "ref": "juno",
-            "pose": "talk",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "props": [
-          {
-            "kind": "coin",
-            "label": "coin"
-          }
-        ],
-        "extra": {
-          "sign": "TOWN PLANS",
-          "time": "day",
-          "shots": [
-            {
-              "size": "medium",
-              "focus": "juno",
-              "expr": "excited",
-              "holds": "pencil",
-              "light": "gold"
-            },
-            {
-              "at": "nine years",
-              "size": "close",
-              "focus": "juno",
-              "expr": "smug",
-              "tag": "9 YEARS"
-            },
-            {
-              "at": "every coin",
-              "insert": "coin",
-              "focus": "juno",
-              "light": "red"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s06",
-      "text": "And Bea, who never said much, put her hand up and asked, what about a sound?",
-      "visual": {
-        "layout": "dialogue",
-        "headline": "What about a sound?",
-        "setting": "town-square",
-        "characters": [
-          {
-            "ref": "mo",
-            "pose": "idle",
-            "position": "left"
+           "k": "bell",
+           "at": [
+            0,
+            -3.2
+           ],
+           "s": 1.3,
+           "id": "bell1"
           },
           {
-            "ref": "bea",
-            "pose": "idle",
-            "position": "center"
+           "k": "lantern",
+           "at": [
+            1.6,
+            -1.2
+           ],
+           "hang": 0.8,
+           "k2": 0.9
+          }
+         ]
+        },
+        "street": {
+         "base": "alley",
+         "mood": "day"
+        },
+        "quay": {
+         "base": "harbour",
+         "mood": "day"
+        },
+        "lane": {
+         "base": "alley",
+         "mood": "dusk"
+        },
+        "field": {
+         "base": "meadow",
+         "mood": "dawn"
+        },
+        "nightst": {
+         "base": "alley",
+         "mood": "night"
+        },
+        "bench": {
+         "base": "workshop",
+         "props": [
+          {
+           "k": "table",
+           "at": [
+            0,
+            -1.2
+           ],
+           "id": "tb1"
           },
           {
-            "ref": "juno",
-            "pose": "idle",
-            "position": "right"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "shots": [
-            {
-              "size": "wide",
-              "move": "hold",
-              "light": "cool"
-            },
-            {
-              "at": "put her hand",
-              "size": "medium",
-              "focus": "bea",
-              "pose": "wave",
-              "expr": "think"
-            },
-            {
-              "at": "what about",
-              "size": "close",
-              "focus": "bea",
-              "expr": "happy",
-              "holds": "lightbulb",
-              "light": "bright",
-              "fx": "rays"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s07",
-      "text": "So she went down to the old workshop and dug out a bell that nobody had rung in forty years.",
-      "visual": {
-        "layout": "hero",
-        "headline": "The old bell",
-        "setting": "town-square",
-        "characters": [
-          {
-            "ref": "bea",
-            "pose": "walk",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "props": [
-          {
-            "kind": "bell",
-            "label": "bell"
-          }
-        ],
-        "extra": {
-          "shots": [
-            {
-              "size": "full",
-              "focus": "bea",
-              "pose": "walk",
-              "expr": "happy",
-              "light": "warm",
-              "fx": "dust"
-            },
-            {
-              "at": "dug out",
-              "place": "workshop",
-              "size": "medium",
-              "focus": "bea",
-              "pose": "point",
-              "expr": "excited",
-              "light": "lamp"
-            },
-            {
-              "at": "a bell",
-              "insert": "bell",
-              "focus": "bea"
-            },
-            {
-              "at": "nobody had",
-              "size": "medium",
-              "focus": "bea",
-              "expr": "grin",
-              "holds": "bell",
-              "light": "gold"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s08",
-      "text": "They dragged it up the hill and hung it on a post, and Bea gave the rope one good pull.",
-      "visual": {
-        "layout": "dialogue",
-        "headline": "One good pull",
-        "setting": "castle-hill",
-        "characters": [
-          {
-            "ref": "mo",
-            "pose": "walk",
-            "position": "left"
+           "k": "key",
+           "at": [
+            -0.15,
+            -1.2
+           ],
+           "on": "tb1",
+           "s": 1.8
           },
           {
-            "ref": "bea",
-            "pose": "walk",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "shots": [
-            {
-              "size": "wide",
-              "move": "tilt-up",
-              "light": "sunset",
-              "fx": "dust"
-            },
-            {
-              "at": "hung it",
-              "size": "two",
-              "pose": {
-                "mo": "point",
-                "bea": "idle"
-              },
-              "expr": {
-                "mo": "worried"
-              },
-              "holds": "bell",
-              "focus": "bea"
-            },
-            {
-              "at": "one good pull",
-              "size": "close",
-              "focus": "bea",
-              "pose": "cheer",
-              "expr": "excited",
-              "light": "bright",
-              "fx": [
-                "shake",
-                "burst"
-              ],
-              "cut": "cut"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s09",
-      "text": "That night the fog came in like it always did, and the boats just turned toward the sound and came home.",
-      "visual": {
-        "layout": "hero",
-        "headline": "Home",
-        "setting": "harbour",
-        "characters": [
-          {
-            "ref": "bea",
-            "pose": "idle",
-            "position": "center"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "time": "night",
-          "shots": [
-            {
-              "size": "wide",
-              "move": "pan-left",
-              "light": "night",
-              "fx": "none"
-            },
-            {
-              "at": "the boats",
-              "size": "medium",
-              "focus": "bea",
-              "expr": "happy",
-              "holds": "bell",
-              "light": "blue",
-              "fx": "sparkle"
-            },
-            {
-              "at": "came home",
-              "size": "full",
-              "move": "rise",
-              "light": "gold",
-              "fx": "rays"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s10",
-      "text": "The fishermen cheered, Mo quietly took his flag down, and Bea rang that bell until the sun came up.",
-      "visual": {
-        "layout": "dialogue",
-        "headline": "Until sunrise",
-        "setting": "harbour",
-        "characters": [
-          {
-            "ref": "mo",
-            "pose": "cheer",
-            "position": "left"
+           "k": "coins",
+           "at": [
+            0.35,
+            -1.1
+           ],
+           "on": "tb1",
+           "s": 1.4
           },
           {
-            "ref": "bea",
-            "pose": "cheer",
-            "position": "center"
+           "k": "candle",
+           "at": [
+            0.55,
+            -1.35
+           ],
+           "on": "tb1"
+          }
+         ]
+        },
+        "desk": {
+         "base": "study",
+         "props": [
+          {
+           "k": "table",
+           "at": [
+            0,
+            -1.2
+           ],
+           "id": "tb2"
           },
           {
-            "ref": "juno",
-            "pose": "cheer",
-            "position": "right"
-          }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "time": "dusk",
-          "shots": [
-            {
-              "size": "wide",
-              "pose": {
-                "mo": "cheer",
-                "bea": "cheer",
-                "juno": "cheer"
-              },
-              "expr": {
-                "mo": "laugh",
-                "bea": "laugh",
-                "juno": "happy"
-              },
-              "light": "gold",
-              "fx": "confetti"
-            },
-            {
-              "at": "Mo quietly",
-              "size": "medium",
-              "focus": "mo",
-              "pose": "sad",
-              "expr": "worried",
-              "light": "warm",
-              "fx": "sweat"
-            },
-            {
-              "at": "Bea rang",
-              "size": "close",
-              "focus": "bea",
-              "pose": "cheer",
-              "expr": "laugh",
-              "holds": "bell",
-              "light": "sunset",
-              "move": "shake"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "s11",
-      "text": "Juno still has the lighthouse drawings. She says it's a nine year plan, and she's on year one.",
-      "visual": {
-        "layout": "hero",
-        "headline": "Year one",
-        "setting": "office",
-        "characters": [
+           "k": "book",
+           "at": [
+            -0.1,
+            -1.15
+           ],
+           "on": "tb2",
+           "s": 1.5
+          },
           {
-            "ref": "juno",
-            "pose": "talk",
-            "position": "center"
+           "k": "candle",
+           "at": [
+            0.35,
+            -1.3
+           ],
+           "on": "tb2",
+           "s": 1.2
+          },
+          {
+           "k": "mug",
+           "at": [
+            -0.45,
+            -1.1
+           ],
+           "on": "tb2"
           }
-        ],
-        "camera": "push-in",
-        "transition": "cut",
-        "extra": {
-          "sign": "TOWN PLANS",
-          "time": "night",
-          "shots": [
-            {
-              "size": "medium",
-              "focus": "juno",
-              "expr": "smug",
-              "holds": "book",
-              "light": "warm"
-            },
-            {
-              "at": "nine year",
-              "size": "close",
-              "focus": "juno",
-              "expr": "deadpan",
-              "tag": "YEAR 1",
-              "light": "lamp"
-            }
-          ]
+         ]
+        },
+        "floor": {
+         "base": "hall",
+         "mood": "cold",
+         "props": [
+          {
+           "k": "sticks",
+           "at": [
+            0,
+            -1.2
+           ],
+           "s": 0.45
+          },
+          {
+           "k": "lantern",
+           "at": [
+            0.5,
+            -1.4
+           ]
+          },
+          {
+           "k": "coal",
+           "at": [
+            -0.5,
+            -1.0
+           ]
+          }
+         ]
         }
-      }
+       },
+       "looks": {
+        "ada": {
+         "body": "#5d3a62",
+         "trim": "#3a2440",
+         "body2": "#f3eee2",
+         "style": "dress",
+         "hat": "mob",
+         "hatCol": "#f6f1e6",
+         "band": "#8a4a6a",
+         "hairStyle": "bun",
+         "hair": "#3a2a22",
+         "glasses": true
+        },
+        "pip": {
+         "body": "#6f8a4a",
+         "style": "plain",
+         "hairStyle": "tuft",
+         "hair": "#7a4a2a",
+         "scale": 0.62
+        },
+        "extra1": {
+         "body": "#2f3d5c",
+         "style": "coat",
+         "hat": "top",
+         "hatCol": "#1c1a1e",
+         "band": "#c8a24a",
+         "moustache": true,
+         "hair": "#2a1e18",
+         "legs": "#1f1d22"
+        },
+        "extra2": {
+         "body": "#8a3b2e",
+         "style": "vest",
+         "body2": "#e9dcc0",
+         "hat": "bowler",
+         "hatCol": "#2b2420",
+         "moustache": true,
+         "hair": "#4a3022"
+        },
+        "extra3": {
+         "body": "#5e6b3a",
+         "style": "tunic",
+         "hat": "straw",
+         "hatCol": "#d9b56a",
+         "beard": "#5a4030",
+         "hair": "#6a5040",
+         "wide": 1.15
+        },
+        "extra4": {
+         "body": "#e8e1d2",
+         "style": "apron",
+         "body2": "#f3eee2",
+         "trim": "#b06a3a",
+         "hat": "flat",
+         "hatCol": "#f3eee2",
+         "moustache": true,
+         "hair": "#3a2a22",
+         "wide": 1.2
+        },
+        "extra5": {
+         "body": "#7a4a6e",
+         "style": "dress",
+         "hat": "mob",
+         "hatCol": "#efe6d6",
+         "hair": "#8a5a32",
+         "hairStyle": "bun"
+        },
+        "extra6": {
+         "body": "#3f5a6a",
+         "style": "coat",
+         "hat": "flat",
+         "hatCol": "#2c3a44",
+         "glasses": true,
+         "hair": "#cfc8bc",
+         "hairStyle": "side"
+        }
+       },
+       "exposure": 1.3
+      },
+      "set": "nightst",
+      "shots": [
+       {
+        "frame": "wide",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "think",
+          "face": "worry"
+         }
+        ],
+        "fx": [
+         "dust"
+        ]
+       },
+       {
+        "at": "village",
+        "set": "quay",
+        "frame": "wide",
+        "move": "pan-right",
+        "actors": [
+         {
+          "ref": "extra1",
+          "at": [
+           -0.8,
+           0
+          ],
+          "act": "point",
+          "face": "shock"
+         },
+         {
+          "ref": "extra2",
+          "at": [
+           0.7,
+           -0.3
+          ],
+          "act": "scared",
+          "face": "worry"
+         }
+        ]
+       },
+       {
+        "at": "stopped",
+        "frame": "full",
+        "on": "ada",
+        "punch": [
+         "stopped"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "face": "shock",
+          "act": "scared"
+         },
+         {
+          "ref": "extra1",
+          "at": [
+           -1.3,
+           -1.4
+          ],
+          "dir": "right",
+          "act": "think"
+         },
+         {
+          "ref": "extra2",
+          "at": [
+           1.4,
+           -1.6
+          ],
+          "dir": "left",
+          "act": "shrug"
+         }
+        ]
+       }
+      ]
+     }
     }
-  ],
-  "cta": "Follow for another small story."
+   }
+  },
+  {
+   "id": "s02",
+   "text": "Ada the clockmaker fixed it every morning. And every night, it stopped again.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "workshop",
+      "shots": [
+       {
+        "frame": "medium",
+        "move": "pan-right",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.5,
+           0
+          ],
+          "act": "reach"
+         },
+         {
+          "ref": "extra3",
+          "at": [
+           1.2,
+           -1.3
+          ],
+          "dir": "left",
+          "act": "idle"
+         }
+        ]
+       },
+       {
+        "at": "fixed",
+        "frame": "low",
+        "on": "ada",
+        "az": 35,
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "reach",
+          "face": "grit",
+          "held": "keys"
+         },
+         {
+          "ref": "extra3",
+          "at": [
+           1.0,
+           0.6
+          ],
+          "act": "think",
+          "face": "worry"
+         }
+        ]
+       },
+       {
+        "at": "morning",
+        "set": "bench",
+        "frame": "macro",
+        "on": [
+         0,
+         0.95,
+         -1.2
+        ],
+        "actors": [],
+        "keys": [
+         {
+          "f": 0,
+          "p": [
+           -0.35,
+           1.5899999999999999,
+           -0.25
+          ],
+          "t": [
+           0,
+           0.84,
+           -1.2
+          ],
+          "fov": 38
+         },
+         {
+          "f": 60,
+          "p": [
+           -0.15,
+           1.44,
+           -0.5
+          ],
+          "t": [
+           0.05,
+           0.84,
+           -1.2
+          ],
+          "fov": 36
+         }
+        ]
+       },
+       {
+        "at": "every night",
+        "frame": "low",
+        "on": "ada",
+        "move": "pull",
+        "grade": "cold",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "slump",
+          "face": "sad"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "text": "She replaced the gears. She replaced the spring. She even replaced the whole clock.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": {
+       "base": "market",
+       "mood": "day"
+      },
+      "shots": [
+       {
+        "frame": "full",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.4,
+           0
+          ],
+          "act": "carry"
+         },
+         {
+          "ref": "extra2",
+          "at": [
+           1.0,
+           -1.8
+          ],
+          "dir": "left",
+          "act": "talk"
+         }
+        ],
+        "on": "ada"
+       },
+       {
+        "at": "gears",
+        "set": "tower",
+        "frame": "macro",
+        "on": "bell1",
+        "move": "orbit",
+        "fx": [
+         "dust"
+        ],
+        "actors": []
+       },
+       {
+        "at": "gears",
+        "frame": "high",
+        "on": "ada",
+        "move": "crane-down",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "hold-up",
+          "face": "worry",
+          "held": "half"
+         },
+         {
+          "ref": "extra2",
+          "at": [
+           -0.9,
+           0.5
+          ],
+          "act": "point",
+          "face": "shock"
+         }
+        ]
+       },
+       {
+        "at": "spring",
+        "frame": "two",
+        "on": "ada",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.5,
+           0
+          ],
+          "act": "hold-up",
+          "face": "grit"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.8,
+           -0.6
+          ],
+          "dir": "left",
+          "act": "think"
+         }
+        ]
+       },
+       {
+        "at": "whole",
+        "frame": "wide",
+        "move": "pull",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.6,
+           0
+          ],
+          "act": "cheer"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           1.0,
+           0.4
+          ],
+          "dir": "left",
+          "act": "idle"
+         },
+         {
+          "ref": "extra1",
+          "at": [
+           -1.8,
+           -1.2
+          ],
+          "act": "cheer"
+         },
+         {
+          "ref": "extra3",
+          "at": [
+           2.0,
+           -0.8
+          ],
+          "dir": "left",
+          "act": "idle",
+          "face": "happy"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "text": "Nothing worked. So one night, Ada stayed up in the dark, and waited.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "study",
+      "shots": [
+       {
+        "frame": "full",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "sit",
+          "face": "sleepy"
+         }
+        ]
+       },
+       {
+        "at": "stayed",
+        "frame": "high",
+        "on": "ada",
+        "move": "crane-down",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "sit",
+          "face": "sleepy"
+         }
+        ]
+       },
+       {
+        "at": "dark",
+        "set": "desk",
+        "frame": "macro",
+        "on": [
+         0,
+         0.95,
+         -1.2
+        ],
+        "actors": [],
+        "keys": [
+         {
+          "f": 0,
+          "p": [
+           -0.6,
+           1.5899999999999999,
+           -0.25
+          ],
+          "t": [
+           0,
+           0.84,
+           -1.2
+          ],
+          "fov": 38
+         },
+         {
+          "f": 60,
+          "p": [
+           0.1,
+           1.44,
+           -0.5
+          ],
+          "t": [
+           0.05,
+           0.84,
+           -1.2
+          ],
+          "fov": 36
+         }
+        ]
+       },
+       {
+        "at": "waited",
+        "frame": "close",
+        "on": "ada",
+        "punch": [
+         "waited"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "think",
+          "face": "worry",
+          "look": [
+           0.6,
+           0
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "text": "At seven past three, the tower door creaked open. Someone tiny crept up the stairs.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "tower",
+      "shots": [
+       {
+        "frame": "wide",
+        "move": "push",
+        "fx": [
+         "dust"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -1.4,
+           -1.2
+          ],
+          "dir": "right",
+          "act": "idle",
+          "face": "worry"
+         }
+        ]
+       },
+       {
+        "at": "creaked",
+        "frame": "dutch",
+        "on": "ada",
+        "move": "push",
+        "shake": [
+         "creaked"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "scared",
+          "face": "shock",
+          "held": "lantern"
+         }
+        ]
+       },
+       {
+        "at": "Someone",
+        "frame": "low",
+        "on": [
+         0.4,
+         0.8,
+         0
+        ],
+        "move": "push",
+        "actors": [
+         {
+          "ref": "pip",
+          "at": [
+           0.6,
+           1.0
+          ],
+          "to": [
+           0.4,
+           -0.5
+          ],
+          "act": "walk"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "text": "It was Pip, the baker's son. And he was jamming a stick into the gears.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "tower",
+      "shots": [
+       {
+        "frame": "medium",
+        "on": "pip",
+        "actors": [
+         {
+          "ref": "pip",
+          "at": [
+           0.4,
+           -1.2
+          ],
+          "act": "reach",
+          "face": "grit",
+          "held": "knife"
+         },
+         {
+          "ref": "ada",
+          "at": [
+           -1.3,
+           -2.4
+          ],
+          "dir": "right",
+          "act": "idle",
+          "face": "worry"
+         }
+        ]
+       },
+       {
+        "at": "baker's",
+        "set": "quay",
+        "frame": "medium",
+        "on": "extra4",
+        "move": "pan-left",
+        "actors": [
+         {
+          "ref": "extra4",
+          "at": [
+           0,
+           0
+          ],
+          "act": "carry",
+          "face": "happy",
+          "held": "bundle"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.9,
+           0.2
+          ],
+          "act": "wave",
+          "face": "happy"
+         }
+        ]
+       },
+       {
+        "at": "jamming",
+        "frame": "medium",
+        "on": "bell1",
+        "move": "push",
+        "shake": [
+         "jamming"
+        ],
+        "flash": [
+         "stick"
+        ],
+        "fx": [
+         "sparks"
+        ],
+        "actors": [
+         {
+          "ref": "pip",
+          "at": [
+           0.5,
+           -1.6
+          ],
+          "act": "reach",
+          "face": "grit",
+          "held": "knife"
+         }
+        ]
+       },
+       {
+        "at": "stick",
+        "set": "floor",
+        "frame": "macro",
+        "on": [
+         0,
+         0.25,
+         -1.2
+        ],
+        "actors": [],
+        "fx": [
+         "dust"
+        ],
+        "keys": [
+         {
+          "f": 0,
+          "p": [
+           -0.7,
+           1.25,
+           0.45
+          ],
+          "t": [
+           0,
+           0.2,
+           -1.2
+          ],
+          "fov": 40
+         },
+         {
+          "f": 60,
+          "p": [
+           -0.4,
+           1.05,
+           0.15
+          ],
+          "t": [
+           0,
+           0.2,
+           -1.2
+          ],
+          "fov": 38
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "text": "Ada gasped. Why would you stop a clock?",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "tower",
+      "shots": [
+       {
+        "frame": "two",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.8,
+           0
+          ],
+          "act": "point",
+          "face": "shock"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.8,
+           0
+          ],
+          "dir": "left",
+          "act": "slump",
+          "face": "sad"
+         }
+        ]
+       },
+       {
+        "at": "Why",
+        "frame": "close",
+        "on": "ada",
+        "punch": [
+         "Why"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.8,
+           0
+          ],
+          "act": "talk",
+          "face": "angry"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.8,
+           0
+          ],
+          "dir": "left",
+          "act": "slump",
+          "face": "sad"
+         }
+        ]
+       },
+       {
+        "at": "stop",
+        "frame": "ots",
+        "on": "pip",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.5,
+           0.6
+          ],
+          "act": "point",
+          "face": "angry"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.4,
+           -0.6
+          ],
+          "act": "shrug",
+          "face": "sad"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s08",
+   "text": "Because my dad leaves to bake at three, and I wake up alone. If the clock stops, it's not morning yet.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "tower",
+      "shots": [
+       {
+        "frame": "medium",
+        "on": "pip",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.8,
+           0
+          ],
+          "act": "idle",
+          "face": "sad"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.8,
+           0
+          ],
+          "dir": "left",
+          "act": "slump",
+          "face": "sad"
+         }
+        ]
+       },
+       {
+        "at": "bake",
+        "set": "cellar",
+        "frame": "wide",
+        "move": "dolly-right",
+        "fx": [
+         "embers"
+        ],
+        "actors": [
+         {
+          "ref": "extra4",
+          "at": [
+           0,
+           0
+          ],
+          "act": "dig",
+          "face": "grit",
+          "held": "shovel"
+         }
+        ]
+       },
+       {
+        "at": "alone",
+        "frame": "high",
+        "on": "pip",
+        "move": "pull",
+        "actors": [
+         {
+          "ref": "pip",
+          "at": [
+           0,
+           0
+          ],
+          "act": "slump",
+          "face": "sad"
+         }
+        ]
+       },
+       {
+        "at": "If the clock",
+        "frame": "medium",
+        "on": "pip",
+        "move": "pull",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.8,
+           0
+          ],
+          "act": "idle",
+          "face": "sad"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.8,
+           0
+          ],
+          "dir": "left",
+          "act": "think",
+          "face": "sad"
+         }
+        ]
+       },
+       {
+        "at": "morning",
+        "set": "bench",
+        "frame": "macro",
+        "on": [
+         0,
+         0.95,
+         -1.2
+        ],
+        "actors": [],
+        "keys": [
+         {
+          "f": 0,
+          "p": [
+           -0.6,
+           1.5899999999999999,
+           -0.25
+          ],
+          "t": [
+           0,
+           0.84,
+           -1.2
+          ],
+          "fov": 38
+         },
+         {
+          "f": 60,
+          "p": [
+           0.1,
+           1.44,
+           -0.5
+          ],
+          "t": [
+           0.05,
+           0.84,
+           -1.2
+          ],
+          "fov": 36
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s09",
+   "text": "So Ada didn't fix the clock. She walked down to the bakery cellar instead.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "lane",
+      "shots": [
+       {
+        "frame": "wide",
+        "move": "push",
+        "fx": [
+         "leaves"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -1.6,
+           0.5
+          ],
+          "to": [
+           0.2,
+           -1.0
+          ],
+          "act": "walk"
+         }
+        ]
+       },
+       {
+        "at": "walked",
+        "frame": "full",
+        "on": "ada",
+        "move": "dolly-right",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "walk",
+          "face": "worry",
+          "held": "lantern"
+         }
+        ]
+       },
+       {
+        "at": "cellar",
+        "frame": "full",
+        "move": "pull",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0.2,
+           -1.0
+          ],
+          "act": "idle",
+          "face": "happy",
+          "held": "lantern"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s10",
+   "text": "And she built Pip a bed right beside the warm ovens, so he'd never wake up alone again.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": {
+       "base": "cellar",
+       "props": [
+        {
+         "k": "bed",
+         "at": [
+          -1.4,
+          -2.8
+         ],
+         "id": "bed1"
+        }
+       ]
+      },
+      "shots": [
+       {
+        "frame": "medium",
+        "move": "pan-left",
+        "fx": [
+         "embers"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0.4,
+           0
+          ],
+          "act": "carry",
+          "face": "happy"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           1.3,
+           -0.8
+          ],
+          "dir": "left",
+          "act": "idle",
+          "face": "happy"
+         }
+        ]
+       },
+       {
+        "at": "ovens",
+        "frame": "macro",
+        "on": "hearth",
+        "move": "push",
+        "fx": [
+         "embers"
+        ],
+        "actors": [
+         {
+          "ref": "pip",
+          "at": [
+           0.9,
+           0.4
+          ],
+          "act": "idle",
+          "face": "happy"
+         }
+        ]
+       },
+       {
+        "at": "bed",
+        "frame": "two",
+        "on": "pip",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "pip",
+          "at": [
+           -0.4,
+           -1.6
+          ],
+          "act": "cheer",
+          "face": "joy"
+         },
+         {
+          "ref": "ada",
+          "at": [
+           0.7,
+           -1.3
+          ],
+          "dir": "left",
+          "act": "idle",
+          "face": "happy"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s11",
+   "text": "The clock never stopped again.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "field",
+      "shots": [
+       {
+        "frame": "wide",
+        "move": "crane-up",
+        "fx": [
+         "fireflies"
+        ],
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           -0.9,
+           0
+          ],
+          "act": "wave",
+          "face": "joy"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.9,
+           0.2
+          ],
+          "dir": "left",
+          "act": "cheer",
+          "face": "joy"
+         }
+        ]
+       },
+       {
+        "at": "never",
+        "set": "tower",
+        "frame": "low",
+        "on": "ada",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "cheer",
+          "face": "joy"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           0.8,
+           -0.2
+          ],
+          "act": "laugh",
+          "face": "joy"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s12",
+   "text": "It does run four minutes slow now. Nobody has ever mentioned it.",
+   "visual": {
+    "layout": "hero",
+    "headline": "x",
+    "setting": "workshop",
+    "characters": [
+     {
+      "ref": "ada",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "lit": {
+      "set": "quay",
+      "shots": [
+       {
+        "frame": "medium",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "ada",
+          "at": [
+           0,
+           0
+          ],
+          "act": "shrug",
+          "face": "smug"
+         },
+         {
+          "ref": "extra1",
+          "at": [
+           1.5,
+           -1.5
+          ],
+          "dir": "left",
+          "act": "laugh"
+         },
+         {
+          "ref": "pip",
+          "at": [
+           -1.3,
+           -1.0
+          ],
+          "dir": "right",
+          "act": "laugh",
+          "face": "joy"
+         }
+        ]
+       },
+       {
+        "at": "slow",
+        "set": "desk",
+        "frame": "macro",
+        "on": [
+         0,
+         0.95,
+         -1.2
+        ],
+        "actors": [],
+        "keys": [
+         {
+          "f": 0,
+          "p": [
+           -0.35,
+           1.5899999999999999,
+           -0.25
+          ],
+          "t": [
+           0,
+           0.84,
+           -1.2
+          ],
+          "fov": 38
+         },
+         {
+          "f": 60,
+          "p": [
+           -0.15,
+           1.44,
+           -0.5
+          ],
+          "t": [
+           0.05,
+           0.84,
+           -1.2
+          ],
+          "fov": 36
+         }
+        ]
+       },
+       {
+        "at": "Nobody",
+        "frame": "two",
+        "on": "extra1",
+        "move": "push",
+        "actors": [
+         {
+          "ref": "extra1",
+          "at": [
+           -0.4,
+           0
+          ],
+          "act": "shrug",
+          "face": "smug"
+         },
+         {
+          "ref": "extra2",
+          "at": [
+           0.5,
+           0
+          ],
+          "act": "laugh",
+          "face": "joy"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
 }

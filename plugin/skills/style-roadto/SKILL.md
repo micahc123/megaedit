@@ -26,3 +26,9 @@ Plain words, round every number, no early wins. At most 5 hashtags.
 
 ## Render
 WebGL: `--gl=angle`, or swangle with no GPU. Render on a render machine, check one still first.
+
+## Pacing, crowd and framing (engine does most of this for you)
+- The engine hard-cuts to a new camera set-up about every 3 s inside every scene (wide, medium, close, orbit, mirrored cast, re-seeded backdrop), so a 12 s scene already plays as 4 shots. Do not write one long static idea: give each scene a different `setting` from the previous one and vary `camera` (push-in, pull-out, pan, orbit), and prefer 2 named characters per scene so the cast is never one kid alone.
+- Bystanders (a crowd in stadium and stands, a few neighbours elsewhere) are added behind the cast automatically; `props` on hero scenes add objects on top. Name a place that fits the beat (street, field, gym, office, stands, lockers) and keep the same place for at most one scene in a row.
+- Captions sit low (about 80 % down) beneath the feet so they never cover a face or body; keep headlines to 2 lines so the cast head stays clear of them.
+- The foreground prop is always fully inside the frame (no half-cut cones or crates), and lens blur is light so the set stays readable.

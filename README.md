@@ -35,8 +35,8 @@ releases and checks its SHA-256 before installing it in `~/.megaedit/plugin-engi
 
 | Step | Command | What happens |
 |---|---|---|
-| Idea | `/megaedit:new <idea>` | Picks the style, sets the cast, writes the script, shows the storyboard. Say "finished video" and it renders too. |
-| Styles | `/megaedit:styles` | Every style with its example cover: what-if, paper 2D, flat, pixel, collage, cartoon 3D, block world 3D, low-poly 3D, POV comedy, night desk, Day-N series, sports team, road-to, "you pick". |
+| Idea | `/megaedit:new <idea> [style]`, e.g. `/megaedit:new why we yawn zackd style` | Picks the style, sets the cast, writes the script, shows the storyboard. Say "finished video" and it renders too. |
+| Styles | `/megaedit:styles` | Every style with its example cover, in two groups. **Styles:** cartoon 3D, Roblox (Blox Studio), Zack D-style 3D, low-poly 3D, what-if, fern, kurzgesagt, vox, pixel art. **Series:** road-to, sports team, Day-N. The 3D styles render in Blender, which setup installs. |
 | Cast | `/megaedit:cast` | The starter characters, and your own. |
 | Script | `/megaedit:write`, `/megaedit:fix s03 <what's wrong>` | Write or rewrite; fix one scene and see it as a still. |
 | Voice | `/megaedit:voice`, `/megaedit:voice-key <key>` | ElevenLabs voices with your own ElevenLabs key. |

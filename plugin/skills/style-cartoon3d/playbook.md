@@ -1,38 +1,31 @@
-# Cartoon 3D playbook
+# Cartoon 3D playbook (lit)
 
 ## Look
-Flat 2D paper-head characters with a thick ink outline (cream round head, pill body, thin limbs, ring hands, about three heads tall), standing in dressed 3D places. Every surface is painted (planks, tiles, wallpaper, brick), every edge is inked, and the lens blurs what is behind the subject. Rooms are lit by what is in them: a pendant lamp throws a cone and a pool on the floor, a window lights the wall beside it, the corners fall off dark. The light pools on whoever the shot is about.
+Flat 2D stick-cartoon characters (big round cream head, pill body, thin dark limbs, ink outline) stand in a real 3D world with **no ink on the world**: procedural PBR walls, floors and props, real point, spot and sun lights with soft shadows, a pool of light under the cast, haze, contact AO (N8AO), a thin-lens blur whose focus follows the subject, and a filmic grade (extended Reinhard, contrast, saturation, vignette, grain). Bloom is HDR-thresholded so only light sources glow. This is the "Ricks-style" look measured from the reference short; see NOTES in the plugin repo for the port.
 
 ## Camera
-It never sits still. Measured mix: push-in on half the shots, then pull-outs, tilts, rises and the odd pan or orbit; a still hold almost never. Between shots the camera travels (15 to 30 frames) instead of cutting; it cuts hard into and out of an object shot, on a shock, and when the place changes. Framing is sized from the character's head, so a close-up is a head and shoulders with the room still in view.
+Keyed on every shot (framing preset + move + optional punch-ins), hard cuts between shots, a slow sideways drift and a hand-held wobble on top. A shot starts on a spoken word. Punch-ins are 3 frames. Shake and flash on impacts.
 
 ## Places
-A story moves. Four to six places in a minute, a new one every one or two scenes, and a scene can change place mid-sentence. A place change is a fast blur-push (5 frames out, 7 in), never a fade.
+4 to 6 per minute. Interiors have light from a lamp, fire or a window shaft; exteriors have a sun, dusk or dawn sky, a moon at night.
 
-## Light
-Shot types vary like a reel: an establishing wide or a drone aerial over the land when the story opens out, hero inserts of the object at a three-quarter, low or top-down angle, a scope or binocular POV, crowd reactions with extras, low canted action shots with debris, never more than two of one type in a row. A story turn changes the lighting preset (night, sunset, a lamp-lit room, alarm red pulsing) and it holds until morning. One light per shot, never the same twice running. Warm, gold and bright for hope, cool and blue for doubt, pink for love, green for greed or sickness, sunset for endings, lamp or dark for the low point with a tight pool on the subject, red for danger. The change is eased over the camera travel.
+## Light and grade
+The mood decides the light and grade. Use a shot `grade` for the turn of the story only (`cold`, `sick`, `dream`, `blood`, `dark`).
 
-## Objects
-Real 3D models with the set's ink line. Small things sit in the hand and sway with it, big things stand beside or behind the character and widen the shot, ideas and feelings float over the head, a crown sits on it. An object pops in with a bounce and gets one close shot where it is, with a glow behind it.
+## Characters
+Face by name, action by name; blinks every 40 to 90 frames, the mouth flaps while the scene's speaker talks, idle sway on everyone (`bible.act`). Walks move the character between two floor points.
 
 ## Effects
-Flat inked sprites pinned to the action: sparkles and rays on the thing that matters, coins, sweat, dust under running feet, confetti, a burst and a 7-frame shake on an impact, hearts, smoke, rain, snow, a white flash. Two at most on a shot. No "!" or "?" over heads, no speed lines.
-
-## Faces
-Fourteen expressions; they drift to a neighbour every second or so, so nobody freezes. Blinks every 40 to 90 frames, three frames long. A speaking mouth changes shape every four frames.
+Atmosphere per shot (`fx`): dust, embers, smoke, sparks, rain, snow, fireflies, steam, leaves. Impacts use `shake` + `flash` + `sparks`.
 
 ## Captions
-One or two words, white Archivo Black with a black outline, at 70% of the frame height. No colour emphasis, no boxes.
+Archivo Black style, sentence case, one to three words, big and low on the frame, hard swaps on the spoken words. Use the `story` caption style.
 
 ## Sound
-Voice up front. Short dry foley on actions (a thud, a door, a paper rustle). A light music bed at about -22 LUFS or none. No risers, no whistles, no ambience bed.
+Voice up front, short dry foley on actions, no ambience bed, no risers or whistles.
+
+## Fallback
+Scenes without `extra.lit` still render through the older ink-world drawer so old projects keep working.
 
 ## Script formula
-1. A person, a place and a problem in one sentence.
-2. Three or four tries, each failing for a specific, real reason.
-3. The turn, on a light change.
-4. The payoff, shown wide.
-5. One dry closing line. No "follow for more" inside the story.
-
-## Render
-WebGL via three. Stills at scale 0.25 take a few seconds each; check one per shot (`--scene s03 --frame 40`) before the full render.
+Person plus problem in the first sentence, three failed tries, the turn, the payoff, one dry last line. 160 to 200 words.

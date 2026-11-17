@@ -1,0 +1,59 @@
+{
+ "stack": [
+  "lab",
+  "office",
+  "break",
+  "lobby"
+ ],
+ "cast": {
+  "dan": {
+   "body": "male",
+   "room": "break",
+   "at": [
+    0.1,
+    0.1
+   ],
+   "yaw": 12
+  },
+  "sue": {
+   "body": "secretary",
+   "room": "office",
+   "at": [
+    0.3,
+    0.1
+   ],
+   "yaw": -12
+  },
+  "pratt": {
+   "body": "cop",
+   "room": "lobby",
+   "at": [
+    0.0,
+    0.2
+   ],
+   "yaw": 8
+  },
+  "vale": {
+   "body": "scientist",
+   "room": "lab",
+   "at": [
+    -0.2,
+    0.1
+   ],
+   "yaw": -8
+  }
+ },
+ "things": {
+  "mug": {
+   "model": "mug",
+   "height": 0.1,
+   "color": "#f1ede4",
+   "start": {
+    "state": "hold",
+    "who": "dan",
+    "hand": "Right",
+    "room": "break"
+   }
+  }
+ }
+}

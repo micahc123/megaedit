@@ -1,0 +1,1009 @@
+{
+ "title": "You Can See Your Luck",
+ "hook": "In this world, every person has a glowing number printed on their chest, telling them how much luck is left in their day.",
+ "scenes": [
+  {
+   "id": "s01",
+   "text": "In this world, every person has a glowing number printed on their chest, telling them how much luck is left in their day.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "bald",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "gruff",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "kid",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "NightStreet",
+       "cam": "mls",
+       "subject": "oldman",
+       "mood": "nightlit",
+       "actors": [
+        {
+         "who": "oldman",
+         "at": [
+          -1.4,
+          -1.8
+         ],
+         "face": "d:grump",
+         "yaw": 15
+        },
+        {
+         "who": "purple",
+         "at": [
+          0.2,
+          1.4
+         ],
+         "face": "neutral",
+         "yaw": -5
+        },
+        {
+         "who": "woman",
+         "at": [
+          1.9,
+          -1.2
+         ],
+         "face": "smile",
+         "yaw": -25
+        },
+        {
+         "who": "kid",
+         "at": [
+          -3.6,
+          2.6
+         ],
+         "face": "smile",
+         "yaw": 10
+        },
+        {
+         "who": "gruff",
+         "at": [
+          3.6,
+          3.0
+         ],
+         "face": "sad",
+         "yaw": -15
+        }
+       ],
+       "move": "pull",
+       "amt": 0.7,
+       "orbit": 12,
+       "aim": [
+        1.0,
+        0,
+        -0.4
+       ],
+       "eyeline": 0.42,
+       "height": 2.2,
+       "angle": 15,
+       "grade": "cold",
+       "fstop": 1.6,
+       "fw": 7.2,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "telling them how",
+       "set": "LightRoad",
+       "cam": "mcu",
+       "subject": "bald",
+       "mood": "nightlit",
+       "actors": [
+        {
+         "who": "bald",
+         "at": [
+          0,
+          -1.2
+         ],
+         "face": "d:scream",
+         "anim": "idle",
+         "yaw": 0
+        },
+        {
+         "who": "purple",
+         "at": [
+          -3.3,
+          -3.4
+         ],
+         "anim": "idle",
+         "yaw": 160
+        },
+        {
+         "who": "gruff",
+         "at": [
+          3.4,
+          -3.2
+         ],
+         "anim": "idle",
+         "yaw": 200
+        }
+       ],
+       "move": "pull",
+       "amt": 0.6,
+       "fw": 4.4,
+       "eyeline": 0.36,
+       "height": -1.4,
+       "angle": 0,
+       "grade": "warm",
+       "fstop": 1.0,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "text": "A big green number means you're lucky, and a red one means you're not.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "poor",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "suit",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "CityLot",
+       "cam": "ms",
+       "subject": "suit",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "suit",
+         "at": [
+          0,
+          -1.6
+         ],
+         "face": "d:teeth",
+         "anim": "idle",
+         "yaw": 0
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "angle": 8,
+       "height": -1.6,
+       "fw": 9.0,
+       "eyeline": 0.44,
+       "fstop": 2.0,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "and a red",
+       "set": "PoorRoom",
+       "cam": "ms",
+       "subject": "poor",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "poor",
+         "at": [
+          0,
+          1.0
+         ],
+         "face": "sad",
+         "anim": "sad",
+         "yaw": 0
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "angle": -15,
+       "height": 2.6,
+       "fw": 9.0,
+       "eyeline": 0.38,
+       "fstop": 1.8,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "text": "One morning a boy named Leo woke up to a blazing green one thousand on his shirt.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "leo",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "Bedroom",
+       "cam": "low",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          2.6
+         ],
+         "z": 2.3,
+         "anim": "sit_legs",
+         "face": "d:wow",
+         "yaw": 0
+        }
+       ],
+       "move": "pull",
+       "amt": 0.5,
+       "angle": 0,
+       "aim": [
+        0,
+        0,
+        -1.3
+       ],
+       "fw": 2.6,
+       "eyeline": 0.22,
+       "height": -0.8,
+       "fstop": 0.8,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "text": "He freaked out, ran outside, and had the best day he'd ever had, picking up a hundred dollar bill, hearing compliments everywhere, and somehow winning a shiny new car.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "lady",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "leo",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "seller",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "Bedroom",
+       "cam": "ms",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          -2.6,
+          -0.6
+         ],
+         "anim": "cheer",
+         "face": "laugh",
+         "yaw": 15
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "angle": -20,
+       "fw": 7.0,
+       "eyeline": 0.42,
+       "height": 1.4,
+       "fstop": 1.4,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "ran outside, and",
+       "set": "SunsetStreet",
+       "cam": "mls",
+       "subject": "leo",
+       "mood": "sunset",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          2.8
+         ],
+         "walkTo": [
+          0,
+          -1.2
+         ],
+         "anim": "walk",
+         "face": "grin",
+         "yaw": 0
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "angle": 6,
+       "fw": 10.0,
+       "eyeline": 0.47,
+       "height": -1.0,
+       "grade": "warm",
+       "ease_mix": 0.35
+      },
+      {
+       "at": "picking up a",
+       "set": "FenceLot",
+       "cam": "ws",
+       "subject": "leo",
+       "mood": "sunset",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          -1.6,
+          4.6
+         ],
+         "anim": "kneel",
+         "face": "grin",
+         "yaw": 180
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "fw": 13.0,
+       "eyeline": 0.32,
+       "height": "ground:0.7",
+       "angle": 0,
+       "grade": "warm",
+       "pass": [
+        "chainlink"
+       ],
+       "ease_mix": 0.35
+      },
+      {
+       "at": "hearing compliments everywhere",
+       "set": "SunsetStreet",
+       "cam": "ms",
+       "subject": "lady",
+       "mood": "sunset",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          1.7,
+          -4.0
+         ],
+         "anim": "idle",
+         "face": "grin",
+         "yaw": 170
+        },
+        {
+         "who": "lady",
+         "at": [
+          -0.4,
+          1.5
+         ],
+         "anim": "wave",
+         "face": "laugh",
+         "yaw": 0
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "angle": 0,
+       "height": -0.1,
+       "eyeline": 0.45,
+       "aim": [
+        1.0,
+        0,
+        0
+       ],
+       "fw": 6.6,
+       "grade": "warm",
+       "fstop": 0.9,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "and somehow winning",
+       "set": "Dealership",
+       "cam": "mls",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0.8,
+          0.4
+         ],
+         "anim": "cheer",
+         "face": "d:teeth",
+         "yaw": -10
+        },
+        {
+         "who": "seller",
+         "at": [
+          -1.7,
+          0.6
+         ],
+         "anim": "idle",
+         "face": "grin",
+         "yaw": 25
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "fw": 11.0,
+       "eyeline": 0.5,
+       "height": -0.6,
+       "angle": 0,
+       "fstop": 2.4,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "text": "When the sun went down, he finally headed home.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "leo",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "SkyHill",
+       "cam": "ms",
+       "subject": "leo",
+       "mood": "dusk",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          1.6
+         ],
+         "walkTo": [
+          0,
+          -0.4
+         ],
+         "anim": "walk",
+         "face": "d:kiss",
+         "look": [
+          0.2,
+          0.7
+         ],
+         "yaw": 0
+        }
+       ],
+       "move": "pull",
+       "amt": 1.2,
+       "fw": 6.5,
+       "angle": 0,
+       "height": -1.0,
+       "eyeline": 0.4,
+       "grade": "warm",
+       "fstop": 1.4,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "text": "But the moment he walked in the door, his number turned blood red, dropping all the way to minus one million.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "leo",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "HouseRoom2",
+       "cam": "ms",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          5.0
+         ],
+         "walkTo": [
+          0,
+          1.6
+         ],
+         "anim": "walk",
+         "face": "d:smirk",
+         "yaw": 0
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "fw": 8.0,
+       "angle": 4,
+       "height": -1.3,
+       "eyeline": 0.42,
+       "fstop": 1.6,
+       "pass": [
+        "table"
+       ],
+       "ease_mix": 0.35
+      },
+      {
+       "at": "his number turned",
+       "set": "HouseRoom",
+       "cam": "low",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          1.4
+         ],
+         "anim": "idle",
+         "animAt": [
+          [
+           0.35,
+           "arms_wide"
+          ]
+         ],
+         "face": "d:sadsweat",
+         "yaw": 0,
+         "chestAt": [
+          [
+           0.3,
+           "1000%",
+           [
+            1.0,
+            0.05,
+            0.04
+           ]
+          ]
+         ]
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "fw": 4.4,
+       "angle": 0,
+       "height": -4.2,
+       "eyeline": 0.3,
+       "fstop": 1.2,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "dropping all the",
+       "set": "HouseRoom",
+       "cam": "ms",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          5.2
+         ],
+         "anim": "hands_head",
+         "face": "scream",
+         "yaw": 0,
+         "chest": [
+          "-1,000,000\n%",
+          [
+           1.0,
+           0.05,
+           0.04
+          ]
+         ]
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "angle": 5,
+       "fw": 9.5,
+       "eyeline": 0.46,
+       "height": -0.6,
+       "fstop": 2.0,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "text": "His heart started racing, and in the kitchen his little sister was crying on the floor, holding their mom, who was having a massive heart attack.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "leo",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "mom",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "sister",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "HouseRoom",
+       "cam": "mcu",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          3.0,
+          4.6
+         ],
+         "anim": "scared",
+         "face": "worried",
+         "yaw": -55,
+         "chest": [
+          "-1,000,000\n%",
+          [
+           1.0,
+           0.05,
+           0.04
+          ]
+         ]
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "angle": -60,
+       "fw": 7.5,
+       "eyeline": 0.4,
+       "fstop": 1.2,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "and in the",
+       "set": "Kitchen2",
+       "cam": "ms",
+       "subject": "sister",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "sister",
+         "at": [
+          0,
+          0.6
+         ],
+         "anim": "kneel_sob",
+         "face": "d:cry",
+         "yaw": 10
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "angle": 20,
+       "fw": 8.0,
+       "eyeline": 0.4,
+       "height": 1.0,
+       "fstop": 1.4,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "holding their mom",
+       "set": "Kitchen2",
+       "cam": "high",
+       "subject": "mom",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "mom",
+         "at": [
+          -1.0,
+          -1.0
+         ],
+         "anim": "lie",
+         "face": "whiteeye",
+         "yaw": 0
+        },
+        {
+         "who": "sister",
+         "at": [
+          2.0,
+          3.6
+         ],
+         "anim": "kneel",
+         "face": "cry",
+         "yaw": -90
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "angle": -12,
+       "aim": [
+        0,
+        4.4,
+        -4.0
+       ],
+       "eyeline": 0.5,
+       "fw": 5.6,
+       "height": 5.0,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "who was having",
+       "set": "Kitchen2",
+       "cam": "ms",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          6.4,
+          4.4
+         ],
+         "anim": "hands_head",
+         "face": "scream",
+         "yaw": -15,
+         "chest": [
+          "-1,000,000\n%",
+          [
+           1.0,
+           0.05,
+           0.04
+          ]
+         ]
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "angle": 10,
+       "fw": 8.0,
+       "eyeline": 0.4,
+       "height": 0.0,
+       "fstop": 1.4,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s08",
+   "text": "It turns out the numbers never handed out free luck.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "suit",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "RedLot",
+       "cam": "ms",
+       "subject": "suit",
+       "mood": "redsky",
+       "actors": [
+        {
+         "who": "suit",
+         "at": [
+          0,
+          -2.3
+         ],
+         "face": "smug",
+         "anim": "idle",
+         "yaw": 0
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "angle": -10,
+       "height": -0.6,
+       "fw": 8.0,
+       "eyeline": 0.4,
+       "lens": 40,
+       "grade": "red",
+       "fstop": 2.4,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s09",
+   "text": "They just took it from someone else, so when Leo stole his own mom's luck, he was the one who doomed her.",
+   "visual": {
+    "layout": "hero",
+    "characters": [
+     {
+      "ref": "leo",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "mom",
+      "pose": "idle",
+      "position": "center"
+     },
+     {
+      "ref": "sister",
+      "pose": "idle",
+      "position": "center"
+     }
+    ],
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "set": "Graveyard",
+       "cam": "ms",
+       "subject": "suit",
+       "mood": "nightlit",
+       "actors": [
+        {
+         "who": "suit",
+         "at": [
+          0,
+          0
+         ],
+         "face": "sad",
+         "anim": "idle",
+         "yaw": 0
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.4,
+       "fw": 6.5,
+       "angle": 6,
+       "eyeline": 0.45,
+       "height": -1.0,
+       "grade": "cold",
+       "fstop": 1.4,
+       "ease_mix": 0.35
+      },
+      {
+       "at": "so when Leo",
+       "set": "TowerSky",
+       "cam": "low",
+       "subject": "leo",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "leo",
+         "at": [
+          0,
+          0
+         ],
+         "z": 13.6,
+         "anim": "cheer",
+         "face": "grin",
+         "yaw": 0
+        }
+       ],
+       "move": "pull",
+       "amt": 0.4,
+       "fw": 7.0,
+       "angle": 0,
+       "height": -14.0,
+       "eyeline": 0.36,
+       "lens": 18,
+       "pass": [
+        "redtower"
+       ],
+       "ease_mix": 0.35
+      },
+      {
+       "at": "he was the",
+       "set": "Kitchen2",
+       "cam": "high",
+       "subject": "mom",
+       "mood": "sunny",
+       "actors": [
+        {
+         "who": "mom",
+         "at": [
+          1.0,
+          -1.5
+         ],
+         "anim": "lie",
+         "face": "dead",
+         "yaw": 0
+        },
+        {
+         "who": "sister",
+         "at": [
+          -1.4,
+          2.9
+         ],
+         "anim": "kneel",
+         "face": "cry",
+         "yaw": 90
+        }
+       ],
+       "move": "pushin",
+       "amt": 0.5,
+       "angle": 25,
+       "aim": [
+        0,
+        4.4,
+        -4.0
+       ],
+       "eyeline": 0.5,
+       "fw": 4.2,
+       "height": 3.0,
+       "fstop": 0.8,
+       "ease_mix": 0.35
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "cta": ""
+}

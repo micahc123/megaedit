@@ -1,5 +1,3 @@
-A tiny fable about a harbour town, a foggy night and one very loud bell.
+Ada fixed the village clock every morning, and every night it stopped at 3:07. Then she waited up.
 
-Follow for another small story.
-
-#storytime #cartoon #fable #harbour #animation
+#storytime #cartoon #fable #animation

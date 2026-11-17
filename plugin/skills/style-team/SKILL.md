@@ -55,3 +55,11 @@ About 3.3 words per second. 7 to 8 scenes, 28 to 32 seconds of VO, 11 to 16 word
 
 ## Example
 `example/` is Day 1 of "Ash Lot Hoops": five friends find their club's court is a cracked parking lot.
+
+## Framing and clarity rules (engine-enforced; write scripts to match)
+- The cast is drawn full-body in the upper-middle of the frame (heads below the headline zone, feet above the caption band at ~61% height). Captions sit under the skates, never over jerseys or numbers. Do not ask for close-ups that crop at the shins.
+- Motion is crisp: whips are 4-frame whooshes with at most ~2 px blur and the run "ghost trail" is gone, so faces never smudge. Use `camera: whip` for a beat change, not as a style.
+- The arena is bright and filled (lit crowd, banners, boards); never describe the setting as dark or empty. Keep each scene to one headline OR one pill, not a stack.
+
+## Cuts and cutaways (engine does this automatically)
+Every scene is cut into ~2.2 s shots cycling wide, close-up (1.45x, cut at the waist so captions stay clear of jerseys), top-down play view and a scoreboard card (the last two only on hero/process/big-number/reveal beats, so write a game moment there). Stationary poses rotate on each cut. Expect ~20 cuts in 35 s; do not add manual whips on top.

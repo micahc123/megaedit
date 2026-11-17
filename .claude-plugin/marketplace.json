@@ -7,7 +7,7 @@
       "name": "megaedit",
       "source": "./plugin",
       "description": "The whole system for animated short videos and series: idea, cast, style, script, voice, sound, QA, render, series memory. Needs a Megamedia Labs member key.",
-      "version": "2.0.0",
+      "version": "2.2.0",
       "category": "media",
       "homepage": "https://github.com/micahc123/megaedit"
     }

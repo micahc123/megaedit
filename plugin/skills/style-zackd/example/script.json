@@ -1,0 +1,337 @@
+{
+ "title": "Why Do You Blush",
+ "hook": "Someone says your name, and your face goes hot.",
+ "scenes": [
+  {
+   "id": "s01",
+   "text": "Someone says your name, and your face goes hot.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "chest",
+       "expr": "shy",
+       "cam": "push",
+       "amt": 0.8
+      },
+      {
+       "at": "your face goes hot",
+       "target": "face",
+       "expr": "shy",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "cheeks",
+         "strength": 0.8,
+         "t0": 0.5
+        }
+       ],
+       "cam": "push",
+       "amt": 0.5
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "text": "That red is not in your head. It is blood.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "cheek_r",
+       "expr": "shy",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "cheeks",
+         "strength": 0.9,
+         "t0": 0.0
+        }
+       ],
+       "cam": "slide"
+      },
+      {
+       "at": "It is blood",
+       "world": "field",
+       "cells": "rbc",
+       "count": 90,
+       "cam": "push"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "text": "A rush of adrenaline hits the tiny vessels under your cheeks.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "world": "vessels",
+       "az": -24,
+       "cam": "push"
+      },
+      {
+       "at": "under your cheeks",
+       "kind": "xray",
+       "target": "head",
+       "cam": "orbit",
+       "xray": {
+        "t0": 0.2
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "text": "Their walls relax and widen, so more blood floods in.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "world": "vessels",
+       "dilate": 0.9,
+       "seed": 7,
+       "az": 22,
+       "el": 10,
+       "cam": "slide"
+      },
+      {
+       "at": "more blood",
+       "world": "vessels",
+       "dilate": 1.0,
+       "count": 70,
+       "speed": 0.9,
+       "seed": 9,
+       "az": -10,
+       "cam": "push",
+       "amt": 1.3
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "text": "Facial skin is thin, so the red shows right through.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "cheek_l",
+       "expr": "shy",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "cheeks",
+         "strength": 0.9,
+         "t0": 0.0
+        }
+       ],
+       "cam": "rise"
+      },
+      {
+       "at": "the red",
+       "target": "face",
+       "expr": "shy",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "face",
+         "strength": 1.0,
+         "t0": 0.0,
+         "ramp": 0.8
+        }
+       ],
+       "cam": "push"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "text": "It can spread to your ears, your neck, even your chest.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "ear",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "ears",
+         "strength": 1.0,
+         "t0": 0.0
+        }
+       ],
+       "az": -60,
+       "cam": "slide"
+      },
+      {
+       "at": "your neck",
+       "target": "neck",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "neck",
+         "strength": 0.9,
+         "t0": 0.0
+        }
+       ],
+       "cam": "push"
+      },
+      {
+       "at": "chest",
+       "target": "chest",
+       "pose": "hands-up",
+       "expr": "shy",
+       "cam": "pull",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "face",
+         "strength": 1.0,
+         "t0": 0.0
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "text": "You can't switch it off, because the signal skips your thinking brain.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "eye",
+       "expr": "worried",
+       "cam": "push"
+      },
+      {
+       "at": "the signal",
+       "kind": "xray",
+       "target": "head",
+       "az": 25,
+       "cam": "orbit",
+       "xray": {
+        "t0": 0.2
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s08",
+   "text": "Scientists think it works like an apology, a way to say sorry without words.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "chest",
+       "pose": "hands-up",
+       "expr": "shy",
+       "az": -12,
+       "cam": "push",
+       "amt": 0.6
+      },
+      {
+       "at": "a way to say",
+       "target": "mouth",
+       "expr": "smile",
+       "cam": "slide"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s09",
+   "text": "And people really do trust a blusher more.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "chest",
+       "expr": "smile",
+       "az": 14,
+       "cam": "push"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s10",
+   "text": "So when you blush, relax. That's just your blood talking.",
+   "visual": {
+    "layout": "hero",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "target": "face",
+       "expr": "smile",
+       "fx": [
+        {
+         "fx": "flush",
+         "where": "cheeks",
+         "strength": 0.6,
+         "t0": 0.0
+        }
+       ],
+       "cam": "push",
+       "amt": 0.5
+      },
+      {
+       "at": "your blood talking",
+       "world": "field",
+       "cells": "rbc",
+       "count": 100,
+       "seed": 12,
+       "cam": "pull"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "cta": ""
+}

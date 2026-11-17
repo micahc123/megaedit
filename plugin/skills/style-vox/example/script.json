@@ -1,0 +1,541 @@
+{
+ "title": "The day the noons lined up",
+ "hook": "This clock has two minute hands.",
+ "scenes": [
+  {
+   "id": "s01",
+   "text": "This clock has two minute hands. One shows London time. The other shows Bristol time, ten minutes behind.",
+   "visual": {
+    "layout": "title",
+    "headline": "Two minute hands",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "bible": {
+      "series": "THE EXPLAINER",
+      "accent": "#d6264f"
+     },
+     "shots": [
+      {
+       "kind": "collage",
+       "ghost": "10 MINUTES",
+       "photos": [
+        {
+         "src": "ph/bristol-clock.jpg",
+         "at": 0,
+         "caption": "Bristol Exchange clock",
+         "tint": "#d9c7a5"
+        }
+       ],
+       "ink": [
+        {
+         "type": "circle",
+         "x": 0.39,
+         "y": 0.31,
+         "r": 0.2,
+         "at": "two",
+         "text": "TWO HANDS"
+        }
+       ]
+      },
+      {
+       "kind": "photo",
+       "at": "One",
+       "src": "ph/bristol-clock.jpg",
+       "tint": "#d9c7a5",
+       "focus": [
+        40,
+        45
+       ],
+       "caption": "Bristol Exchange clock, 1822",
+       "ink": [
+        {
+         "type": "arrow",
+         "x": 0.8,
+         "y": 0.2,
+         "x2": 0.58,
+         "y2": 0.33,
+         "at": "London",
+         "text": "LONDON"
+        }
+       ]
+      },
+      {
+       "kind": "stat",
+       "at": "ten",
+       "big": "10 min",
+       "line": "Bristol ran behind London",
+       "hiAt": "behind",
+       "source": "Wikipedia, Railway time"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "text": "Before trains, every town set noon by its own sun. When it was noon in New York, it was five past eleven in Chicago.",
+   "visual": {
+    "layout": "title",
+    "headline": "Every town its own noon",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "kind": "photo",
+       "src": "ph/depot-1880.jpg",
+       "tint": "#d9c7a5",
+       "caption": "A railroad depot, c. 1880",
+       "ink": [
+        {
+         "type": "underline",
+         "x": 0.12,
+         "y": 0.5,
+         "x2": 0.88,
+         "y2": 0.62,
+         "at": "noon",
+         "text": "OWN NOON"
+        }
+       ]
+      },
+      {
+       "kind": "map",
+       "states": true,
+       "cam": [
+        {
+         "at": 0,
+         "lon": -92,
+         "lat": 39,
+         "span": 56
+        },
+        {
+         "at": "in",
+         "lon": -88,
+         "lat": 39,
+         "span": 46
+        }
+       ],
+       "labels": [
+        {
+         "lon": -74,
+         "lat": 40.7,
+         "text": "New York 12:00",
+         "kind": "callout",
+         "at": "New",
+         "dx": 0,
+         "dy": 0
+        },
+        {
+         "lon": -87.6,
+         "lat": 41.9,
+         "text": "Chicago 11:05",
+         "kind": "city",
+         "at": "five",
+         "dx": 0,
+         "dy": -30
+        }
+       ],
+       "source": "Local mean time, 4 minutes per degree of longitude",
+       "at": "When"
+      },
+      {
+       "kind": "stat",
+       "at": "five",
+       "big": "11:05",
+       "line": "Chicago, when New York says noon",
+       "hiAt": "Chicago",
+       "source": "4 minutes per degree of longitude"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "text": "Then the railroads made it worse. By 1883 there were about a hundred different railroad times.",
+   "visual": {
+    "layout": "title",
+    "headline": "A hundred clocks",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "kind": "photo",
+       "src": "ph/timetable-1883.jpg",
+       "tint": "#d9c7a5",
+       "caption": "Railroad timetable, 1883",
+       "ink": [
+        {
+         "type": "circle",
+         "x": 0.5,
+         "y": 0.3,
+         "r": 0.18,
+         "at": "worse"
+        }
+       ]
+      },
+      {
+       "kind": "chart",
+       "chart": "bar",
+       "title": "Times Americans kept, 1883",
+       "max": 300,
+       "ticks": [
+        0,
+        100,
+        200,
+        300
+       ],
+       "data": [
+        {
+         "label": "Local noons",
+         "v": 300,
+         "at": 0.3,
+         "sub": "300+"
+        },
+        {
+         "label": "Railroad",
+         "v": 100,
+         "at": "hundred",
+         "sub": "~100"
+        },
+        {
+         "label": "Zones",
+         "v": 4,
+         "at": "1883",
+         "sub": "4"
+        }
+       ],
+       "source": "Wikipedia, Time in the United States",
+       "at": "By"
+      },
+      {
+       "kind": "stat",
+       "at": "hundred",
+       "big": "~100",
+       "line": "railroad times in use",
+       "hiAt": "times",
+       "source": "Wikipedia, Time in the United States"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "text": "So on November eighteenth, 1883, at noon, telegraph lines sent one time signal to every major city. Four zones began.",
+   "visual": {
+    "layout": "title",
+    "headline": "One signal",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "kind": "doc",
+       "title": "TIME IN THE UNITED STATES",
+       "head": "Four standard time zones",
+       "meta": "excerpt, retypeset",
+       "body": [
+        "Four standard time zones were introduced ==at noon on November 18, 1883==, in Chicago, Illinois, when the ==telegraph lines transmitted time signals== to all major cities."
+       ],
+       "hl": [
+        "eighteenth",
+        "telegraph"
+       ],
+       "cam": [
+        {
+         "at": 0,
+         "x": 550,
+         "y": 330,
+         "z": 1
+        },
+        {
+         "at": "eighteenth",
+         "x": 550,
+         "y": 330,
+         "z": 1.12
+        }
+       ],
+       "source": "Wikipedia, Time in the United States (CC BY-SA)"
+      },
+      {
+       "kind": "photo",
+       "at": "every",
+       "src": "ph/chicago-alton-1884.jpg",
+       "tint": "#d9c7a5",
+       "caption": "Chicago & Alton map, 1884",
+       "ink": [
+        {
+         "type": "arrow",
+         "x": 0.2,
+         "y": 0.2,
+         "x2": 0.5,
+         "y2": 0.4,
+         "at": "city",
+         "text": "CHICAGO"
+        }
+       ]
+      },
+      {
+       "kind": "stat",
+       "at": "Four",
+       "big": "4",
+       "line": "time zones began",
+       "hiAt": "zones",
+       "source": "Wikipedia, Time in the United States"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "text": "Eastern. Central. Mountain. Pacific. A line down the map, and every clock inside it agreed.",
+   "visual": {
+    "layout": "title",
+    "headline": "Four zones",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "kind": "map",
+       "states": true,
+       "cam": [
+        {
+         "at": 0,
+         "lon": -97,
+         "lat": 38,
+         "span": 62
+        }
+       ],
+       "routes": [
+        {
+         "pts": [
+          [
+           -75,
+           25
+          ],
+          [
+           -75,
+           50
+          ]
+         ],
+         "at": "Eastern",
+         "dur": 0.5
+        },
+        {
+         "pts": [
+          [
+           -90,
+           25
+          ],
+          [
+           -90,
+           50
+          ]
+         ],
+         "at": "Central",
+         "dur": 0.5
+        },
+        {
+         "pts": [
+          [
+           -105,
+           25
+          ],
+          [
+           -105,
+           50
+          ]
+         ],
+         "at": "Mountain",
+         "dur": 0.5
+        },
+        {
+         "pts": [
+          [
+           -120,
+           25
+          ],
+          [
+           -120,
+           50
+          ]
+         ],
+         "at": "Pacific",
+         "dur": 0.5
+        }
+       ],
+       "labels": [
+        {
+         "lon": -80,
+         "lat": 44,
+         "text": "EASTERN",
+         "kind": "callout",
+         "at": "Eastern",
+         "size": 46,
+         "dy": 0
+        },
+        {
+         "lon": -93,
+         "lat": 44,
+         "text": "CENTRAL",
+         "kind": "callout",
+         "at": "Central",
+         "size": 46,
+         "dy": -110
+        },
+        {
+         "lon": -108,
+         "lat": 44,
+         "text": "MOUNTAIN",
+         "kind": "callout",
+         "at": "Mountain",
+         "size": 46,
+         "dy": 0
+        },
+        {
+         "lon": -120,
+         "lat": 42,
+         "text": "PACIFIC",
+         "kind": "callout",
+         "at": "Pacific",
+         "size": 46,
+         "dy": -110
+        }
+       ],
+       "source": "Zone lines approximate"
+      },
+      {
+       "kind": "photo",
+       "at": "every",
+       "src": "ph/rio-las-animas-1882.jpg",
+       "tint": "#d9c7a5",
+       "caption": "Rail line, Colorado, 1882"
+      },
+      {
+       "kind": "collage",
+       "at": "agreed",
+       "ghost": "AGREED",
+       "photos": [
+        {
+         "src": "ph/depot-1880.jpg",
+         "at": 0,
+         "tint": "#d9c7a5"
+        },
+        {
+         "src": "ph/timetable-1883.jpg",
+         "at": "agreed",
+         "tint": "#d9c7a5"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "text": "But it wasn't law until 1918. Thirty-five years running on the railroads' clock.",
+   "visual": {
+    "layout": "title",
+    "headline": "Law, 1918",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "kind": "photo",
+       "src": "ph/standard-time-1906.jpg",
+       "tint": "#d9c7a5",
+       "caption": "Standard time, 1906",
+       "ink": [
+        {
+         "type": "cross",
+         "x": 0.5,
+         "y": 0.3,
+         "r": 0.08,
+         "at": "wasn't",
+         "text": "NOT LAW"
+        }
+       ]
+      },
+      {
+       "kind": "stat",
+       "at": "1918",
+       "big": "1918",
+       "line": "Congress makes it law",
+       "hiAt": "law",
+       "source": "Wikipedia, Standard Time Act"
+      },
+      {
+       "kind": "stat",
+       "at": "years",
+       "big": "35 yrs",
+       "line": "on the railroads' clock",
+       "hiAt": "clock",
+       "source": "1883 to 1918"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "text": "So next time your phone is on time, thank a telegraph, a railroad, and one very confused Bristol clock.",
+   "visual": {
+    "layout": "title",
+    "headline": "On time",
+    "camera": "push-in",
+    "transition": "cut",
+    "extra": {
+     "shots": [
+      {
+       "kind": "collage",
+       "ghost": "ON TIME",
+       "photos": [
+        {
+         "src": "ph/grand-central-1880.jpg",
+         "at": 0,
+         "tint": "#d9c7a5"
+        },
+        {
+         "src": "ph/dale-creek-1885.jpg",
+         "at": "phone",
+         "tint": "#d9c7a5"
+        }
+       ]
+      },
+      {
+       "kind": "photo",
+       "at": "telegraph",
+       "src": "ph/chicago-alton-1884.jpg",
+       "tint": "#d9c7a5",
+       "caption": "Telegraph-age map, 1884"
+      },
+      {
+       "kind": "photo",
+       "at": "railroad",
+       "src": "ph/depot-1880.jpg",
+       "tint": "#d9c7a5",
+       "caption": "Railroad depot, c. 1880"
+      },
+      {
+       "kind": "title",
+       "at": "confused",
+       "kicker": "THE EXPLAINER \u00b7 TIME ZONES",
+       "lines": [
+        "The day the",
+        "noons lined up"
+       ],
+       "mark": "lined up"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "7cfcde59-641d-4053-b57a-d8fea4a51159",
+  "slug": "why-do-you-blush",
+  "title": "Why Do You Blush",
+  "style": "zackd",
+  "createdAt": "2026-11-16T13:28:41.435Z",
+  "updatedAt": "2026-11-16T13:28:41.435Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "pNInz6obpgDQGcFmaJgB",
+    "model": "eleven_multilingual_v2",
+    "speed": 1.12,
+    "stability": 0.5,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "block",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {}
+}

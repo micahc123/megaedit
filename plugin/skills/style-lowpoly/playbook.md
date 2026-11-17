@@ -1,19 +1,21 @@
 # Low-poly playbook
 
 ## Look
-One low-poly valley in real 3D: flat-shaded primitives, a noisy grass texture, thatched huts, a fence, a river, round hills and trees. Two people built from boxes and balls: a bearded caveman "you" in a tan hide tunic, and a tall friend with a headband who only reacts. The picture is slightly washed out (saturation 0.78, contrast 0.9) with a soft blue-grey tint and a vignette. Light is a warm sun from the upper left with soft shadows.
-
-## Chain
-Problem, fix, new problem, fix, until it is silly, then one small object solves everything. Each prop is a few shapes; "a new prop lands" is one more entry in `props`.
+A PlayStation 1 game, rendered for real. A cross-section of one building: rooms are 7 x 6 x 3 m and stacked (lab over office over break room over lobby), with real furniture (vending machine, cooler, filing cabinets, reception desk, lab bench). Four rigged low-poly people with swappable faces (grin, strain, shock, scream), animated by motion-generated clips. Blender renders at 360 x 640 with PS1 vertex snapping and affine texture warp, then a grade (bloom, lift, saturation, vignette), a 4 x 4 Bayer dither to 5 bits and a nearest x3 upscale to 1080 x 1920.
 
 ## Camera
-A list of cuts, a hard scale jump every 3 seconds or so: wide push-in on the hook, a macro on the hands, a low pull-out when something big appears, a front track while you walk, a three-quarter pull-out on the payoff. Close shots get a depth-of-field blur on the far band. Never hold one picture for a whole long line.
+Always alive: a slow dolly plus a little handheld on every shot. Wide corners cycle per room, close-ups have f/2 depth of field and follow the head, inserts go to the object, and the cut-away shows the whole building. Light shifts a little on every cut (flat, cold, bright, warm) so cuts read.
 
 ## Captions
-Two or three words at a time, white, heavy, with a dark shadow, at about 60 % of the frame height. No karaoke colours.
+Yellow Archivo Black, two or three words at a time, at 69 % of the height, black outline. Price tags are white paper tags with red text that pop in with a sound.
 
 ## Voice and sound
-About 3.9 words a second, no pauses, the same phrases every time: "but you're a genius, so you ...", "Except ...", "But ...", "So you ...", "Genius!", "Clever!". The voice is the only sound. Add at most a tiny click or thud when a prop lands, very quiet. No music, no whistles, no risers.
+One narrator (ElevenLabs, speed 1.05 to 1.12, about 3 words a second). Sound effects are synthesised in code and placed on the picture (thud, punch, glass, gasp, whoosh, pop on every tag). No music bed. The voice is mixed to -14 LUFS.
 
-## Light by beat
-Sunny for the fixes; `gloom` up to about 0.5 for the beat where it goes wrong (the crane sinks), then back to bright for the payoff.
+## Beats
+Hook (calm, a small thing goes wrong) -> three escalating rooms, each with a bigger number on a price tag -> the turn (the thing was there all along) -> the community line over a pull-back to the whole building.
+
+## Cost and gotchas
+- About 12 minutes of mini time for a 40 s Short. Do the `still` sheet first (2 minutes).
+- Heads cut off or a blue blur means the camera is inside a body: pick a different `rel`/`bone`, or a `wide`.
+- A verb the clip does not have (or a face the body lacks) fails at `check`, not at render.

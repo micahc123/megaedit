@@ -1,0 +1,246 @@
+{
+ "tag": "MONA LISA · 1911",
+ "title": "The Empty Wall",
+ "subtitle": "The 1911 theft of the Mona Lisa",
+ "music": "tense",
+ "cast": {
+  "vincenzo": {
+   "outfit": "coat",
+   "color": "#c9c3b4",
+   "hat": "cap",
+   "height": 0.97
+  },
+  "guard": {
+   "outfit": "uniform",
+   "color": "#1b2233",
+   "hat": "cap"
+  },
+  "inspector": {
+   "outfit": "suit",
+   "color": "#17181d",
+   "hat": "fedora"
+  }
+ },
+ "places": {
+  "Gallery": {
+   "kind": "room",
+   "w": 9,
+   "d": 14,
+   "h": 6,
+   "floor": "planks",
+   "wall": "plaster",
+   "wall_color": "#4a4036",
+   "ceiling_light": "none",
+   "windows": [
+    {
+     "wall": "left",
+     "x": 2,
+     "z": 3.2,
+     "w": 1.6,
+     "h": 3.0,
+     "outside": "dawn",
+     "power": 400
+    }
+   ],
+   "props": [
+    [
+     "frame",
+     0,
+     6.9,
+     0,
+     {
+      "name": "mona",
+      "w": 0.62,
+      "h": 0.86,
+      "z": 1.7
+     }
+    ],
+    [
+     "frame",
+     -2.8,
+     6.9,
+     0,
+     {
+      "w": 1.5,
+      "h": 1.1,
+      "z": 2.0,
+      "art": "landscape"
+     }
+    ],
+    [
+     "frame",
+     2.8,
+     6.9,
+     0,
+     {
+      "w": 1.2,
+      "h": 1.7,
+      "z": 2.1
+     }
+    ],
+    [
+     "bench",
+     0,
+     3.2,
+     0,
+     {}
+    ]
+   ]
+  },
+  "EmptyWall": {
+   "kind": "room",
+   "w": 9,
+   "d": 14,
+   "h": 6,
+   "floor": "planks",
+   "wall": "plaster",
+   "wall_color": "#4a4036",
+   "ceiling_light": "none",
+   "windows": [
+    {
+     "wall": "left",
+     "x": 2,
+     "z": 3.2,
+     "w": 1.6,
+     "h": 3.0,
+     "outside": "day",
+     "power": 300
+    }
+   ],
+   "props": [
+    [
+     "frame",
+     -2.8,
+     6.9,
+     0,
+     {
+      "w": 1.5,
+      "h": 1.1,
+      "z": 2.0,
+      "art": "landscape"
+     }
+    ],
+    [
+     "frame",
+     2.8,
+     6.9,
+     0,
+     {
+      "w": 1.2,
+      "h": 1.7,
+      "z": 2.1
+     }
+    ],
+    [
+     "bench",
+     0,
+     3.2,
+     0,
+     {
+      "name": "bench"
+     }
+    ]
+   ]
+  },
+  "QuaiStreet": {
+   "kind": "street",
+   "length": 80,
+   "facade": "plaster",
+   "storeys": [
+    4,
+    6
+   ],
+   "wet": true,
+   "lit": 0.15
+  },
+  "Room": {
+   "kind": "room",
+   "w": 4,
+   "d": 4.5,
+   "h": 2.8,
+   "wall": "plaster",
+   "wall_color": "#3b3730",
+   "floor": "wood",
+   "windows": [
+    {
+     "wall": "back",
+     "x": 0.9,
+     "z": 1.0,
+     "w": 1.0,
+     "h": 1.5,
+     "outside": "night",
+     "blinds": true
+    }
+   ],
+   "ceiling_light": "none",
+   "props": [
+    [
+     "bed",
+     -1.1,
+     -0.4,
+     90,
+     {}
+    ],
+    [
+     "suitcase",
+     0.7,
+     0.5,
+     15,
+     {
+      "name": "trunk",
+      "open": true
+     }
+    ],
+    [
+     "table",
+     1.4,
+     1.7,
+     0,
+     {}
+    ],
+    [
+     "desk_lamp",
+     1.5,
+     1.8,
+     200,
+     {
+      "lift": 0.75
+     }
+    ],
+    [
+     "chair",
+     1.4,
+     1.1,
+     180,
+     {}
+    ]
+   ]
+  },
+  "Desk": {
+   "kind": "table",
+   "surface": "wood",
+   "props": [
+    [
+     "frame",
+     0,
+     0,
+     0,
+     {
+      "name": "panel",
+      "w": 0.53,
+      "h": 0.77,
+      "z": 0.45,
+      "art": "portrait"
+     }
+    ],
+    [
+     "papers",
+     0.45,
+     0.2,
+     10,
+     {}
+    ]
+   ]
+  }
+ }
+}

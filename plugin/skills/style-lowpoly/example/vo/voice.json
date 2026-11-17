@@ -1,811 +1,667 @@
 {
   "provider": "elevenlabs",
-  "voiceId": "QCOsaFukRxK1IUh7WVlM",
+  "voiceId": "xDM73lGN1cPZSG4X87cj",
   "language": "en",
   "scenes": [
     {
       "id": "s01",
       "file": "vo/s01.mp3",
-      "duration": 5.57,
+      "duration": 3.622,
       "words": [
         {
-          "w": "You",
+          "w": "Monday",
           "start": 0,
-          "end": 0.151
-        },
-        {
-          "w": "need",
-          "start": 0.197,
-          "end": 0.348
-        },
-        {
-          "w": "water",
-          "start": 0.395,
-          "end": 0.65
-        },
-        {
-          "w": "from",
-          "start": 0.697,
-          "end": 0.836
-        },
-        {
-          "w": "the",
-          "start": 0.882,
-          "end": 0.952
-        },
-        {
-          "w": "river,",
-          "start": 1.01,
-          "end": 1.335
-        },
-        {
-          "w": "but",
-          "start": 1.37,
-          "end": 1.567
-        },
-        {
-          "w": "it",
-          "start": 1.637,
-          "end": 1.765
-        },
-        {
-          "w": "all",
-          "start": 1.834,
-          "end": 2.043
-        },
-        {
-          "w": "runs",
-          "start": 2.101,
-          "end": 2.31
-        },
-        {
-          "w": "out",
-          "start": 2.357,
-          "end": 2.485
-        },
-        {
-          "w": "between",
-          "start": 2.531,
-          "end": 2.786
-        },
-        {
-          "w": "your",
-          "start": 2.821,
-          "end": 2.926
-        },
-        {
-          "w": "fingers,",
-          "start": 2.972,
-          "end": 3.379
-        },
-        {
-          "w": "so",
-          "start": 3.402,
-          "end": 3.622
-        },
-        {
-          "w": "you",
-          "start": 3.715,
-          "end": 3.843
-        },
-        {
-          "w": "scoop",
-          "start": 3.959,
-          "end": 4.214
-        },
-        {
-          "w": "it",
-          "start": 4.261,
-          "end": 4.307
-        },
-        {
-          "w": "up",
-          "start": 4.342,
-          "end": 4.412
-        },
-        {
-          "w": "with",
-          "start": 4.447,
-          "end": 4.551
-        },
-        {
-          "w": "a",
-          "start": 4.586,
-          "end": 4.621
-        },
-        {
-          "w": "big",
-          "start": 4.667,
-          "end": 4.83
-        },
-        {
-          "w": "leaf.",
-          "start": 4.911,
-          "end": 5.573
-        }
-      ],
-      "textHash": "90cb04848c6f59e9"
-    },
-    {
-      "id": "s02",
-      "file": "vo/s02.mp3",
-      "duration": 4.78,
-      "words": [
-        {
-          "w": "Except",
-          "start": 0,
-          "end": 0.348
-        },
-        {
-          "w": "the",
-          "start": 0.372,
-          "end": 0.441
-        },
-        {
-          "w": "leaf",
-          "start": 0.499,
-          "end": 0.673
-        },
-        {
-          "w": "folds",
-          "start": 0.731,
-          "end": 0.987
-        },
-        {
-          "w": "over",
-          "start": 1.022,
-          "end": 1.184
-        },
-        {
-          "w": "and",
-          "start": 1.207,
-          "end": 1.277
-        },
-        {
-          "w": "spills",
-          "start": 1.312,
-          "end": 1.614
-        },
-        {
-          "w": "it,",
-          "start": 1.649,
-          "end": 1.73
-        },
-        {
-          "w": "so",
-          "start": 1.753,
-          "end": 1.823
-        },
-        {
-          "w": "you",
-          "start": 1.858,
-          "end": 1.939
-        },
-        {
-          "w": "carve",
-          "start": 2.032,
-          "end": 2.287
-        },
-        {
-          "w": "out",
-          "start": 2.31,
-          "end": 2.403
-        },
-        {
-          "w": "a",
-          "start": 2.438,
-          "end": 2.473
-        },
-        {
-          "w": "whole",
-          "start": 2.531,
-          "end": 2.786
-        },
-        {
-          "w": "log.",
-          "start": 2.844,
-          "end": 3.39
-        },
-        {
-          "w": "Genius!",
-          "start": 3.831,
-          "end": 4.783
-        }
-      ],
-      "textHash": "a13dc6b6bc9182a1"
-    },
-    {
-      "id": "s03",
-      "file": "vo/s03.mp3",
-      "duration": 6.46,
-      "words": [
-        {
-          "w": "But",
-          "start": 0,
-          "end": 0.174
-        },
-        {
-          "w": "the",
-          "start": 0.209,
           "end": 0.279
         },
         {
-          "w": "log",
-          "start": 0.348,
-          "end": 0.569
+          "w": "morning,",
+          "start": 0.325,
+          "end": 0.662
         },
         {
-          "w": "is",
-          "start": 0.615,
-          "end": 0.697
+          "w": "Dan",
+          "start": 0.731,
+          "end": 0.952
         },
         {
-          "w": "so",
-          "start": 0.755,
-          "end": 0.917
-        },
-        {
-          "w": "heavy",
+          "w": "opens",
           "start": 1.01,
           "end": 1.254
         },
         {
-          "w": "you",
-          "start": 1.3,
-          "end": 1.382
-        },
-        {
-          "w": "can't",
-          "start": 1.44,
-          "end": 1.637
-        },
-        {
-          "w": "lift",
-          "start": 1.683,
-          "end": 1.858
-        },
-        {
-          "w": "it",
-          "start": 1.904,
-          "end": 1.962
-        },
-        {
-          "w": "once",
-          "start": 2.009,
-          "end": 2.159
-        },
-        {
-          "w": "it's",
-          "start": 2.194,
-          "end": 2.31
-        },
-        {
-          "w": "full,",
-          "start": 2.357,
-          "end": 2.775
-        },
-        {
-          "w": "so",
-          "start": 2.984,
-          "end": 3.088
-        },
-        {
-          "w": "you",
-          "start": 3.123,
-          "end": 3.193
-        },
-        {
-          "w": "shave",
-          "start": 3.286,
-          "end": 3.529
-        },
-        {
-          "w": "it",
-          "start": 3.564,
-          "end": 3.622
-        },
-        {
-          "w": "down",
-          "start": 3.669,
-          "end": 3.901
-        },
-        {
-          "w": "thin.",
-          "start": 3.982,
-          "end": 4.505
-        },
-        {
-          "w": "Clever!",
-          "start": 5.619,
-          "end": 6.455
-        }
-      ],
-      "textHash": "b03d2be1b7d5fc53"
-    },
-    {
-      "id": "s04",
-      "file": "vo/s04.mp3",
-      "duration": 3.39,
-      "words": [
-        {
-          "w": "Except",
-          "start": 0,
-          "end": 0.337
-        },
-        {
           "w": "the",
-          "start": 0.372,
-          "end": 0.441
+          "start": 1.289,
+          "end": 1.358
         },
         {
-          "w": "water",
-          "start": 0.488,
-          "end": 0.708
+          "w": "break",
+          "start": 1.393,
+          "end": 1.567
         },
         {
-          "w": "sloshes",
-          "start": 0.766,
-          "end": 1.184
-        },
-        {
-          "w": "out",
-          "start": 1.231,
-          "end": 1.335
-        },
-        {
-          "w": "as",
-          "start": 1.37,
-          "end": 1.428
-        },
-        {
-          "w": "you",
-          "start": 1.463,
-          "end": 1.544
-        },
-        {
-          "w": "walk,",
+          "w": "room",
           "start": 1.614,
-          "end": 1.892
+          "end": 1.753
         },
         {
-          "w": "so",
-          "start": 1.927,
-          "end": 1.997
+          "w": "cupboard,",
+          "start": 1.8,
+          "end": 2.206
         },
         {
-          "w": "you",
-          "start": 2.032,
-          "end": 2.101
-        },
-        {
-          "w": "put",
-          "start": 2.159,
-          "end": 2.287
-        },
-        {
-          "w": "a",
-          "start": 2.322,
-          "end": 2.357
-        },
-        {
-          "w": "lid",
-          "start": 2.403,
-          "end": 2.554
-        },
-        {
-          "w": "on",
-          "start": 2.601,
-          "end": 2.682
-        },
-        {
-          "w": "top.",
-          "start": 2.74,
-          "end": 3.39
-        }
-      ],
-      "textHash": "2458a4566ca1e1b1"
-    },
-    {
-      "id": "s05",
-      "file": "vo/s05.mp3",
-      "duration": 2.88,
-      "words": [
-        {
-          "w": "But",
-          "start": 0,
-          "end": 0.174
-        },
-        {
-          "w": "now",
-          "start": 0.221,
-          "end": 0.348
-        },
-        {
-          "w": "no",
-          "start": 0.418,
-          "end": 0.511
-        },
-        {
-          "w": "water",
-          "start": 0.58,
-          "end": 0.836
-        },
-        {
-          "w": "can",
-          "start": 0.882,
-          "end": 0.998
-        },
-        {
-          "w": "get",
-          "start": 1.045,
-          "end": 1.184
-        },
-        {
-          "w": "in,",
-          "start": 1.242,
-          "end": 1.382
-        },
-        {
-          "w": "so",
-          "start": 1.416,
-          "end": 1.498
-        },
-        {
-          "w": "you",
-          "start": 1.544,
-          "end": 1.614
-        },
-        {
-          "w": "cut",
-          "start": 1.672,
-          "end": 1.8
-        },
-        {
-          "w": "a",
-          "start": 1.834,
-          "end": 1.858
-        },
-        {
-          "w": "hole",
-          "start": 1.904,
-          "end": 2.067
-        },
-        {
-          "w": "in",
-          "start": 2.101,
-          "end": 2.159
-        },
-        {
-          "w": "the",
-          "start": 2.194,
-          "end": 2.264
-        },
-        {
-          "w": "lid.",
-          "start": 2.31,
-          "end": 2.879
-        }
-      ],
-      "textHash": "f919c18165d095c1"
-    },
-    {
-      "id": "s06",
-      "file": "vo/s06.mp3",
-      "duration": 3.81,
-      "words": [
-        {
-          "w": "Except",
-          "start": 0,
-          "end": 0.604
-        },
-        {
-          "w": "you",
-          "start": 0.755,
-          "end": 0.882
-        },
-        {
-          "w": "need",
-          "start": 0.94,
-          "end": 1.091
-        },
-        {
-          "w": "both",
-          "start": 1.138,
-          "end": 1.335
-        },
-        {
-          "w": "hands",
-          "start": 1.382,
-          "end": 1.579
-        },
-        {
-          "w": "to",
-          "start": 1.614,
-          "end": 1.66
-        },
-        {
-          "w": "carry",
-          "start": 1.718,
-          "end": 1.985
-        },
-        {
-          "w": "it,",
-          "start": 2.032,
-          "end": 2.148
-        },
-        {
-          "w": "so",
-          "start": 2.183,
-          "end": 2.299
-        },
-        {
-          "w": "you",
-          "start": 2.357,
-          "end": 2.438
-        },
-        {
-          "w": "tie",
-          "start": 2.508,
-          "end": 2.717
-        },
-        {
-          "w": "on",
-          "start": 2.752,
-          "end": 2.81
-        },
-        {
-          "w": "a",
-          "start": 2.844,
-          "end": 2.868
-        },
-        {
-          "w": "rope",
-          "start": 2.937,
-          "end": 3.146
-        },
-        {
-          "w": "handle.",
-          "start": 3.181,
-          "end": 3.808
-        }
-      ],
-      "textHash": "0e10d9b2078ce338"
-    },
-    {
-      "id": "s07",
-      "file": "vo/s07.mp3",
-      "duration": 3.95,
-      "words": [
-        {
-          "w": "But",
-          "start": 0,
-          "end": 0.186
-        },
-        {
-          "w": "the",
-          "start": 0.209,
-          "end": 0.279
-        },
-        {
-          "w": "rope",
-          "start": 0.348,
-          "end": 0.546
-        },
-        {
-          "w": "can't",
-          "start": 0.58,
-          "end": 0.789
-        },
-        {
-          "w": "hold",
-          "start": 0.824,
-          "end": 0.987
-        },
-        {
-          "w": "all",
-          "start": 1.022,
-          "end": 1.115
-        },
-        {
-          "w": "that",
-          "start": 1.161,
-          "end": 1.277
-        },
-        {
-          "w": "water,",
-          "start": 1.324,
-          "end": 1.672
-        },
-        {
-          "w": "so",
-          "start": 1.707,
-          "end": 1.881
-        },
-        {
-          "w": "you",
-          "start": 1.962,
-          "end": 2.055
-        },
-        {
-          "w": "build",
-          "start": 2.136,
-          "end": 2.334
-        },
-        {
-          "w": "a",
-          "start": 2.368,
+          "w": "and",
+          "start": 2.264,
           "end": 2.403
         },
         {
-          "w": "giant",
-          "start": 2.473,
-          "end": 2.763
+          "w": "his",
+          "start": 2.45,
+          "end": 2.519
         },
         {
-          "w": "crane",
-          "start": 2.798,
-          "end": 3.053
-        },
-        {
-          "w": "to",
-          "start": 3.077,
-          "end": 3.135
-        },
-        {
-          "w": "lift",
-          "start": 3.193,
-          "end": 3.425
-        },
-        {
-          "w": "it.",
-          "start": 3.471,
-          "end": 3.947
-        }
-      ],
-      "textHash": "08a6cf67ee2923bf"
-    },
-    {
-      "id": "s08",
-      "file": "vo/s08.mp3",
-      "duration": 7.76,
-      "words": [
-        {
-          "w": "Except",
-          "start": 0,
-          "end": 0.313
-        },
-        {
-          "w": "the",
-          "start": 0.337,
-          "end": 0.406
-        },
-        {
-          "w": "crane",
-          "start": 0.441,
-          "end": 0.708
-        },
-        {
-          "w": "sinks",
-          "start": 0.743,
-          "end": 0.975
-        },
-        {
-          "w": "into",
-          "start": 1.01,
-          "end": 1.126
-        },
-        {
-          "w": "the",
-          "start": 1.173,
-          "end": 1.242
-        },
-        {
-          "w": "mud,",
-          "start": 1.289,
-          "end": 1.544
-        },
-        {
-          "w": "so",
-          "start": 1.567,
-          "end": 1.66
-        },
-        {
-          "w": "you",
-          "start": 1.718,
-          "end": 1.8
-        },
-        {
-          "w": "shrink",
-          "start": 1.916,
-          "end": 2.148
-        },
-        {
-          "w": "the",
-          "start": 2.194,
-          "end": 2.264
-        },
-        {
-          "w": "whole",
-          "start": 2.322,
-          "end": 2.554
-        },
-        {
-          "w": "thing",
+          "w": "mug",
           "start": 2.577,
           "end": 2.74
         },
         {
-          "w": "down",
-          "start": 2.798,
+          "w": "is",
+          "start": 2.786,
+          "end": 2.856
+        },
+        {
+          "w": "gone.",
+          "start": 2.914,
+          "end": 3.622
+        }
+      ],
+      "textHash": "65fb88e9e3e6a26b",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s02",
+      "file": "vo/s02.mp3",
+      "duration": 2.972,
+      "words": [
+        {
+          "w": "It",
+          "start": 0,
+          "end": 0.128
+        },
+        {
+          "w": "was",
+          "start": 0.151,
+          "end": 0.232
+        },
+        {
+          "w": "a",
+          "start": 0.267,
+          "end": 0.29
+        },
+        {
+          "w": "four",
+          "start": 0.36,
+          "end": 0.546
+        },
+        {
+          "w": "dollar",
+          "start": 0.592,
+          "end": 0.836
+        },
+        {
+          "w": "mug.",
+          "start": 0.894,
+          "end": 1.347
+        },
+        {
+          "w": "Four.",
+          "start": 1.66,
           "end": 2.972
+        }
+      ],
+      "textHash": "0641c6f7a3df9d0f",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s03",
+      "file": "vo/s03.mp3",
+      "duration": 3.483,
+      "words": [
+        {
+          "w": "So",
+          "start": 0,
+          "end": 0.163
         },
         {
-          "w": "to",
+          "w": "he",
+          "start": 0.221,
+          "end": 0.279
+        },
+        {
+          "w": "told",
+          "start": 0.337,
+          "end": 0.522
+        },
+        {
+          "w": "Sue,",
+          "start": 0.569,
+          "end": 0.836
+        },
+        {
+          "w": "and",
+          "start": 0.871,
+          "end": 0.975
+        },
+        {
+          "w": "Sue",
+          "start": 1.045,
+          "end": 1.242
+        },
+        {
+          "w": "opened",
+          "start": 1.289,
+          "end": 1.556
+        },
+        {
+          "w": "a",
+          "start": 1.591,
+          "end": 1.614
+        },
+        {
+          "w": "ticket.",
+          "start": 1.66,
+          "end": 2.078
+        },
+        {
+          "w": "Tickets",
+          "start": 2.125,
+          "end": 2.543
+        },
+        {
+          "w": "are",
+          "start": 2.577,
+          "end": 2.694
+        },
+        {
+          "w": "forever.",
+          "start": 2.728,
+          "end": 3.483
+        }
+      ],
+      "textHash": "1c5da3392d2c19c3",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s04",
+      "file": "vo/s04.mp3",
+      "duration": 4.226,
+      "words": [
+        {
+          "w": "The",
+          "start": 0,
+          "end": 0.163
+        },
+        {
+          "w": "ticket",
+          "start": 0.209,
+          "end": 0.488
+        },
+        {
+          "w": "reached",
+          "start": 0.534,
+          "end": 0.789
+        },
+        {
+          "w": "security,",
+          "start": 0.824,
+          "end": 1.463
+        },
+        {
+          "w": "and",
+          "start": 1.556,
+          "end": 1.707
+        },
+        {
+          "w": "security",
+          "start": 1.765,
+          "end": 2.171
+        },
+        {
+          "w": "brought",
+          "start": 2.218,
+          "end": 2.426
+        },
+        {
+          "w": "a",
+          "start": 2.45,
+          "end": 2.473
+        },
+        {
+          "w": "clipboard",
+          "start": 2.508,
+          "end": 2.961
+        },
+        {
+          "w": "and",
           "start": 2.995,
-          "end": 3.042
+          "end": 3.077
         },
         {
-          "w": "something",
-          "start": 3.088,
-          "end": 3.344
+          "w": "a",
+          "start": 3.111,
+          "end": 3.135
         },
         {
-          "w": "you",
-          "start": 3.367,
+          "w": "lot",
+          "start": 3.193,
+          "end": 3.355
+        },
+        {
+          "w": "of",
+          "start": 3.39,
           "end": 3.437
         },
         {
-          "w": "can",
+          "w": "feelings.",
           "start": 3.483,
-          "end": 3.587
+          "end": 4.226
+        }
+      ],
+      "textHash": "f0048403080d8c76",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s05",
+      "file": "vo/s05.mp3",
+      "duration": 5.666,
+      "words": [
+        {
+          "w": "Security",
+          "start": 0,
+          "end": 0.499
         },
         {
-          "w": "carry",
-          "start": 3.634,
-          "end": 3.913
-        },
-        {
-          "w": "in",
-          "start": 3.959,
-          "end": 4.017
-        },
-        {
-          "w": "one",
-          "start": 4.098,
-          "end": 4.284
-        },
-        {
-          "w": "hand.",
-          "start": 4.331,
-          "end": 4.841
-        },
-        {
-          "w": "Congratulations,",
-          "start": 5.283,
-          "end": 6.211
-        },
-        {
-          "w": "you've",
-          "start": 6.385,
-          "end": 6.548
-        },
-        {
-          "w": "invented",
-          "start": 6.583,
-          "end": 6.873
+          "w": "called",
+          "start": 0.546,
+          "end": 0.743
         },
         {
           "w": "the",
-          "start": 6.896,
-          "end": 6.966
+          "start": 0.766,
+          "end": 0.836
         },
         {
-          "w": "bucket!",
-          "start": 7.001,
-          "end": 7.755
+          "w": "lab.",
+          "start": 0.871,
+          "end": 1.207
+        },
+        {
+          "w": "The",
+          "start": 1.265,
+          "end": 1.382
+        },
+        {
+          "w": "lab",
+          "start": 1.44,
+          "end": 1.625
+        },
+        {
+          "w": "flew",
+          "start": 1.695,
+          "end": 1.904
+        },
+        {
+          "w": "in",
+          "start": 1.939,
+          "end": 1.997
+        },
+        {
+          "w": "a",
+          "start": 2.032,
+          "end": 2.055
+        },
+        {
+          "w": "specialist,",
+          "start": 2.09,
+          "end": 2.763
+        },
+        {
+          "w": "and",
+          "start": 2.821,
+          "end": 2.961
+        },
+        {
+          "w": "the",
+          "start": 2.995,
+          "end": 3.065
+        },
+        {
+          "w": "specialist",
+          "start": 3.1,
+          "end": 3.553
+        },
+        {
+          "w": "dusted",
+          "start": 3.611,
+          "end": 3.947
+        },
+        {
+          "w": "the",
+          "start": 3.971,
+          "end": 4.04
+        },
+        {
+          "w": "cupboard",
+          "start": 4.075,
+          "end": 4.377
+        },
+        {
+          "w": "for",
+          "start": 4.423,
+          "end": 4.516
+        },
+        {
+          "w": "prints.",
+          "start": 4.586,
+          "end": 5.666
         }
       ],
-      "textHash": "ace82357c07aafa7"
+      "textHash": "fc58b232a5bfbc15",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s06",
+      "file": "vo/s06.mp3",
+      "duration": 2.879,
+      "words": [
+        {
+          "w": "Forty",
+          "start": 0,
+          "end": 0.325
+        },
+        {
+          "w": "thousand",
+          "start": 0.395,
+          "end": 0.72
+        },
+        {
+          "w": "dollars",
+          "start": 0.778,
+          "end": 1.068
+        },
+        {
+          "w": "later,",
+          "start": 1.115,
+          "end": 1.416
+        },
+        {
+          "w": "the",
+          "start": 1.451,
+          "end": 1.556
+        },
+        {
+          "w": "lab",
+          "start": 1.625,
+          "end": 1.823
+        },
+        {
+          "w": "had",
+          "start": 1.869,
+          "end": 1.985
+        },
+        {
+          "w": "one",
+          "start": 2.078,
+          "end": 2.264
+        },
+        {
+          "w": "answer.",
+          "start": 2.299,
+          "end": 2.879
+        }
+      ],
+      "textHash": "bcf1719f234403bd",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s07",
+      "file": "vo/s07.mp3",
+      "duration": 3.808,
+      "words": [
+        {
+          "w": "The",
+          "start": 0,
+          "end": 0.163
+        },
+        {
+          "w": "prints",
+          "start": 0.209,
+          "end": 0.464
+        },
+        {
+          "w": "were",
+          "start": 0.499,
+          "end": 0.615
+        },
+        {
+          "w": "Dan's.",
+          "start": 0.65,
+          "end": 1.184
+        },
+        {
+          "w": "The",
+          "start": 1.3,
+          "end": 1.428
+        },
+        {
+          "w": "mug",
+          "start": 1.474,
+          "end": 1.66
+        },
+        {
+          "w": "was",
+          "start": 1.718,
+          "end": 1.834
+        },
+        {
+          "w": "in",
+          "start": 1.892,
+          "end": 1.962
+        },
+        {
+          "w": "his",
+          "start": 2.032,
+          "end": 2.136
+        },
+        {
+          "w": "hand",
+          "start": 2.206,
+          "end": 2.403
+        },
+        {
+          "w": "the",
+          "start": 2.45,
+          "end": 2.519
+        },
+        {
+          "w": "whole",
+          "start": 2.554,
+          "end": 2.752
+        },
+        {
+          "w": "time.",
+          "start": 2.786,
+          "end": 3.808
+        }
+      ],
+      "textHash": "e01bdf1223140f8c",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s08",
+      "file": "vo/s08.mp3",
+      "duration": 3.437,
+      "words": [
+        {
+          "w": "If",
+          "start": 0,
+          "end": 0.139
+        },
+        {
+          "w": "you",
+          "start": 0.197,
+          "end": 0.279
+        },
+        {
+          "w": "want",
+          "start": 0.36,
+          "end": 0.534
+        },
+        {
+          "w": "all",
+          "start": 0.569,
+          "end": 0.697
+        },
+        {
+          "w": "of",
+          "start": 0.743,
+          "end": 0.789
+        },
+        {
+          "w": "this,",
+          "start": 0.824,
+          "end": 1.01
+        },
+        {
+          "w": "join",
+          "start": 1.091,
+          "end": 1.335
+        },
+        {
+          "w": "my",
+          "start": 1.416,
+          "end": 1.533
+        },
+        {
+          "w": "community,",
+          "start": 1.602,
+          "end": 2.078
+        },
+        {
+          "w": "Megamedia",
+          "start": 2.136,
+          "end": 2.682
+        },
+        {
+          "w": "Labs.",
+          "start": 2.74,
+          "end": 3.437
+        }
+      ],
+      "textHash": "d08e7ed47aa6b400",
+      "lead": 0,
+      "trail": 0
+    },
+    {
+      "id": "s09",
+      "file": "vo/s09.mp3",
+      "duration": 4.598,
+      "words": [
+        {
+          "w": "Every",
+          "start": 0,
+          "end": 0.267
+        },
+        {
+          "w": "skill",
+          "start": 0.313,
+          "end": 0.546
+        },
+        {
+          "w": "and",
+          "start": 0.592,
+          "end": 0.662
+        },
+        {
+          "w": "workflow",
+          "start": 0.697,
+          "end": 1.057
+        },
+        {
+          "w": "I",
+          "start": 1.103,
+          "end": 1.138
+        },
+        {
+          "w": "used",
+          "start": 1.219,
+          "end": 1.428
+        },
+        {
+          "w": "is",
+          "start": 1.474,
+          "end": 1.556
+        },
+        {
+          "w": "in",
+          "start": 1.614,
+          "end": 1.672
+        },
+        {
+          "w": "there,",
+          "start": 1.718,
+          "end": 1.997
+        },
+        {
+          "w": "all",
+          "start": 2.159,
+          "end": 2.322
+        },
+        {
+          "w": "in",
+          "start": 2.38,
+          "end": 2.426
+        },
+        {
+          "w": "one",
+          "start": 2.496,
+          "end": 2.624
+        },
+        {
+          "w": "plugin.",
+          "start": 2.659,
+          "end": 3.1
+        },
+        {
+          "w": "Link",
+          "start": 3.297,
+          "end": 3.506
+        },
+        {
+          "w": "in",
+          "start": 3.553,
+          "end": 3.611
+        },
+        {
+          "w": "the",
+          "start": 3.646,
+          "end": 3.715
+        },
+        {
+          "w": "description.",
+          "start": 3.75,
+          "end": 4.598
+        }
+      ],
+      "textHash": "d26865fc52de19c2",
+      "lead": 0,
+      "trail": 0
     }
   ]
 }

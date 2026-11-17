@@ -1,114 +1,99 @@
 ---
 user-invocable: false
 name: megaedit-cartoon3d
-description: Write a Megaedit script.json in the Cartoon 3D style, a directed 60 second story short. Flat inked paper-head characters act in dressed 3D places, the story moves through four to six of them, real 3D objects sit in their hands, the camera never stops moving, the light changes on every beat, effects land on the action, and one or two caption words sit low on the frame. Use for narrated stories, "what happened to X", history and science tales, fables. Needs a WebGL render.
+description: Write a Megaedit script.json in the Cartoon 3D style, a directed 50 to 65 second story short. Flat stick-cartoon characters stand in a real lit 3D world (lamps, fires, sun, soft shadows, textured walls, haze, lens blur, filmic grade), the camera is keyed on every shot with punch-ins on spoken words, cuts are hard, and captions are big sentence-case words. Use for narrated stories, "what happened to X", history and science tales, fables. Needs a WebGL render.
 ---
 
-# Cartoon 3D
+# Cartoon 3D (lit)
 
-A narrated story, shot like a film. Every scene is a **shot list**: who the camera is on, how close, what face they make, what they hold, how the camera moves and what the light does. No text cards. The captions carry the words and the picture carries the story.
+A narrated story shot like a film. Every scene is a **shot list** in `visual.extra.lit`: the place, who stands where, what they do and feel, where the camera sits, how it moves and which spoken word it cuts or punches in on. The captions carry the words; the picture carries the story. No text cards.
+
+**Old scripts still render.** A scene that has `extra.lit` is drawn by the lit renderer. A scene without it falls back to the older ink-outline drawer (`extra.time`, `extra.shots[{size,move,light,fx}]`, `visual.setting`). Do not mix the two looks in one episode; write `extra.lit` on every scene. `check` tells you which scenes are on the fallback.
 
 ## The shape of an episode
-- **55 to 65 seconds, about 3.6 words a second** (200 to 230 words), 10 to 14 scenes of 12 to 22 words.
-- **Move the story through 4 to 6 places.** A new place every one or two scenes, and a scene can move in the middle of a sentence with `place` on a shot. The place is half the picture: pick the one the line happens in. A story told in one room looks like a slideshow.
-- Script formula: a person and a problem in the first sentence → three or four tries that each go wrong in a specific way → the turn ("Then…", "Until…") → the payoff → one dry last line. Real details, no morals.
-- Captions: `story` (1 to 2 words, white with a black outline, low on the frame). Never put the same words on screen twice.
+- 50 to 65 seconds, about 3.3 words a second (160 to 200 words), 10 to 13 scenes of 8 to 22 words.
+- Move through 4 to 6 places (`set`). A story told in one room is a slideshow.
+- Formula: a person and a problem in the first sentence, three tries that each fail in a specific way, the turn, the payoff, one dry last line. Real details, no morals.
+- Two or three characters. Put each in `cast` (megaedit.json) and, if you want a hat, glasses or a dress, in `bible.looks`.
+- Captions: leave the style on `story`.
+- Per scene: 1 to 3 shots, so a cut about every 2.5 to 4 seconds. Hard cuts only (`xfade` is for dreams). Never two shots of the same `frame` in a row.
 
-## Places (`visual.setting`)
-Rooms, each fully dressed with its own wall colour, lamp and window light: `bedroom`, `living`, `kitchen`, `office`, `classroom`, `shop`, `cafe`, `hospital`, `gym`, `garage`, `lab`, `studio`, `warehouse`, `cell`.
-Outdoors: `town-square`, `harbour`, `forest-road`, `castle-hill`, `night-street`, `workshop`.
-Many plain words map to these (school, jail, store, bank, diner, clinic, basement, dorm, factory…).
-Leave `setting` out and the engine picks: a place named in the line if there is one, otherwise a new one every two scenes. Write it anyway; your pick is better.
+## Shape of a scene
+```json
+{ "id": "s05", "text": "At seven past three, the tower door creaked open. Someone tiny crept up the stairs.",
+  "visual": { "layout": "hero", "headline": "x", "setting": "workshop", "characters": [{ "ref": "ada" }], "camera": "push-in", "transition": "cut",
+    "extra": { "lit": {
+      "bible": { ... },                         // scene 1 only
+      "set": "tower",                           // preset, bible set, or an inline set
+      "shots": [
+        { "frame": "wide", "move": "push", "fx": ["dust"], "actors": [{ "ref": "ada", "at": [-1.4, -1.2], "face": "worry" }] },
+        { "at": "Someone", "frame": "low", "on": [0.4, 0.8, 0], "actors": [{ "ref": "pip", "at": [0.6, 1.0], "to": [0.4, -0.5], "act": "walk" }] }
+      ] } } } }
+```
+`layout`, `headline`, `setting`, `characters` are required by the schema but unused by lit scenes (give them any valid value). `at` is a spoken word.
 
-Dress a room from the script with `visual.extra`:
-- `"sign": "LOST & FOUND"` a sign on the wall (28 characters at most)
-- `"wall": "#7a5cc4"` the wall colour
-- `"time": "day" | "dusk" | "night"` what the window shows
+**Cues** are seconds from the scene start, or spoken words: `"furnace"` (first match), `"stick#2"` (second match), `"stick+0.3"` (0.3 s later). `check` warns when a cue is not in the line.
 
-## Shots (`visual.extra.shots`, up to 8 a scene)
-Each shot starts on a spoken word. Leave `shots` out and the engine cuts on sentence breaks for you, but a written list is always better.
+World units are metres, y up, the camera looks down -z, the stage is around x 0, z 0, a character is about 1.5 m tall, a table is 0.78 m. Keep two characters about 1.1 m apart, the frame is a narrow vertical slice. Back wall at -z, camera at +z.
+
+## Sets
+`set` = a preset name: `cellar tavern study workshop hall alley market harbour meadow forest ruins`, or a name from `bible.sets`, or an inline set. An inline set may start from one: `{ "base": "cellar", "mood": "dawn", "props": [...] }` (its props are added to the base's).
 
 | field | values |
 | --- | --- |
-| `at` | the word or phrase the shot starts on (the first shot starts at 0) |
-| `type` | `story` (default), `insert`, `establishing`, `aerial`, `pov-scope`, `pov`, `closeup`, `crowd`, `action`, `twist-light` (see Shot types). Sets the size, move and camera; `size`/`move` still override |
-| `twist` | a lighting preset that holds from this shot on (and into the next two scenes, until a morning): `night`, `sunset`, `lamp`, `alarm` |
-| `label` | text printed on a hero object in its insert (≤12 chars): a clock's `9:00`, a door's number, a button's `PUSH`, a letter's heading |
-| `size` | `wide`, `full`, `two`, `medium`, `close`, `extreme`, `insert` |
-| `focus` | cast id the camera is on |
-| `expr` | `neutral happy grin laugh excited shock scared worried sad angry smug deadpan tired think`; one for the focus, or `{ "id": "expr" }` |
-| `pose` | `idle talk point shock cheer sad think walk run wave facepalm shrug` |
-| `place` | this shot and the ones after it happen somewhere else: any place name above |
-| `holds` | an object the focus has from here on (see Objects) |
-| `insert` | the object filmed close, right where it is, glowing, the cast blurred behind |
-| `move` | `push pull pan-left pan-right tilt-up tilt-down orbit rise dutch shake hold` |
-| `light` | `base bright warm gold sunset pink cool blue green night dark red lamp`: a different one on every shot |
-| `fx` | one or several of `sparkle sweat dust coins confetti burst rays hearts flash smoke rain snow shake debris`, or `none` |
-| `cut` | `travel` (the camera glides there, default) or `cut`. A new place and an object shot always cut |
-| `tag` | a label floating over a head: a number, a name, a price. `""` clears it |
+| `kind` | `room` `hall` (vaulted) `street` `field` (open air) |
+| `mood` | indoors: `candle fire window cold`; outdoors: `day dusk dawn night overcast` (an indoor mood on a field maps to its nearest outdoor one and the other way round) |
+| `wall` / `floor` | walls `brick stone plaster wood iron`; floors `wood stone cobble dirt grass sand cloth` |
+| `size` | width, depth, height in metres |
+| `wallCol` `floorCol` `sky` | `#rrggbb` trims |
+| `windows` `door` `beams` `hearth` `water` | counts and switches |
+| `fog` | 0 clear to 1 thick |
+| `dust` | air dust 0 to 1.5 |
+| `props` | up to 80, see below |
 
-Rules of thumb: about one shot every 2 to 3 seconds. Mostly `medium` and `full` so the room reads; one `close` in five; `extreme` once an episode, on the biggest reaction. `push` is the default move.
+Lighting follows the mood, you do not place lights: candle and lantern props are real point lights, a hearth is a fire light, windows throw a shaft, outdoors has a sun or a moon. Dark scenes need a light prop (`lantern`, `candle`, `fire`) near the action.
 
-**Shot types.** Never more than two shots of one type in a row (the engine enforces it on auto shots, counting the end of the scene before).
-- `insert`: the object fills the frame. Eight hero models stand on their own little set for it, filmed at a three-quarter, a low or a top-down angle: `button clock phone envelope trophy money map door` (they move: the button presses, the clock ticks, the letter slides out, the door opens, a brick of money drops in). Other objects get their in-hand close shot.
-- `establishing`: the whole place from high and far, pulling out or rising. First shot of a new place.
-- `aerial`: the drone over farmland, river, villages and clouds; nobody in it. For a valley, a country, the whole world.
-- `pov-scope` / `pov`: through a rifle scope (circle + crosshair) or binoculars, a long lens on the focus from far off, with hand-held drift. For aiming, spotting, watching.
-- `closeup`: a face, on a shock or a realisation.
-- `crowd`: the cast with a seeded crowd of extras around them, cheering or shocked by the words.
-- `action`: low, close, canted, pushing in hard, with `burst debris shake`.
-- `twist-light`: the shot where the story turns; it changes the lighting preset (`twist`) and the preset holds.
-Left out, the engine reads the words: "valley/farms/the world" → aerial, "crowd/everyone/the whole town" → crowd, "crashed/exploded/burned" → action, "aimed/target/spotted" → pov-scope, "watched/stared" → pov, a gasp or a shock → closeup, a line naming a hero object → its insert, "then/suddenly/one day" → a sunset (outdoors) or lamp-lit (indoors) turn, "that night" → night, "alarm/crash/emergency" → alarm-red; "the next morning/dawn" ends the twist.
+**Props** `{ "k", "at": [x, z], "y", "on": "<prop id>", "id", "s" (size), "rot" (deg), "n" + "area": [x0, z0, x1, z1] (scatter n copies), "k2" (brightness / radius), "text", "col", "hang" (lantern height), "shadow" }`.
+Kinds: `crate barrel table stool bench chest sack shelf pillar cart haystack well fence lantern candle fire lamppost sticks coal rock tree bush bottle mug book bell coins sign banner door window bed key sword`. Put small things `on` a table by its `id`.
 
-**Light.** Never the same light two shots running. `warm`, `gold`, `bright` for hope and wins, `cool` and `blue` for doubt, `pink` for love and daydreams, `green` for sick, greedy or strange, `sunset` for endings, `lamp` or `dark` for the low point, `red` for danger, `night` for night. Left out, the engine picks from the words.
+## Characters
+`actors[]`: `ref` (a cast id, a `bible.looks` id, or `extra1`..`extra6` for a passer-by), `at` ([x, z] or `far-left left center right far-right back-left back back-right front`), `to` (walks there, `go`/`until` cues bound the walk), `dir` (`left` / `right`, which way it faces), `face`, `faces: [[cue, face]]`, `act`, `acts: [[cue, act]]`, `held`, `scale`, `tint` (`silhouette dark cool`), `look` ([x,y] eyes), `from` / `hide` cues.
+- `face`: `neutral happy joy worry shock angry smug sleepy sad talk grit evil flat`
+- `act`: `idle talk point shrug cheer scared walk run think slump reach wave carry dig hold-up bow sit laugh`. The mouth moves by itself while the scene's `speaker` is that actor.
+- `held`: `shovel tally knife lantern mug paper cane bundle keys half`
+- `bible.looks.<id>`: `{ body, body2, trim, skin, style (plain vest coat apron robe dress tunic), hat (flat bowler top mob coif straw crown hood wig), hatCol, band, hair, hairStyle, moustache, beard, glasses, scale, wide, legs }`. `beard` is a colour (`"#5a4030"`), `moustache` is `true` or a colour; use only the listed `style` / `hat` values. A bad look value silently drops the whole video to the old flat renderer, so look at a still of scene 1 after editing the bible. Characters not in the bible are derived from `cast.json`.
 
-**Effects.** They belong to an action, never decoration. `sparkle` and `rays` on the thing that matters, `coins` for money, `sweat` on a worried head, `dust` under running feet, `confetti` for a win, `burst` plus `shake` on an impact or a shock, `hearts`, `smoke`, `rain`, `snow`, `flash` on a sudden reveal. Two at most on a shot. Left out, the engine picks from the pose, the face and the words; write `"fx": "none"` for a quiet shot.
+- Every character is a **rigged 3D toon** (the inkbeat character system: lit meshes with an ink outline, a drawn face with ringed eyes that blink and lip-flap on the voice, two-bone arms, a walk cycle, sitting, held props): big cream-white round head, bean torso, thin dark stick limbs, ball hands. `act` drives the body (`idle talk point shrug cheer scared think slump reach wave carry dig hold-up bow sit laugh walk run`), `face` the expression. Hats: `flat bowler top straw cap` and cloth `mob coif hood` caps.
+- `bible.chars: "card"` switches back to flat drawn cards (only for a deliberately 2D look).
 
-## Objects (`holds`, `insert`, `visual.props`)
-Objects are real 3D models with the same ink line as the set. Where one lives depends on what it is:
-- **In the hand:** `coin cash card key phone envelope coffee laptop trophy plant book pencil bell gift box battery camera microphone magnifier umbrella tool pizza ball` and most small things.
-- **On the ground beside or behind them:** `car house rocket door cart flag target fire robot`. The shot widens to hold it.
-- **Over the head:** `lightbulb heart star cloud sun moon chat music-note check cross clock calendar brain gear chart-up chart-down map-pin arrow`. Use for an idea, a feeling, a deadline.
-- **On the head:** `crown`.
+## Shots
+| field | values |
+| --- | --- |
+| `at` | the spoken word the shot starts on (first shot starts at 0) |
+| `set` | cut away to another set for this shot: a preset name or a name from `bible.sets` (define `{ base, mood }` variants there; an inline object here is not supported) |
+| `frame` | `wide full medium close macro low high top two ots dutch` |
+| `on` | an actor ref, a prop id, or `[x, y, z]` |
+| `move` | `still push pull orbit orbit-back pan-left pan-right crane-up crane-down dive rise dolly-left dolly-right` (default `push`, `wide` defaults to `still`) |
+| `az` `dist` `height` `fov` `roll` | override the framing (degrees / metres) |
+| `keys` | raw camera keys `[{ f, p, t, fov, e }]` for full control |
+| `punch` | words where the camera pushes in over 3 frames (and stays) |
+| `shake` `flash` | words where the camera shakes / the frame flashes (a slam, a blast, a spark) |
+| `fx` | `dust embers smoke sparks rain snow fireflies steam leaves` |
+| `grade` | `warm cold sick dream dark bright mono blood` for the turn of the story |
+| `exposure` `fire` `dof` `drift` `pan` `xfade` | numeric trims |
 
-List an object in `visual.props` with the word that names it (`{ "kind": "coin", "label": "coin" }`) and it gets its own close shot on that word, then stays in the hand. In a written shot list, `insert` shows it and `holds` keeps it. One object a scene, two at most.
+Rules of thumb: open on a `wide` to show the place, then `medium` / `full` for the story, `close` at most twice per video, on the biggest reaction (a face filling the frame reads as a mistake), `macro` on an object in the hand, `low` for a threat, `two` for a conversation. `punch` on the word that lands. One `grade` per episode turn, not per shot. Vary `move`.
 
-## Cast
-Up to 3 in a scene (4 fits in a `wide`). Everyone is drawn in one family: a big cream paper head, a pill body, thin ink limbs, ring hands. Tell them apart with `body` (`bean`, `tall`, `round`, `stick`), hair (`short`, `long`, `bun`, `curly`, `spiky`, `cap`), `eyes`, one `accessory` and a shirt colour nobody else has. Two characters face each other; in a close-up the other steps out of frame on their own.
+Vary the places like the Ricks refs: at least 4 different-looking sets per video, including a daylight exterior (`bible.sets.street = { base: "alley", mood: "day" }`), and a prop insert every 4-6 shots. Inserts: put the story objects on a table in a `bible.sets` entry (`{ k: "table", at: [0, -1.2], id: "tb1" }`, then `{ k: "key", at: [-0.15, -1.2], on: "tb1", s: 1.8 }`; kinds: key coins candle book mug bottle sword sticks coal sack lantern bell sign), and shoot it with `frame: "macro"`, `actors: []` and raw `keys` looking down onto the tabletop, e.g. `[{ f: 0, p: [-0.35, 1.6, -0.25], t: [0, 0.84, -1.2], fov: 38 }, { f: 60, p: [-0.15, 1.45, -0.5], t: [0.05, 0.84, -1.2], fov: 36 }]` (see the example's `bench` / `desk` sets).
 
-## Do
-- Give every scene a different shot than the one before it.
-- Name what is in the hand (`holds`) and show it once (`insert`).
-- Change the place when the story moves, and the light on every shot.
-- Plain English, said the way you would say it out loud.
+Fill the frame like the Ricks refs: most shots have **2 or 3 people** (the lead, who they talk to, or `extra1`..`extra6` reacting in the back), never one figure alone on an empty stage unless the line is about being alone. Put people next to a prop, not inside it (a sitting or standing actor needs ~0.6 m clear of a bed, table or counter). Leave `dof` alone: the set stays sharp behind the cast by default.
 
-## Don't
-- No headlines or lists on screen. If it has to be read, it is a sign on the wall or a tag over a head.
-- No income claims, no unsourced facts. At most 5 hashtags.
-- Do not describe the camera in the text.
-- No "!" or "?" over heads and no speed lines: a face and an effect say it.
+## Episode bible (scene 1 only)
+`bible`: `sets` (your own named places), `looks` (characters), `exposure` / `sat` / `vig` (episode-wide grade trim), `pan` (sideways drift, default 5), `act` (idle acting, default 1).
 
-## script.json example
-```json
-{ "id": "s03", "text": "So he walked into the bank with a shoebox and asked for a loan. The teller laughed so hard she had to sit down.",
-  "visual": { "layout": "dialogue", "setting": "office",
-    "characters": [{ "ref": "walt", "pose": "idle", "position": "left" }, { "ref": "teller", "pose": "talk", "position": "right" }],
-    "extra": { "sign": "FIRST TOWN BANK", "time": "day", "shots": [
-      { "size": "two", "move": "push", "light": "warm" },
-      { "at": "shoebox", "insert": "box", "focus": "walt" },
-      { "at": "asked", "size": "medium", "focus": "walt", "expr": "happy", "holds": "box", "light": "gold" },
-      { "at": "laughed", "size": "close", "focus": "teller", "expr": "laugh", "move": "shake", "light": "pink", "fx": "burst" } ] } } }
-```
-A scene that moves:
-```json
-{ "id": "s04", "text": "He ran all the way home, sat down on the bed, and counted it again.",
-  "visual": { "layout": "hero", "setting": "town-square", "characters": [{ "ref": "walt", "pose": "run", "position": "center" }],
-    "extra": { "shots": [
-      { "size": "full", "pose": "run", "expr": "scared", "light": "sunset", "fx": "dust" },
-      { "at": "sat down", "place": "bedroom", "size": "medium", "pose": "sad", "expr": "tired", "light": "lamp" },
-      { "at": "counted", "insert": "cash", "light": "green" } ] } } }
-```
-The older information layouts (list, process, big-number, split, choice, compare, recap) still draw as sticker cards over the world when you need them; a story does not.
-
-## Render note
-WebGL. Check stills first, one per shot: `megaedit still <dir> --scene s03 --frame 40 --scale 0.5` (`--frame` counts from the start of that scene). Then render with `--gl=angle`.
+## Workflow
+1. `megaedit new "<title>" --style cartoon3d`, write `brief.md`, then `script.json` and the `cast` in `megaedit.json`.
+2. `megaedit check <dir>`: fix every error and read the warnings (cues that are not spoken words, unknown refs).
+3. `megaedit voice <dir>`, then `megaedit still <dir> --scene s03 --frame 40` for every scene (look at them: dark, empty or off-centre frames are fixed with `frame`, `on`, a lantern prop, or a different `at`).
+4. `megaedit render <dir> --preset 9x16-1080`. Rendering needs a GL browser; it takes several minutes, run it on the mini if you have one.
+See `example/` for a finished 12-scene script.

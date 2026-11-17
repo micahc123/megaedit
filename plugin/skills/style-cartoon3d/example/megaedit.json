@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "id": "fog-bell",
-  "slug": "fog-bell",
-  "title": "The Fog Bell",
+  "id": "a745fcee-05ad-486f-8413-fefe0c088db6",
+  "slug": "the-clock-that-stopped-at-3-07",
+  "title": "The Clock That Stopped at 3:07",
   "style": "cartoon3d",
   "createdAt": "2026-11-09T09:00:00.000Z",
   "updatedAt": "2026-11-09T09:00:00.000Z",
@@ -28,61 +28,40 @@
   "sfx": true,
   "cast": [
     {
-      "id": "bea",
-      "name": "Bea",
+      "id": "ada",
+      "name": "Ada",
       "body": "bean",
-      "skin": "#f5d0b5",
+      "skin": "#f1c9a5",
       "hair": {
-        "style": "long",
-        "color": "#c0562f"
+        "style": "bun",
+        "color": "#3a2a22"
       },
-      "eyes": "anime",
+      "eyes": "dot",
       "outfit": {
-        "top": "#9b5de5",
-        "bottom": "#22223b",
-        "pattern": "dots"
-      },
-      "accessory": "scarf",
-      "height": 0.98,
-      "personality": "Fearless, competitive, keeps score of everything."
-    },
-    {
-      "id": "mo",
-      "name": "Mo",
-      "body": "block",
-      "skin": "#e8b98f",
-      "hair": {
-        "style": "cap",
-        "color": "#b23a48"
-      },
-      "eyes": "sleepy",
-      "outfit": {
-        "top": "#577590",
-        "bottom": "#2b2d42",
+        "top": "#5d3a62",
+        "bottom": "#2b2030",
         "pattern": "plain"
       },
       "accessory": "none",
-      "height": 1,
-      "personality": "Deadpan. Says the quiet part out loud."
+      "height": 1
     },
     {
-      "id": "juno",
-      "name": "Juno",
-      "body": "tall",
-      "skin": "#8d5a3b",
+      "id": "pip",
+      "name": "Pip",
+      "body": "bean",
+      "skin": "#f1c9a5",
       "hair": {
-        "style": "bun",
-        "color": "#1d1410"
+        "style": "short",
+        "color": "#7a4a2a"
       },
-      "eyes": "oval",
+      "eyes": "dot",
       "outfit": {
-        "top": "#2a9d8f",
-        "bottom": "#264653",
+        "top": "#6f8a4a",
+        "bottom": "#3a3a30",
         "pattern": "plain"
       },
-      "accessory": "glasses",
-      "height": 1.08,
-      "personality": "The calm one who explains things plainly and is usually right."
+      "accessory": "none",
+      "height": 0.7
     }
   ],
   "aspect": "9:16",

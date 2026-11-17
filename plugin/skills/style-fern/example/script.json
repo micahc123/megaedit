@@ -1,0 +1,336 @@
+{
+  "title": "The Empty Wall",
+  "hook": "August 21, 1911. Paris. A man in a white smock walks out of the Louvre at seven in the morning.",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "August 21, 1911. Paris. A man in a white smock walks out of the Louvre at seven in the morning.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "set": "Gallery",
+              "cam": "ws",
+              "subject": "vincenzo",
+              "light": "dawn",
+              "stamp": [
+                "AUGUST 21, 1911",
+                "Paris, France"
+              ],
+              "move": "push",
+              "amt": 0.12,
+              "actors": [
+                {
+                  "who": "vincenzo",
+                  "at": [
+                    0.6,
+                    4.6
+                  ],
+                  "yaw": 180,
+                  "pose": "stand"
+                }
+              ]
+            },
+            {
+              "at": "walks",
+              "set": "QuaiStreet",
+              "cam": "mls",
+              "subject": "vincenzo",
+              "light": "dawn",
+              "weather": "fog",
+              "move": "truck_r",
+              "amt": 0.12,
+              "actors": [
+                {
+                  "who": "vincenzo",
+                  "at": [
+                    2.2,
+                    -4
+                  ],
+                  "pose": "walk",
+                  "walkTo": [
+                    2.2,
+                    1.5
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Under the smock is a small painting on a wooden panel.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "set": "Desk",
+              "cam": "ins",
+              "focus": "panel",
+              "move": "push",
+              "amt": 0.12,
+              "light": "interior",
+              "hit": "thump"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Nobody notices it is gone for twenty eight hours.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "set": "EmptyWall",
+              "cam": "ws",
+              "subject": "guard",
+              "light": "overcast",
+              "move": "push",
+              "amt": 0.1,
+              "actors": [
+                {
+                  "who": "guard",
+                  "at": [
+                    0.3,
+                    4.4
+                  ],
+                  "yaw": 180,
+                  "pose": "hands_pockets"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "The police find four iron pegs on an empty wall, and the frame in a stairwell.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "kind": "doc",
+              "sub": "Prefecture of Police · Paris",
+              "title": "Report, 22 August 1911",
+              "lines": [
+                "Salon Carre. At the place of the painting, four iron pegs remain on the wall.",
+                "The frame and its glass were found on a service stairwell."
+              ],
+              "highlight": [
+                "four iron pegs"
+              ],
+              "label": "RECONSTRUCTION"
+            },
+            {
+              "at": "and the frame",
+              "set": "EmptyWall",
+              "cam": "mls",
+              "subject": "inspector",
+              "light": "overcast",
+              "move": "orbit",
+              "amt": 0.12,
+              "actors": [
+                {
+                  "who": "inspector",
+                  "at": [
+                    0,
+                    5.6
+                  ],
+                  "yaw": 180,
+                  "pose": "look_down"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "For two years, the most famous painting in the world sits in a trunk, in a rented room in Paris.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "set": "Room",
+              "cam": "ins",
+              "focus": "trunk",
+              "light": "night",
+              "move": "push",
+              "amt": 0.12,
+              "key": 0.8
+            },
+            {
+              "at": "in a rented",
+              "set": "Room",
+              "cam": "ws",
+              "subject": "vincenzo",
+              "light": "night",
+              "move": "pull",
+              "amt": 0.12,
+              "actors": [
+                {
+                  "who": "vincenzo",
+                  "at": [
+                    -0.6,
+                    -0.3
+                  ],
+                  "yaw": 30,
+                  "pose": "sit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "In December 1913, an art dealer in Florence gets a letter. The writer wants the painting to go home to Italy.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "kind": "map",
+              "points": [
+                {
+                  "name": "Paris",
+                  "lat": 48.8606,
+                  "lon": 2.3376
+                },
+                {
+                  "name": "Florence",
+                  "lat": 43.7696,
+                  "lon": 11.2558
+                }
+              ],
+              "label": "December 1913"
+            },
+            {
+              "at": "The writer",
+              "kind": "doc",
+              "sub": "Florence · December 1913",
+              "title": "A letter to the dealer",
+              "lines": [
+                "I have the painting. I am Italian, and I want it to go home to Italy.",
+                "Name your terms and I will bring it."
+              ],
+              "highlight": [
+                "go home to Italy"
+              ],
+              "label": "RECONSTRUCTION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s07",
+      "text": "He is Vincenzo Peruggia, a glazier who once helped fit the museum's glass cases. He is arrested in his hotel.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "set": "Room",
+              "cam": "mcu",
+              "subject": "vincenzo",
+              "light": "night",
+              "move": "push",
+              "amt": 0.12,
+              "key_side": "right",
+              "actors": [
+                {
+                  "who": "vincenzo",
+                  "at": [
+                    -0.6,
+                    -0.3
+                  ],
+                  "yaw": 30,
+                  "pose": "sit"
+                }
+              ]
+            },
+            {
+              "at": "He is arrested",
+              "set": "QuaiStreet",
+              "cam": "ews",
+              "light": "night",
+              "weather": "rain",
+              "move": "crane_up",
+              "amt": 0.12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s08",
+      "text": "The painting goes home to the Louvre. And the empty wall had made it the most famous in the world.",
+      "visual": {
+        "layout": "hero",
+        "characters": [],
+        "camera": "push-in",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "set": "Gallery",
+              "cam": "cu",
+              "subject": "mona",
+              "light": "dawn",
+              "move": "push",
+              "amt": 0.12
+            },
+            {
+              "at": "And the empty",
+              "set": "EmptyWall",
+              "cam": "ws",
+              "focus": "bench",
+              "light": "overcast",
+              "move": "push",
+              "amt": 0.1
+            },
+            {
+              "at": "most famous",
+              "kind": "title"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "cta": ""
+}

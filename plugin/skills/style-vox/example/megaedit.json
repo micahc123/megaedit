@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "1a76d5de-bf2e-4bf6-ad7b-bb4397a10ef6",
+  "slug": "the-day-the-noons-lined-up",
+  "title": "The day the noons lined up",
+  "style": "vox",
+  "createdAt": "2026-11-16T13:19:55.635Z",
+  "updatedAt": "2026-11-16T13:19:55.635Z",
+  "language": "en",
+  "translations": {},
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+    "model": "eleven_multilingual_v2",
+    "speed": 1,
+    "stability": 0.5,
+    "similarity": 0.75
+  },
+  "captions": {
+    "styleId": "vox",
+    "position": "lower",
+    "enabled": true
+  },
+  "music": {
+    "trackId": null,
+    "gainDb": -22
+  },
+  "sfx": true,
+  "cast": [],
+  "aspect": "9:16",
+  "exports": [
+    "9x16-1080"
+  ],
+  "palette": {}
+}

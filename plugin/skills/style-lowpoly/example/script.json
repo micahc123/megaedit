@@ -1,171 +1,33 @@
 {
-  "title": "How you invented the bucket",
-  "hook": "You need water from the river, but it all runs out between your fingers, so you scoop it up with a big leaf.",
+  "title": "The Four Dollar Mug",
+  "hook": "Monday morning, Dan opens the break room cupboard, and his mug is gone.",
   "scenes": [
     {
       "id": "s01",
-      "text": "You need water from the river, but it all runs out between your fingers, so you scoop it up with a big leaf.",
+      "text": "Monday morning, Dan opens the break room cupboard, and his mug is gone.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "break",
         "camera": "static",
         "transition": "cut",
         "extra": {
-          "bible": {
-            "you": {
-              "tunic": "#c49a63",
-              "hair": "#3a2618",
-              "skin": "#e0b48a",
-              "beard": true
-            },
-            "friend": {
-              "tunic": "#b86a46",
-              "hair": "#6a3a1c",
-              "skin": "#d9a578",
-              "band": "#e8d3a0",
-              "height": 1.36,
-              "width": 0.92
-            },
-            "setting": "valley",
-            "river": true,
-            "items": {
-              "mud": {
-                "parts": [
-                  {
-                    "g": "cyl",
-                    "c": "mud",
-                    "p": [
-                      0,
-                      0,
-                      0
-                    ],
-                    "s": [
-                      4.8,
-                      0.02,
-                      4.8
-                    ]
-                  }
-                ]
-              },
-              "lid": {
-                "parts": [
-                  {
-                    "g": "cyl",
-                    "c": "lid",
-                    "p": [
-                      0,
-                      0,
-                      0
-                    ],
-                    "s": [
-                      0.69,
-                      0.07,
-                      0.69
-                    ]
-                  }
-                ]
-              }
-            }
-          },
           "shots": [
             {
-              "from": [
-                3.2,
-                2.3,
-                13.5
-              ],
-              "to": [
-                3.0,
-                1.8,
-                9.6
-              ],
-              "look": [
-                3.0,
-                1.1,
-                0
-              ],
-              "fov": 46,
-              "lookTo": [
-                3.0,
-                1.2,
-                0.2
-              ]
+              "cam": "wide",
+              "do": {
+                "dan": "hold_cup"
+              }
             },
             {
-              "from": [
-                4.3,
-                1.25,
-                3.1
-              ],
-              "to": [
-                3.9,
-                1.1,
-                2.2
-              ],
-              "look": [
-                3.0,
-                0.95,
-                0.3
-              ],
-              "fov": 40,
-              "blur": 3,
-              "at": "scoop-0.3"
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": 0.3,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "cup"
-                },
-                {
-                  "pose": "dip",
-                  "at": "scoop"
-                }
-              ]
-            },
-            {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": "idle"
-            }
-          ],
-          "props": [
-            {
-              "item": "leaf",
-              "pos": [
-                0.62,
-                0.9,
-                0
-              ],
-              "attach": "you",
-              "rot": [
-                0.15,
-                0,
-                0
-              ],
-              "pop": false
-            }
-          ],
-          "drops": [
-            {
-              "at": 0.5,
-              "until": "scoop-0.2",
-              "from": [
-                0.6,
-                1.0,
-                0
-              ],
-              "attach": "you",
-              "rate": 14,
-              "v": 0.2,
-              "spread": 0.3
+              "at": "mug",
+              "cam": "cu",
+              "on": "dan",
+              "face": {
+                "dan": "shock"
+              },
+              "do": {
+                "dan": "shock"
+              }
             }
           ]
         }
@@ -174,140 +36,28 @@
     },
     {
       "id": "s02",
-      "text": "Except the leaf folds over and spills it, so you carve out a whole log. Genius!",
+      "text": "It was a four dollar mug. Four.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "break",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                4.3,
-                1.25,
-                3.1
-              ],
-              "to": [
-                3.9,
-                1.1,
-                2.2
-              ],
-              "look": [
-                3.0,
-                0.95,
-                0.3
-              ],
-              "fov": 40,
-              "blur": 3
-            },
-            {
-              "from": [
-                5.4,
-                0.9,
-                5.2
-              ],
-              "to": [
-                0.6,
-                2.0,
-                8.8
-              ],
-              "look": [
-                2.6,
-                0.7,
-                1.2
-              ],
-              "fov": 46,
-              "lookTo": [
-                2.5,
-                1.0,
-                0.8
-              ],
-              "at": "carve-0.25"
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": 0.3,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "dip"
-                },
-                {
-                  "pose": "flourish",
-                  "at": "carve"
-                }
-              ]
-            },
-            {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "idle"
-                },
-                {
-                  "pose": "wave",
-                  "at": "genius"
-                },
-                {
-                  "pose": "idle",
-                  "at": "genius+0.9"
-                }
-              ]
-            }
-          ],
-          "props": [
-            {
-              "item": "leaf",
-              "pos": [
-                0.62,
-                0.9,
-                0
-              ],
-              "attach": "you",
-              "rot": [
-                0.15,
-                0,
-                0
-              ],
-              "until": "carve",
-              "scale": {
-                "from": 1,
-                "to": 0.55,
-                "at": "folds",
-                "dur": 0.4
+              "cam": "cu",
+              "on": "dan",
+              "do": {
+                "dan": "shrug"
               },
-              "pop": false
-            },
-            {
-              "item": "log",
-              "pos": [
-                2.6,
-                0.45,
-                1.8
-              ],
-              "at": "carve"
-            }
-          ],
-          "drops": [
-            {
-              "at": "spills-0.2",
-              "until": "spills+0.9",
-              "from": [
-                0.7,
-                0.95,
-                0
-              ],
-              "attach": "you",
-              "rate": 30,
-              "v": 0.6,
-              "spread": 0.9
+              "face": {
+                "dan": "strain"
+              },
+              "tag": {
+                "text": "$4",
+                "dt": 0.9,
+                "dur": 1.4
+              }
             }
           ]
         }
@@ -316,98 +66,28 @@
     },
     {
       "id": "s03",
-      "text": "But the log is so heavy you can't lift it once it's full, so you shave it down thin. Clever!",
+      "text": "So he told Sue, and Sue opened a ticket. Tickets are forever.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "office",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                5.0,
-                1.0,
-                5.6
-              ],
-              "to": [
-                1.2,
-                1.8,
-                8.4
-              ],
-              "look": [
-                2.6,
-                0.8,
-                1.2
-              ],
-              "fov": 46,
-              "lookTo": [
-                2.5,
-                1.0,
-                0.8
-              ]
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": 0.3,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "hold"
-                },
-                {
-                  "pose": "strain",
-                  "at": "heavy"
-                },
-                {
-                  "pose": "hold",
-                  "at": "shave"
-                }
-              ]
+              "cam": "wide",
+              "do": {
+                "sue": "work"
+              }
             },
             {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "idle"
-                },
-                {
-                  "pose": "wave",
-                  "at": "clever"
-                },
-                {
-                  "pose": "idle",
-                  "at": "clever+0.9"
-                }
-              ]
-            }
-          ],
-          "props": [
-            {
-              "item": "log",
-              "pos": [
-                2.6,
-                0.45,
-                1.8
-              ],
-              "until": "shave",
-              "wobble": 0.03,
-              "pop": false
-            },
-            {
-              "item": "log-thin",
-              "pos": [
-                2.6,
-                0.45,
-                1.8
-              ],
-              "at": "shave"
+              "at": "opened",
+              "cam": "mid",
+              "on": "sue",
+              "do": {
+                "sue": "read"
+              },
+              "lit": "cold"
             }
           ]
         }
@@ -416,153 +96,30 @@
     },
     {
       "id": "s04",
-      "text": "Except the water sloshes out as you walk, so you put a lid on top.",
+      "text": "The ticket reached security, and security brought a clipboard and a lot of feelings.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "lobby",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                1.2,
-                1.4,
-                5.6
-              ],
-              "to": [
-                2.4,
-                1.2,
-                3.9
-              ],
-              "look": [
-                2.9,
-                0.95,
-                -0.4
-              ],
-              "fov": 44
-            },
-            {
-              "from": [
-                3.4,
-                2.6,
-                2.8
-              ],
-              "to": [
-                3.0,
-                2.2,
-                2.2
-              ],
-              "look": [
-                2.9,
-                0.9,
-                -0.4
-              ],
-              "fov": 40,
-              "blur": 3,
-              "at": "lid-0.2"
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": [
-                {
-                  "from": 0.3,
-                  "to": -1.2,
-                  "at": "sloshes",
-                  "until": "lid-0.3"
-                },
-                {
-                  "from": -1.2,
-                  "to": -0.3,
-                  "at": "lid-0.3",
-                  "dur": 1.0
-                }
-              ],
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "hold"
-                },
-                {
-                  "pose": "carry",
-                  "at": "sloshes-0.4"
-                }
-              ],
-              "walk": {
-                "at": "sloshes",
-                "until": "lid"
+              "cam": "wide",
+              "do": {
+                "pratt": "idle"
               }
             },
             {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": "idle"
-            }
-          ],
-          "props": [
-            {
-              "item": "log-thin",
-              "pos": [
-                2.6,
-                0.45,
-                1.8
-              ],
-              "until": "sloshes-0.4",
-              "pop": false
-            },
-            {
-              "item": "log-thin",
-              "pos": [
-                0.62,
-                0.55,
-                0
-              ],
-              "attach": "you",
-              "at": "sloshes-0.4",
-              "until": "lid",
-              "pop": false
-            },
-            {
-              "item": "lid",
-              "pos": [
-                {
-                  "from": [
-                    0.62,
-                    1.835,
-                    0
-                  ],
-                  "to": [
-                    0.62,
-                    1.035,
-                    0
-                  ],
-                  "at": "lid",
-                  "dur": 0.22
-                }
-              ],
-              "attach": "you",
-              "at": "lid",
-              "pop": false
-            }
-          ],
-          "drops": [
-            {
-              "at": "sloshes-0.1",
-              "until": "lid-0.1",
-              "from": [
-                0.62,
-                1.0,
-                0
-              ],
-              "attach": "you",
-              "rate": 24,
-              "v": 1.4,
-              "spread": 1.1
+              "at": "clipboard",
+              "cam": "cu",
+              "on": "pratt",
+              "do": {
+                "pratt": "think"
+              },
+              "face": {
+                "pratt": "shock"
+              }
             }
           ]
         }
@@ -571,86 +128,30 @@
     },
     {
       "id": "s05",
-      "text": "But now no water can get in, so you cut a hole in the lid.",
+      "text": "Security called the lab. The lab flew in a specialist, and the specialist dusted the cupboard for prints.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "lab",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                4.2,
-                2.9,
-                2.6
-              ],
-              "to": [
-                3.7,
-                2.3,
-                1.7
-              ],
-              "look": [
-                3.0,
-                1.0,
-                0
-              ],
-              "fov": 40,
-              "blur": 3
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": -0.3,
-              "face": 1.5708,
-              "pose": "carry"
+              "cam": "wide",
+              "do": {
+                "vale": "point"
+              }
             },
             {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": "idle"
-            }
-          ],
-          "props": [
-            {
-              "item": "log-lid",
-              "pos": [
-                0.62,
-                0.55,
-                0
-              ],
-              "attach": "you",
-              "until": "hole",
-              "pop": false
-            },
-            {
-              "item": "log-hole",
-              "pos": [
-                0.62,
-                0.55,
-                0
-              ],
-              "attach": "you",
-              "at": "hole"
-            }
-          ],
-          "drops": [
-            {
-              "at": "now",
-              "until": "cut+0.2",
-              "from": [
-                0.62,
-                1.0,
-                -0.1
-              ],
-              "attach": "you",
-              "rate": 26,
-              "v": 1.8,
-              "spread": 1.6
+              "at": "dusted",
+              "cam": "cu",
+              "on": "vale",
+              "face": {
+                "vale": "shock"
+              },
+              "do": {
+                "vale": "read"
+              }
             }
           ]
         }
@@ -659,95 +160,34 @@
     },
     {
       "id": "s06",
-      "text": "Except you need both hands to carry it, so you tie on a rope handle.",
+      "text": "Forty thousand dollars later, the lab had one answer.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "lab",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                1.8,
-                1.3,
-                3.3
-              ],
-              "to": [
-                1.2,
-                1.8,
-                6.5
-              ],
-              "look": [
-                2.9,
-                1.05,
-                0
-              ],
-              "fov": 44,
-              "lookTo": [
-                2.9,
-                1.0,
-                0
-              ]
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": -0.3,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "carry"
-                },
-                {
-                  "pose": "point",
-                  "at": "tie"
-                }
-              ]
+              "cam": "cut",
+              "from": "lab",
+              "to": "break",
+              "tag": {
+                "text": "$40,000",
+                "dt": 0.2,
+                "dur": 2.0
+              }
             },
             {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "idle"
-                },
-                {
-                  "pose": "point",
-                  "at": "both"
-                },
-                {
-                  "pose": "idle",
-                  "at": "handle+0.6"
-                }
-              ]
-            }
-          ],
-          "props": [
-            {
-              "item": "log-hole",
-              "pos": [
-                0.62,
-                0.55,
-                0
-              ],
-              "attach": "you",
-              "until": "handle",
-              "pop": false
-            },
-            {
-              "item": "log-handle",
-              "pos": [
-                0.62,
-                0.55,
-                0
-              ],
-              "attach": "you",
-              "at": "handle"
+              "at": "answer",
+              "cam": "cu",
+              "on": "vale",
+              "face": {
+                "vale": "shock"
+              },
+              "do": {
+                "vale": "shock"
+              }
             }
           ]
         }
@@ -756,126 +196,36 @@
     },
     {
       "id": "s07",
-      "text": "But the rope can't hold all that water, so you build a giant crane to lift it.",
+      "text": "The prints were Dan's. The mug was in his hand the whole time.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "break",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                1.8,
-                1.3,
-                3.3
-              ],
-              "to": [
-                1.2,
-                1.8,
-                6.5
-              ],
-              "look": [
-                2.9,
-                1.05,
-                0
-              ],
-              "fov": 44,
-              "lookTo": [
-                2.9,
-                1.0,
-                0
-              ]
+              "cam": "wide",
+              "do": {
+                "dan": "hold_cup"
+              }
             },
             {
-              "from": [
-                -1.0,
-                0.6,
-                7.0
-              ],
-              "to": [
-                3.0,
-                1.5,
-                9.5
-              ],
-              "look": [
-                4.1,
-                1.5,
-                0.4
-              ],
-              "fov": 46,
-              "lookTo": [
-                4.1,
-                3.4,
-                0.6
-              ],
-              "at": "build-0.4"
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": -0.3,
-              "face": 1.5708,
-              "pose": [
-                {
-                  "pose": "carry"
-                },
-                {
-                  "pose": "build",
-                  "at": "build"
-                }
-              ]
+              "at": "mug",
+              "cam": "ins",
+              "on": "mug",
+              "lit": "warm"
             },
             {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": 1.5708,
-              "pose": "idle"
-            }
-          ],
-          "props": [
-            {
-              "item": "log-handle",
-              "pos": [
-                0.62,
-                0.55,
-                0
-              ],
-              "attach": "you",
-              "until": "lift",
-              "pop": false
-            },
-            {
-              "item": "log-handle",
-              "pos": {
-                "from": [
-                  3.02,
-                  0.55,
-                  -0.3
-                ],
-                "to": [
-                  4.1,
-                  2.2,
-                  1.8
-                ],
-                "at": "lift",
-                "dur": 1.0
+              "at": "whole",
+              "cam": "cu",
+              "on": "dan",
+              "face": {
+                "dan": "shock"
               },
-              "at": "lift",
-              "pop": false,
-              "bob": 0.04
-            },
-            {
-              "item": "crane",
-              "pos": [
-                4.1,
-                0,
-                -0.2
-              ],
-              "at": "build"
+              "do": {
+                "dan": "shock"
+              }
             }
           ]
         }
@@ -884,275 +234,42 @@
     },
     {
       "id": "s08",
-      "text": "Except the crane sinks into the mud, so you shrink the whole thing down to something you can carry in one hand. Congratulations, you've invented the bucket!",
+      "text": "If you want all of this, join my community, Megamedia Labs.",
       "visual": {
         "layout": "hero",
-        "setting": "valley",
+        "setting": "break",
         "camera": "static",
         "transition": "cut",
         "extra": {
           "shots": [
             {
-              "from": [
-                1.5,
-                2.0,
-                9.0
-              ],
-              "to": [
-                -1.5,
-                3.0,
-                12.5
-              ],
-              "look": [
-                4.0,
-                1.8,
-                0.8
-              ],
-              "fov": 46,
-              "lookTo": [
-                3.8,
-                1.5,
-                0.8
-              ]
-            },
-            {
-              "from": [
-                4.6,
-                1.4,
-                4.0
-              ],
-              "to": [
-                4.0,
-                1.3,
-                3.2
-              ],
-              "look": [
-                2.8,
-                1.0,
-                0.7
-              ],
-              "fov": 42,
-              "lookTo": [
-                2.5,
-                1.05,
-                0.7
-              ],
-              "blur": 3,
-              "at": "shrink-0.3"
-            },
-            {
-              "from": [
-                2.2,
-                1.3,
-                4.6
-              ],
-              "to": [
-                2.2,
-                1.8,
-                8.6
-              ],
-              "look": [
-                1.9,
-                1.1,
-                0.3
-              ],
-              "fov": 44,
-              "lookTo": [
-                1.8,
-                1.1,
-                0.3
-              ],
-              "at": "congratulations-0.4"
-            }
-          ],
-          "gloom": [
-            {
-              "from": 0,
-              "to": 1,
-              "at": "sinks-0.4",
-              "dur": 1.2
-            },
-            {
-              "from": 1,
-              "to": 0,
-              "at": "shrink",
-              "dur": 0.8
-            }
-          ],
-          "actors": [
-            {
-              "who": "you",
-              "x": 2.4,
-              "z": -0.3,
-              "face": [
-                {
-                  "from": 1.5708,
-                  "to": 0.05,
-                  "at": "congratulations-0.3",
-                  "dur": 0.8
-                }
-              ],
-              "pose": [
-                {
-                  "pose": "build"
-                },
-                {
-                  "pose": "hold",
-                  "at": "sinks"
-                },
-                {
-                  "pose": "grin",
-                  "at": "carry-0.2"
-                }
-              ]
-            },
-            {
-              "who": "friend",
-              "x": 0.8,
-              "z": -0.7,
-              "face": [
-                {
-                  "from": 1.5708,
-                  "to": -0.15,
-                  "at": "congratulations-0.3",
-                  "dur": 0.8
-                }
-              ],
-              "pose": [
-                {
-                  "pose": "idle"
-                },
-                {
-                  "pose": "cheer",
-                  "at": "sinks"
-                },
-                {
-                  "pose": "idle",
-                  "at": "shrink"
-                },
-                {
-                  "pose": "cheer",
-                  "at": "congratulations"
-                }
-              ]
-            }
-          ],
-          "props": [
-            {
-              "item": "mud",
-              "pos": [
-                4.1,
-                0.012,
-                1.7
-              ],
-              "scale": [
-                {
-                  "from": 0.01,
-                  "to": 1,
-                  "at": "sinks",
-                  "dur": 0.9
-                },
-                {
-                  "from": 1,
-                  "to": 0.01,
-                  "at": "shrink",
-                  "dur": 0.4
-                }
-              ],
-              "pop": false
-            },
-            {
-              "item": "crane",
-              "pos": [
-                {
-                  "from": [
-                    4.1,
-                    0,
-                    -0.2
-                  ],
-                  "to": [
-                    4.1,
-                    -1.3,
-                    -0.2
-                  ],
-                  "at": "sinks",
-                  "dur": 0.9
-                }
-              ],
-              "until": "shrink+0.6",
-              "scale": {
-                "from": 1,
-                "to": 0.01,
-                "at": "shrink",
-                "dur": 0.55
-              },
-              "pop": false
-            },
-            {
-              "item": "log-handle",
-              "pos": [
-                {
-                  "from": [
-                    4.1,
-                    2.2,
-                    1.8
-                  ],
-                  "to": [
-                    4.1,
-                    0.7,
-                    1.8
-                  ],
-                  "at": "sinks",
-                  "dur": 0.9
-                }
-              ],
-              "until": "shrink",
-              "pop": false
-            },
-            {
-              "item": "bucket",
-              "pos": [
-                {
-                  "from": [
-                    4.1,
-                    0.7,
-                    1.8
-                  ],
-                  "to": [
-                    3.22,
-                    0.45,
-                    0.4
-                  ],
-                  "at": "shrink",
-                  "dur": 0.55
-                }
-              ],
-              "at": "shrink",
-              "scale": {
-                "from": 1,
-                "to": 0.52,
-                "at": "shrink",
-                "dur": 0.55
-              },
-              "pop": false
-            }
-          ],
-          "drops": [
-            {
-              "at": "sinks",
-              "until": "sinks+0.8",
-              "from": [
-                4.1,
-                0.2,
-                1.6
-              ],
-              "rate": 22,
-              "v": 2.2,
-              "spread": 2.2
+              "cam": "wide",
+              "do": {
+                "dan": "sip"
+              }
             }
           ]
         }
-      }
+      },
+      "hold": -0.3
+    },
+    {
+      "id": "s09",
+      "text": "Every skill and workflow I used is in there, all in one plugin. Link in the description.",
+      "visual": {
+        "layout": "hero",
+        "setting": "break",
+        "camera": "static",
+        "transition": "cut",
+        "extra": {
+          "shots": [
+            {
+              "cam": "cut"
+            }
+          ]
+        }
+      },
+      "hold": 0
     }
   ]
 }
