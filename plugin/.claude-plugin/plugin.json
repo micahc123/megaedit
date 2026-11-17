@@ -1,6 +1,6 @@
 {
   "name": "megaedit",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Megaedit: the whole system for animated short videos and series inside Claude Code. Idea, cast, style, script, ElevenLabs voice, sound, QA, render and series memory, on your own Mac. Needs a Megamedia Labs member key.",
   "author": { "name": "Megamedia Labs", "url": "https://www.skool.com/mega-media-labs-6489/about" },
   "homepage": "https://github.com/micahc123/megaedit",

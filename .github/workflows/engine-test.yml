@@ -1,0 +1,90 @@
+# Installs the plugin the way a member's computer does (Windows + Linux), then renders a short 2D video end to end.
+# Needs the repo secret MEGAEDIT_TEST_KEY (a short-lived member key). Run: gh workflow run engine-test.yml
+name: engine-test
+on:
+  workflow_dispatch:
+    inputs:
+      style:
+        description: Style whose bundled example (with its pre-made voice) is rendered
+        default: whatif
+      scenes:
+        description: How many scenes of the example to render
+        default: '3'
+      blender:
+        description: Also install Blender during setup
+        type: boolean
+        default: true
+  push:
+    branches: ['ci/**']
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 75
+    defaults:
+      run:
+        shell: bash
+    env:
+      STYLE: ${{ inputs.style || 'whatif' }}
+      SCENES: ${{ inputs.scenes || '3' }}
+      SETUP_FLAGS: ${{ (github.event_name == 'workflow_dispatch' && !inputs.blender) && '--skip-blender' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout line endings (Git for Windows defaults to autocrlf)
+        run: |
+          git config --get core.autocrlf || true
+          git ls-files --eol plugin/bin/megaedit plugin/engine.lock plugin/.mcp.json
+          head -c 200 plugin/bin/megaedit | od -c | head -3
+
+      - name: First run, as Claude Code starts the MCP server (no shell; Windows gets bin/megaedit.exe)
+        run: node .github/ci/mcp-first-run.mjs plugin
+
+      - name: Log in with the test key (the hooks' and slash commands' path, Git Bash on Windows)
+        env:
+          MEGAEDIT_KEY: ${{ secrets.MEGAEDIT_TEST_KEY }}
+        run: |
+          plugin/bin/megaedit login "$MEGAEDIT_KEY"
+          plugin/bin/megaedit gate | tee gate.txt
+          grep -q "unlocked\|active" gate.txt
+          echo '{"session_id":"ci","hook_event_name":"SessionStart"}' | "$GITHUB_WORKSPACE/plugin/bin/megaedit" hook session-start
+
+      - name: megaedit.exe from PowerShell
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          & "$env:GITHUB_WORKSPACE\plugin\bin\megaedit.exe" gate
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+
+      - name: Setup (render browser, speech model, Blender)
+        run: plugin/bin/megaedit setup $SETUP_FLAGS
+
+      - name: Render a short ${{ env.STYLE }} video
+        run: |
+          P="$RUNNER_TEMP/ci-test"
+          node .github/ci/test-project.mjs "plugin/skills/style-$STYLE/example" "$P" "$SCENES"
+          plugin/bin/megaedit check "$P" || true
+          plugin/bin/megaedit render "$P" --preset 9x16-1080
+          ls -la "$P/out"
+          test -s "$P/out/ci-test-9x16-1080.mp4"
+
+      - name: Claude Code installs the plugin and connects its MCP server
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          npm install -g @anthropic-ai/claude-code >/dev/null 2>&1
+          claude --version
+          claude plugin marketplace add "$GITHUB_WORKSPACE"
+          claude plugin install megaedit@megamedia-labs
+          claude mcp list
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: megaedit-${{ runner.os }}-${{ env.STYLE }}
+          path: ${{ runner.temp }}/ci-test/out/
+          if-no-files-found: warn

@@ -1,6 +1,10 @@
-version=2.2.0
-url=https://github.com/micahc123/megaedit/releases/download/engine-v2.2.0
-darwin-arm64=megaedit-engine-2.2.0-darwin-arm64.tar.gz ffe8c4ebaad1bce527346229802a7922b767564680acc8e17609ba0a750058cf
-size_darwin-arm64=296 MB
-darwin-x64=megaedit-engine-2.2.0-darwin-x64.tar.gz d1f45475228326e71877bf8e4ac2e2356058aa94d38a28cb0668e81daa571e41
-size_darwin-x64=297 MB
+version=2.3.0
+url=https://github.com/micahc123/megaedit/releases/download/engine-v2.3.0
+darwin-arm64=megaedit-engine-2.3.0-darwin-arm64.tar.gz 6742549220d0e7d8e4b9919dafbc98807e1a61acb8d5b5c3b22f599eb9b96f04
+size_darwin-arm64=295 MB
+darwin-x64=megaedit-engine-2.3.0-darwin-x64.tar.gz 91225ac11d3e3d8e7db0d66a9df334d9249bc84d518987bf7e7925b37f217651
+size_darwin-x64=296 MB
+win32-x64=megaedit-engine-2.3.0-win32-x64.tar.gz 54914c1f9ab077090f28e58a20c26afaf25b1f94a26f57e3db0fe6ead847a1b7
+size_win32-x64=326 MB
+linux-x64=megaedit-engine-2.3.0-linux-x64.tar.gz abb4112c4c27cd15e4acf8ba0e2b6b107e22704002a1b875d0ddda4e63996b04
+size_linux-x64=325 MB
