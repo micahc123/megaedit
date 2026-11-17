@@ -111,16 +111,32 @@ run_engine() {
   exec "$NODE" "$(native "$DEST/cli/node_modules/@megaedit/cli/dist/bin.js")" "$@"
 }
 
-# First session: Claude Code gives an MCP server about 30 s to answer, and the engine is ~300 MB. So this stub answers
-# the handshake (and an empty tool list) at once, installs the engine meanwhile, then hands the session to the real
-# server (replaying the handshake to it) and tells Claude Code the tool list changed. No restart needed.
+# The install outlives whatever started it: Claude Code stops the MCP server and hook processes when a session ends.
+detached_install() { trap '' HUP INT TERM; install_engine "$@" </dev/null; }
+
+# First session: Claude Code gives an MCP server about 30 s per request, and the engine is ~300 MB. So this stub
+# answers every request at once (an empty tool list meanwhile) while the engine installs in the background. When the
+# engine is in, the installer tells Claude Code the tool list changed; the next message hands the session to the real
+# server (the handshake is replayed to it first). No restart needed.
 reply() { printf '{"jsonrpc":"2.0","id":%s,"result":%s}\n' "$1" "$2"; }
+handoff() {
+  { [ -n "$INIT" ] && printf '%s\n' "$INIT"; [ -n "$INITD" ] && printf '%s\n' "$INITD"; printf '%s\n' "$1"; exec cat; } |
+    run_engine mcp | {
+      # Its answer to the replayed handshake is dropped (Claude Code already has one).
+      if [ -n "$INIT" ]; then
+        while IFS= read -r out; do case "$out" in *'"protocolVersion"'*) break ;; *) printf '%s\n' "$out" ;; esac; done
+      fi
+      exec cat
+    }
+  exit $?
+}
 mcp_stub() {
-  install_engine 1800 >/dev/null 2>&1 &
+  ( detached_install 1800 >/dev/null 2>&1 && sleep 1 && printf '%s\n' '{"jsonrpc":"2.0","method":"notifications/tools/list_changed"}' ) &
   IPID=$!
-  INIT=; INITD=; LISTED=
+  INIT=; INITD=
   while IFS= read -r line; do
     line=${line%"$CR"}
+    [ -f "$DEST/.ok" ] && handoff "$line"
     l=$(printf '%s' "$line" | sed 's/"[[:space:]]*:[[:space:]]*/":/g')
     id=$(printf '%s' "$l" | sed -nE 's/.*"id":(-?[0-9]+|"[^"]*").*/\1/p')
     case "$l" in
@@ -129,35 +145,30 @@ mcp_stub() {
         pv=$(printf '%s' "$l" | sed -nE 's/.*"protocolVersion":"([^"]*)".*/\1/p')
         reply "$id" "{\"protocolVersion\":\"${pv:-2025-06-18}\",\"capabilities\":{\"tools\":{\"listChanged\":true},\"prompts\":{}},\"serverInfo\":{\"name\":\"megaedit\",\"version\":\"$VER\"},\"instructions\":\"Megaedit is installing its engine on this computer (first run, a minute or two). Its tools appear here as soon as it is ready. Every Megaedit tool needs a Megamedia Labs member key (/megaedit:login <key>). ElevenLabs voice uses the member's own key (/megaedit:voice-key <key>).\"}" ;;
       *'"method":"notifications/initialized"'*) INITD=$line ;;
-      *'"method":"tools/list"'*) reply "$id" '{"tools":[]}'; LISTED=1; break ;;
+      *'"method":"tools/list"'*) reply "$id" '{"tools":[]}' ;;
       *'"method":"prompts/list"'*) reply "$id" '{"prompts":[]}' ;;
       *'"method":"resources/list"'*) reply "$id" '{"resources":[]}' ;;
       *'"method":"resources/templates/list"'*) reply "$id" '{"resourceTemplates":[]}' ;;
       *'"method":"ping"'*) reply "$id" '{}' ;;
       *'"method":"notifications/'*) ;;
-      *) [ -n "$id" ] && printf '{"jsonrpc":"2.0","id":%s,"error":{"code":-32002,"message":"Megaedit is still installing its engine. Try again in a minute."}}\n' "$id" ;;
+      *)
+        if [ -z "$id" ]; then :
+        elif kill -0 "$IPID" 2>/dev/null; then msg="Megaedit is still installing its engine (first run, a minute or two). Try again in a minute."
+          printf '{"jsonrpc":"2.0","id":%s,"error":{"code":-32002,"message":"%s"}}\n' "$id" "$msg"
+        else msg="Megaedit couldn't install its engine. Run /megaedit:setup to see why, then /mcp and reconnect megaedit."
+          printf '{"jsonrpc":"2.0","id":%s,"error":{"code":-32002,"message":"%s"}}\n' "$id" "$msg"
+        fi ;;
     esac
   done
-  # Claude Code closed the session before asking for tools: nothing to hand over (the install carries on).
-  [ -n "$LISTED" ] && [ -n "$INIT" ] || exit 0
-  if ! wait "$IPID" || [ ! -f "$DEST/.ok" ]; then
-    say "Megaedit couldn't install its engine. Run /megaedit:setup to see why."
-    exit 1
-  fi
-  # The real server gets the member's handshake again; its answer to it is dropped (the client already has one).
-  { printf '%s\n' "$INIT"; [ -n "$INITD" ] && printf '%s\n' "$INITD"; exec cat; } | run_engine mcp | {
-    while IFS= read -r out; do case "$out" in *'"protocolVersion"'*) break ;; *) printf '%s\n' "$out" ;; esac; done
-    printf '%s\n' '{"jsonrpc":"2.0","method":"notifications/tools/list_changed"}'
-    exec cat
-  }
-  exit $?
+  # Claude Code closed the session: nothing to hand over (the install carries on).
+  exit 0
 }
 
 if [ ! -f "$DEST/.ok" ]; then
   case "${1:-}" in
     hook)
       # Never hold up the start of a session: install in the background and say so.
-      ( install_engine >/dev/null 2>&1 & )
+      ( detached_install >/dev/null 2>&1 & )
       if [ "${2:-}" = session-start ]; then
         printf '%s\n' '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Megaedit is installing its engine on this computer (first run, a minute or two). Megaedit commands wait for it, and its tools appear in this session when it is ready. If they are still missing after that, run /megaedit:setup, then /mcp and reconnect megaedit."}}'
       fi

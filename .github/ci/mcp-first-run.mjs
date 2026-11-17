@@ -1,5 +1,5 @@
 // CI: start the plugin's MCP server exactly the way Claude Code does (the .mcp.json command, no shell; on Windows
-// that resolves to bin/megaedit.exe) and check the first-run promise: the handshake answers at once while the
+// that resolves to bin/megaedit.exe) and check the first-run promise: the server answers every request at once while the
 // engine installs, then the real tools arrive with notifications/tools/list_changed, no restart.
 //   node mcp-first-run.mjs <plugin dir>
 import { spawn } from 'node:child_process';
@@ -44,6 +44,12 @@ try {
   console.log(`tools/list answered in ${secs()} s: ${l1.result.tools.length} tools`);
   let tools = l1.result.tools;
   if (!tools.length) {
+    // Claude Code asks for prompts ("commands") right after tools; every request must be answered while installing.
+    send({ id: 10, method: 'prompts/list' });
+    const pl = await wait((m) => m.id === 10, 5_000, 'prompts/list during the install');
+    send({ id: 11, method: 'tools/call', params: { name: 'styles', arguments: {} } });
+    const tc = await wait((m) => m.id === 11, 5_000, 'tools/call during the install');
+    console.log(`while installing: prompts/list -> ${pl.result?.prompts?.length ?? 'error'} prompts, tools/call -> ${tc.error ? `error "${tc.error.message.slice(0, 60)}"` : 'result'} (${secs()} s)`);
     await wait((m) => m.method === 'notifications/tools/list_changed', 20 * 60_000, 'tools/list_changed');
     console.log(`engine installed, list_changed at ${secs()} s`);
     send({ id: 2, method: 'tools/list' });
